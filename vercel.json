@@ -1,0 +1,39 @@
+{
+  "version": 2,
+  "builds": [
+    {
+      "src": "package.json",
+      "use": "@vercel/static-build",
+      "config": { 
+        "distDir": "build",
+        "maxDuration": 10
+      }
+    },
+    {
+      "src": "api/*.js",
+      "use": "@vercel/node",
+      "config": {
+        "memory": 1024,
+        "maxDuration": 10
+      }
+    }
+  ],
+  "routes": [
+    {
+      "src": "/proxy/(.*)",
+      "dest": "/api/proxy.js"
+    },
+    {
+      "src": "/assets/(.*)",
+      "dest": "/api/proxy.js"
+    },
+    {
+      "src": "/ws/(.*)",
+      "dest": "/api/proxy.js"
+    },
+    {
+      "src": "/(.*)",
+      "dest": "/$1"
+    }
+  ]
+} 
