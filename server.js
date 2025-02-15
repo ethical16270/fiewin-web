@@ -19,23 +19,15 @@ app.use(cors());
 app.use(compression());
 
 // Serve static files from the build directory
-app.use(express.static(path.join(__dirname, 'build'), {
-  maxAge: '1y',
-  etag: true,
-}));
+app.use(express.static(path.join(__dirname, 'build')));
 
 // Health check endpoint
 app.get('/health', (req, res) => {
   res.status(200).json({ status: 'OK' });
 });
 
-// Handle proxy requests
-app.get('/proxy', (req, res) => {
-  res.status(200).send('Proxy endpoint');
-});
-
 // Handle all routes by serving index.html
-app.get('/*', function (req, res) {
+app.get('*', function (req, res) {
   res.sendFile(path.join(__dirname, 'build', 'index.html'));
 });
 
@@ -46,7 +38,7 @@ app.use((err, req, res, next) => {
 });
 
 const PORT = process.env.PORT || 3000;
-app.listen(PORT, () => {
+const server = app.listen(PORT, () => {
   console.log(`Server is running on port ${PORT}`);
 });
 
