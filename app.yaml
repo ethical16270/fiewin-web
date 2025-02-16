@@ -6,15 +6,22 @@ services:
     deploy_on_push: true
     repo: your-username/fiewin-web
   build_command: npm install && npm run build
-  run_command: npm start
-  http_port: 3000
+  run_command: node server.js
+  http_port: 8080
   instance_count: 1
   instance_size_slug: basic-xxs
+  envs:
+  - key: NODE_ENV
+    value: production
+  - key: PORT
+    value: "8080"
+  - key: PROXY_TARGET
+    value: "https://91appw.com"
   routes:
-    - path: /
-  env:
-    - key: NODE_ENV
-      value: production
-    - key: PORT
-      scope: RUN_TIME
-      value: "3000" 
+  - path: /
+  health_check:
+    http_path: /health
+    period_seconds: 10
+    timeout_seconds: 5
+    success_threshold: 1
+    failure_threshold: 3 

@@ -3,31 +3,20 @@
   "builds": [
     {
       "src": "package.json",
-      "use": "@vercel/static-build",
-      "config": { "distDir": "build" }
-    },
-    {
-      "src": "api/*.js",
       "use": "@vercel/node",
       "config": {
-        "memory": 1024,
-        "maxDuration": 10
+        "buildCommand": "npm run build",
+        "outputDirectory": "build"
       }
     }
   ],
   "routes": [
-    { "src": "/(.*)", "dest": "/index.html" },
-    {
-      "src": "/proxy/(.*)",
-      "dest": "/api/proxy.js"
-    },
-    {
-      "src": "/assets/(.*)",
-      "dest": "/api/proxy.js"
-    },
-    {
-      "src": "/ws/(.*)",
-      "dest": "/api/proxy.js"
-    }
-  ]
+    { "src": "/api/(.*)", "dest": "/api/$1" },
+    { "src": "/(.*)", "dest": "/index.html" }
+  ],
+  "env": {
+    "NODE_ENV": "production",
+    "PORT": "8080",
+    "PROXY_TARGET": "https://91appw.com"
+  }
 } 

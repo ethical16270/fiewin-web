@@ -1,0 +1,32 @@
+name: Deploy to DigitalOcean
+on:
+  push:
+    branches: [main]
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      
+      - name: Install doctl
+        uses: digitalocean/action-doctl@v2
+        with:
+          token: ${{ secrets.DIGITALOCEAN_ACCESS_TOKEN }}
+          
+      - name: Build container image
+        run: docker build -t registry.digitalocean.com/fiewin-registry/fiewin-web:$(echo $GITHUB_SHA | head -c7) .
+
+      - name: Log in to DigitalOcean Container Registry
+        run: doctl registry login --expiry-seconds 600
+        
+      - name: Push image to registry
+        run: docker push registry.digitalocean.com/fiewin-registry/fiewin-web:$(echo $GITHUB_SHA | head -c7)
+        
+      - name: Update deployment file
+        run: |
+          TAG=$(echo $GITHUB_SHA | head -c7)
+          sed -i 's|<IMAGE>|registry.digitalocean.com/fiewin-registry/fiewin-web:'${TAG}'|' $GITHUB_WORKSPACE/app-spec.yaml
+          
+      - name: Deploy to DigitalOcean App Platform
+        run: doctl apps update ${{ secrets.DIGITALOCEAN_APP_ID }} --spec app-spec.yaml 

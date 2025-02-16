@@ -104,4 +104,21 @@ module.exports = function(app) {
       }
     })
   );
+
+  app.use(
+    '/ws',
+    createProxyMiddleware({
+      target: 'http://localhost:4000',
+      ws: true,
+      changeOrigin: true
+    })
+  );
+
+  app.use(
+    '/api',
+    createProxyMiddleware({
+      target: 'http://localhost:4000',
+      changeOrigin: true
+    })
+  );
 }; 

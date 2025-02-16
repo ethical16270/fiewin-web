@@ -1,11 +1,19 @@
 services:
   - type: web
     name: fiewin-web
-    env: node
-    buildCommand: npm install && npm run build
-    startCommand: node server.js
+    env: docker
+    region: singapore
+    plan: starter
+    buildCommand: docker build -t fiewin-web .
+    startCommand: docker run -p 8080:8080 fiewin-web
     envVars:
       - key: NODE_ENV
         value: production
       - key: PORT
-        value: 3000 
+        value: 8080
+      - key: PROXY_TARGET
+        value: https://91appw.com
+    healthCheckPath: /health
+    autoDeploy: true
+    domains:
+      - fiewin-web.onrender.com 
