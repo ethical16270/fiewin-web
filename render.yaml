@@ -16,4 +16,4 @@ services:
     healthCheckPath: /health
     autoDeploy: true
     domains:
-      - fiewin-web.onrender.com 
+      - fiewin-web.onrender.com
