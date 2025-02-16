@@ -4,10 +4,7 @@
     {
       "src": "package.json",
       "use": "@vercel/static-build",
-      "config": { 
-        "distDir": "build",
-        "maxDuration": 10
-      }
+      "config": { "distDir": "build" }
     },
     {
       "src": "api/*.js",
@@ -19,6 +16,7 @@
     }
   ],
   "routes": [
+    { "src": "/(.*)", "dest": "/index.html" },
     {
       "src": "/proxy/(.*)",
       "dest": "/api/proxy.js"
@@ -30,10 +28,6 @@
     {
       "src": "/ws/(.*)",
       "dest": "/api/proxy.js"
-    },
-    {
-      "src": "/(.*)",
-      "dest": "/$1"
     }
   ]
 } 

@@ -1,0 +1,20 @@
+name: fiewin-web
+services:
+- name: web
+  github:
+    branch: main
+    deploy_on_push: true
+    repo: your-username/fiewin-web
+  build_command: npm install && npm run build
+  run_command: npm start
+  http_port: 3000
+  instance_count: 1
+  instance_size_slug: basic-xxs
+  routes:
+    - path: /
+  env:
+    - key: NODE_ENV
+      value: production
+    - key: PORT
+      scope: RUN_TIME
+      value: "3000" 
