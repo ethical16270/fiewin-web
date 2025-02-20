@@ -10,9 +10,12 @@ module.exports = {
     env: {
       NODE_ENV: 'production',
       PORT: 80,
-      HOST: '0.0.0.0',
-      DOMAIN: 'your-domain.com' // You'll need to replace this with your actual domain
+      HOST: '0.0.0.0'
     },
-    setup: 'npm install && npm run build'
+    deploy: {
+      production: {
+        'post-deploy': 'npm install && npm run build && pm2 reload ecosystem.config.js'
+      }
+    }
   }]
 }; 

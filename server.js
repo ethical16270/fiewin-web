@@ -35,7 +35,7 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 app.use(compression());
 
-// Security middleware
+// Security middleware with adjusted settings for React app
 app.use(cors({
   origin: isProduction ? ['https://your-domain.com'] : '*',
   methods: ['GET', 'POST', 'PUT', 'DELETE', 'OPTIONS'],
@@ -45,7 +45,7 @@ app.use(cors({
 }));
 
 app.use(helmet({
-  contentSecurityPolicy: false, // Disable CSP temporarily for debugging
+  contentSecurityPolicy: false,
   crossOriginEmbedderPolicy: false,
   crossOriginResourcePolicy: { policy: "cross-origin" }
 }));
@@ -72,23 +72,38 @@ app.use((req, res, next) => {
   next();
 });
 
-// API routes before static files and catch-all
+// API routes first
 app.use('/api', apiRoutes);
 
-// Serve static files from the 'public' directory
-app.use(express.static(path.join(__dirname, 'public')));
-
 // Serve static files from the React build directory
-app.use(express.static(path.join(__dirname, 'build')));
+app.use(express.static(path.join(__dirname, 'build'), {
+  maxAge: '1y',
+  etag: false
+}));
+
+// Serve public files
+app.use(express.static(path.join(__dirname, 'public'), {
+  maxAge: '1d',
+  etag: false
+}));
 
 // Special handling for app.config.js
 app.get('/app.config.js', (req, res) => {
   res.sendFile(path.join(__dirname, 'public', 'app.config.js'));
 });
 
-// Catch-all route for React app should be last
-app.get('*', (req, res) => {
-  res.sendFile(path.join(__dirname, 'build', 'index.html'));
+// Handle React routing - this should be after API routes but before error handling
+app.get('*', (req, res, next) => {
+  // Skip API routes and static files
+  if (req.path.startsWith('/api/') || req.path.includes('.')) {
+    return next();
+  }
+  res.sendFile(path.join(__dirname, 'build', 'index.html'), err => {
+    if (err) {
+      console.error('Error sending index.html:', err);
+      next(err);
+    }
+  });
 });
 
 // Error handling middleware must be last
