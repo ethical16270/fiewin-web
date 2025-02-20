@@ -22,16 +22,13 @@
     "react-router-dom": "^7.2.0",
     "react-scripts": "5.0.1",
     "sqlite3": "^5.1.7",
-    "ws": "^8.16.0",
-    "esutils": "^2.0.3",
-    "static-eval": "^2.1.0"
+    "ws": "^8.16.0"
   },
   "scripts": {
-    "start": "node server.js",
+    "start": "react-scripts start",
     "build": "react-scripts build",
     "server": "PORT=4000 nodemon server.js",
-    "dev": "concurrently \"react-scripts start\" \"npm run server\"",
-    "prod": "npm run build && npm start",
+    "dev": "concurrently \"npm run start\" \"npm run server\"",
     "init-db": "node server/utils/initDb.js",
     "test": "react-scripts test",
     "eject": "react-scripts eject"

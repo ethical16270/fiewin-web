@@ -9,13 +9,7 @@ module.exports = {
     max_memory_restart: '1G',
     env: {
       NODE_ENV: 'production',
-      PORT: 3000,
-      HOST: '0.0.0.0'
-    },
-    deploy: {
-      production: {
-        'post-deploy': 'npm install && npm run build && pm2 reload ecosystem.config.js'
-      }
+      PORT: 3000
     }
   }]
 }; 

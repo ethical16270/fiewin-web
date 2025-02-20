@@ -245,33 +245,46 @@ const WebView = memo(({ onGameComplete }) => {
     // Improved iframe load handling
     useEffect(() => {
         const iframe = iframeRef.current;
-        
-        const handleIframeLoad = () => {
-            console.log('Iframe loaded');
+        if (!iframe) return;
+
+        const handleLoad = () => {
             setLoading(false);
             
-            try {
-                // Check if we can access the iframe content
-                const iframeDoc = iframe.contentDocument || iframe.contentWindow.document;
-                console.log('Iframe document accessed');
-                injectScripts(iframeDoc);
-            } catch (err) {
-                console.log('Cross-origin frame access blocked, continuing anyway');
-                // This is expected for cross-origin iframes
-                setLoading(false);
-            }
+            setTimeout(() => {
+                try {
+                    const iframeDoc = iframe.contentWindow.document;
+                    injectScripts(iframeDoc);
+                    setupNavigationTracking();
+                } catch (error) {
+                    handleError('Failed to initialize iframe', error);
+                }
+            }, 1000);
         };
 
-        if (iframe) {
-            iframe.addEventListener('load', handleIframeLoad);
-        }
+        const handleLoadError = () => {
+            handleError('Failed to load page', new Error('Network error'));
+        };
 
+        iframe.addEventListener('load', handleLoad);
+        iframe.addEventListener('error', handleLoadError);
+        
         return () => {
-            if (iframe) {
-                iframe.removeEventListener('load', handleIframeLoad);
+            iframe.removeEventListener('load', handleLoad);
+            iframe.removeEventListener('error', handleLoadError);
+            if (observerRef.current) {
+                observerRef.current.disconnect();
+            }
+            if (retryTimeoutRef.current) {
+                clearTimeout(retryTimeoutRef.current);
+            }
+            // Cleanup scripts in iframe
+            try {
+                iframe.contentWindow.cleanupWinGoMonitoring?.();
+            } catch (error) {
+                // Ignore cross-origin errors
             }
         };
-    }, [injectScripts]);
+    }, [injectScripts, setupNavigationTracking, handleError]);
 
     const handleHackComplete = useCallback(() => {
         console.log('Hack completed, triggering game count update');
@@ -299,20 +312,16 @@ const WebView = memo(({ onGameComplete }) => {
                 ref={iframeRef}
                 src="/proxy"
                 loading={loading ? 1 : 0}
-                sandbox="allow-same-origin allow-scripts allow-forms allow-popups allow-modals allow-presentation"
+                sandbox="allow-same-origin allow-scripts allow-forms allow-popups allow-modals"
                 allow="fullscreen"
                 title="Web View"
-                onError={(e) => {
-                    console.error('Iframe error:', e);
-                    setError('Failed to load content. Please try again.');
-                }}
                 style={{
                     width: '100%',
                     height: '100%',
                     border: 'none',
                     display: 'block',
-                    WebkitOverflowScrolling: 'touch',
-                    overscrollBehavior: 'none'
+                    WebkitOverflowScrolling: 'touch', // Enable smooth scrolling on iOS
+                    overscrollBehavior: 'none' // Prevent pull-to-refresh
                 }}
             />
             {loading && (
