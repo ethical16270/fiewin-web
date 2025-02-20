@@ -8,6 +8,7 @@ const WebSocket = require('ws');
 const apiRoutes = require('./server/routes/api');
 const { initializeDatabase } = require('./server/utils/initDb');
 const { cleanupExpiredUTRs } = require('./server/utils/cleanup');
+const { createProxyMiddleware } = require('http-proxy-middleware');
 
 // Add logging utility
 const logRequest = (req, status, error = null) => {
@@ -128,79 +129,28 @@ app.get('/health', (req, res) => {
 });
 
 // Proxy endpoint with fixed headers
-app.use('/proxy', async (req, res) => {
-  const targetUrl = `${PROXY_TARGET}${req.url}`;
-  
-  try {
-    // Specific headers that work with 91appw.com
-    const headers = {
-      'Accept': '*/*',
-      'Accept-Encoding': 'gzip, deflate, br',
-      'Accept-Language': 'en-US,en;q=0.9',
-      'Cache-Control': 'no-cache',
-      'Connection': 'keep-alive',
-      'Content-Type': 'application/json',
-      'Origin': 'https://91appw.com',
-      'Pragma': 'no-cache',
-      'Referer': 'https://91appw.com/',
-      'sec-ch-ua': '"Not A(Brand";v="99", "Google Chrome";v="121", "Chromium";v="121"',
-      'sec-ch-ua-mobile': '?0',
-      'sec-ch-ua-platform': '"macOS"',
-      'Sec-Fetch-Dest': 'empty',
-      'Sec-Fetch-Mode': 'cors',
-      'Sec-Fetch-Site': 'same-origin',
-      'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/121.0.0.0 Safari/537.36'
-    };
-
-    const response = await fetch(targetUrl, {
-      method: req.method,
-      headers,
-      redirect: 'follow'
-    });
-
-    // Set CORS headers first
-    res.set({
-      'Access-Control-Allow-Origin': '*',
-      'Access-Control-Allow-Methods': 'GET, POST, PUT, DELETE, OPTIONS',
-      'Access-Control-Allow-Headers': '*',
-      'Access-Control-Allow-Credentials': 'true',
-      'Access-Control-Max-Age': '86400',
-      'Access-Control-Expose-Headers': '*'
-    });
-
-    // Get content type
-    const contentType = response.headers.get('content-type');
+app.use('/proxy', createProxyMiddleware({
+  target: PROXY_TARGET,
+  changeOrigin: true,
+  secure: false,
+  ws: true, // Enable WebSocket proxying
+  pathRewrite: {
+    '^/proxy': ''
+  },
+  onProxyRes: function(proxyRes, req, res) {
+    // Remove CORS and security headers that might block loading
+    proxyRes.headers['access-control-allow-origin'] = '*';
+    delete proxyRes.headers['x-frame-options'];
+    delete proxyRes.headers['content-security-policy'];
     
-    // Set single content type
-    if (contentType) {
-      res.set('Content-Type', contentType.split(',')[0].trim());
-    } else {
-      res.set('Content-Type', 'application/json; charset=UTF-8');
+    // Set correct content types
+    if (req.url.endsWith('.js')) {
+      proxyRes.headers['content-type'] = 'application/javascript';
+    } else if (req.url.endsWith('.css')) {
+      proxyRes.headers['content-type'] = 'text/css';
     }
-
-    // Handle response based on content type
-    if (contentType && contentType.includes('application/json')) {
-      const text = await response.text();
-      try {
-        const json = JSON.parse(text);
-        res.json(json);
-      } catch (e) {
-        res.send(text);
-      }
-    } else {
-      response.body.pipe(res);
-    }
-  } catch (error) {
-    console.error('Proxy Error:', error);
-    res.status(500).json({
-      error: 'Proxy Error',
-      message: error.message,
-      status: 500,
-      path: req.url,
-      timestamp: new Date().toISOString()
-    });
   }
-});
+}));
 
 // Handle OPTIONS requests
 app.options('/proxy/*', (req, res) => {
@@ -243,6 +193,26 @@ app.post('/api/log-url', (req, res) => {
 app.get('/api/urls', (req, res) => {
   const urlArray = Array.from(visitedUrls).map(str => JSON.parse(str));
   res.json(urlArray);
+});
+
+// Add this after your proxy middleware
+app.get('/proxy-health', async (req, res) => {
+  try {
+    const response = await fetch(PROXY_TARGET);
+    if (response.ok) {
+      res.status(200).json({ status: 'ok', target: PROXY_TARGET });
+    } else {
+      res.status(response.status).json({ 
+        status: 'error', 
+        message: `Target returned ${response.status}` 
+      });
+    }
+  } catch (error) {
+    res.status(500).json({ 
+      status: 'error', 
+      message: error.message 
+    });
+  }
 });
 
 const startServer = async () => {
