@@ -22,7 +22,9 @@
     "react-router-dom": "^7.2.0",
     "react-scripts": "5.0.1",
     "sqlite3": "^5.1.7",
-    "ws": "^8.16.0"
+    "ws": "^8.16.0",
+    "esutils": "^2.0.3",
+    "static-eval": "^2.1.0"
   },
   "scripts": {
     "start": "node server.js",
