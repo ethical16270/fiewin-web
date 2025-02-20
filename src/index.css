@@ -6,9 +6,63 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  min-height: 100vh;
+  min-height: -webkit-fill-available;
+  overflow: hidden;
+  padding-bottom: env(safe-area-inset-bottom, 0px);
 }
 
 #root {
-  height: 100vh;
+  height: 100%;
+  overflow: hidden;
+}
+
+/* Add these styles to fix mobile viewport issues */
+html {
+  height: -webkit-fill-available;
+  overscroll-behavior: none;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+}
+
+/* Fix for iOS Safari bottom bar */
+@supports (-webkit-touch-callout: none) {
+  .iframe-container {
+    height: -webkit-fill-available;
+  }
+  html, body {
+    height: -webkit-fill-available;
+  }
+}
+
+/* Fix viewport height on mobile */
+:root {
+  --vh: 1vh;
+}
+
+/* Modify these styles to allow scrolling */
+html, body {
+  overscroll-behavior: none;
+  /* Remove position: fixed to allow scrolling */
+  width: 100%;
+  height: 100%;
+  /* Change overflow to auto */
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+
+body {
+  padding-bottom: env(safe-area-inset-bottom, 0px);
+  /* Remove overflow: hidden */
+  margin: 0;
+}
+
+#root {
+  min-height: 100vh;
+  min-height: -webkit-fill-available;
   width: 100vw;
+  /* Change overflow to auto */
+  overflow-y: auto;
+  overflow-x: hidden;
 } 

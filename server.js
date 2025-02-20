@@ -5,6 +5,9 @@ const helmet = require('helmet');
 const cors = require('cors');
 const fetch = require('node-fetch');
 const WebSocket = require('ws');
+const apiRoutes = require('./server/routes/api');
+const { initializeDatabase } = require('./server/utils/initDb');
+const { cleanupExpiredUTRs } = require('./server/utils/cleanup');
 
 // Add logging utility
 const logRequest = (req, status, error = null) => {
@@ -27,7 +30,12 @@ const app = express();
 const isProduction = process.env.NODE_ENV === 'production';
 const PROXY_TARGET = process.env.PROXY_TARGET || 'https://91appw.com';
 
-// Configure CORS before other middleware
+// Essential middleware first
+app.use(express.json());
+app.use(express.urlencoded({ extended: true }));
+app.use(compression());
+
+// Security middleware
 app.use(cors({
   origin: isProduction ? ['https://your-domain.com'] : '*',
   methods: ['GET', 'POST', 'PUT', 'DELETE', 'OPTIONS'],
@@ -36,27 +44,11 @@ app.use(cors({
   maxAge: 86400
 }));
 
-// Security middleware with adjusted settings
 app.use(helmet({
-  contentSecurityPolicy: {
-    directives: {
-      defaultSrc: ["'self'"],
-      scriptSrc: ["'self'", "'unsafe-inline'", "'unsafe-eval'"],
-      styleSrc: ["'self'", "'unsafe-inline'"],
-      imgSrc: ["'self'", "data:", "https:"],
-      connectSrc: ["'self'", "wss:", "ws:", "https:"],
-      fontSrc: ["'self'", "https:", "data:"],
-      objectSrc: ["'none'"],
-      mediaSrc: ["'self'"],
-      frameSrc: ["'self'"]
-    }
-  },
+  contentSecurityPolicy: false, // Disable CSP temporarily for debugging
   crossOriginEmbedderPolicy: false,
   crossOriginResourcePolicy: { policy: "cross-origin" }
 }));
-
-// Enable gzip compression
-app.use(compression());
 
 // Request logging middleware
 app.use((req, res, next) => {
@@ -70,53 +62,42 @@ app.use((req, res, next) => {
   next();
 });
 
-// Serve static files with proper content types
-app.use(express.static(path.join(__dirname, 'build'), {
-  setHeaders: (res, filePath) => {
-    // For all JavaScript files
-    if (filePath.endsWith('.js')) {
-      res.set({
-        'Content-Type': 'application/javascript; charset=UTF-8',
-        'X-Content-Type-Options': 'nosniff',
-        'Access-Control-Allow-Origin': '*',
-        'Access-Control-Allow-Methods': 'GET',
-        'Access-Control-Allow-Headers': '*',
-        'Cross-Origin-Resource-Policy': 'cross-origin'
-      });
-    }
-    // For CSS files
-    if (filePath.endsWith('.css')) {
-      res.set({
-        'Content-Type': 'text/css; charset=UTF-8',
-        'X-Content-Type-Options': 'nosniff',
-        'Access-Control-Allow-Origin': '*'
-      });
-    }
-    // For HTML files
-    if (filePath.endsWith('.html')) {
-      res.set({
-        'Content-Type': 'text/html; charset=UTF-8',
-        'X-Content-Type-Options': 'nosniff'
-      });
-    }
+// Add this middleware before serving static files
+app.use((req, res, next) => {
+  if (req.path.endsWith('.html')) {
+    res.header('Content-Security-Policy', "default-src 'self' 'unsafe-inline'");
+    // Add watermark meta tag
+    res.header('X-Frame-Options', 'SAMEORIGIN');
   }
-}));
-
-// Add specific routes for assets
-app.get('/assets/css/*', (req, res, next) => {
-  res.set({
-    'Content-Type': 'text/css; charset=UTF-8',
-    'Access-Control-Allow-Origin': '*'
-  });
   next();
 });
 
-app.get('/assets/js/*', (req, res, next) => {
-  res.set({
-    'Content-Type': 'text/javascript; charset=UTF-8',
-    'Access-Control-Allow-Origin': '*'
+// API routes before static files and catch-all
+app.use('/api', apiRoutes);
+
+// Serve static files from the 'public' directory
+app.use(express.static(path.join(__dirname, 'public')));
+
+// Serve static files from the React build directory
+app.use(express.static(path.join(__dirname, 'build')));
+
+// Special handling for app.config.js
+app.get('/app.config.js', (req, res) => {
+  res.sendFile(path.join(__dirname, 'public', 'app.config.js'));
+});
+
+// Catch-all route for React app should be last
+app.get('*', (req, res) => {
+  res.sendFile(path.join(__dirname, 'build', 'index.html'));
+});
+
+// Error handling middleware must be last
+app.use((err, req, res, next) => {
+  console.error('Express error handler:', err);
+  res.status(500).json({
+    success: false,
+    message: 'Internal server error'
   });
-  next();
 });
 
 // Health check with detailed status
@@ -218,122 +199,135 @@ app.options('/proxy/*', (req, res) => {
   }).sendStatus(200);
 });
 
-// Handle all routes by serving index.html
-app.get('*', (req, res) => {
-  res.sendFile(path.join(__dirname, 'build', 'index.html'));
-});
+// Add before your other routes
+const visitedUrls = new Set();
 
-app.get('/test', (req, res) => {
-  res.sendFile(path.join(__dirname, 'build', 'index.html'));
-});
-
-// Handle app.config.js specifically
-app.get('/app.config.js', (req, res) => {
-  res.set({
-    'Content-Type': 'application/javascript; charset=UTF-8',
-    'X-Content-Type-Options': 'nosniff'
-  });
-  res.sendFile(path.join(__dirname, 'build', 'app.config.js'));
-});
-
-// Global error handling middleware
-app.use((err, req, res, next) => {
-  const statusCode = err.status || 500;
-  const errorResponse = {
-    error: err.name || 'Internal Server Error',
-    message: err.message,
-    status: statusCode,
-    path: req.url,
-    timestamp: new Date().toISOString()
-  };
-
-  // Log error details
-  console.error('Application Error:', {
-    ...errorResponse,
-    stack: err.stack,
-    headers: req.headers,
-    query: req.query,
-    body: req.body
+app.post('/api/log-url', (req, res) => {
+  const { url, timestamp, userAgent } = req.body;
+  
+  // Log to console
+  console.log('URL Visit Log:', {
+    url,
+    timestamp,
+    userAgent,
+    ip: req.ip
   });
 
-  logRequest(req, statusCode, err);
-  res.status(statusCode).json(errorResponse);
+  // Store in memory
+  visitedUrls.add(JSON.stringify({
+    url,
+    timestamp,
+    userAgent,
+    ip: req.ip
+  }));
+
+  res.status(200).json({ success: true });
 });
 
-const PORT = process.env.PORT || 4000;
-const server = app.listen(PORT, () => {
-  console.log(`Server running on port ${PORT}`);
-  console.log(`Environment: ${process.env.NODE_ENV}`);
-  console.log(`Memory usage: ${JSON.stringify(process.memoryUsage())}`);
+// Endpoint to get all logged URLs
+app.get('/api/urls', (req, res) => {
+  const urlArray = Array.from(visitedUrls).map(str => JSON.parse(str));
+  res.json(urlArray);
 });
 
-// Add WebSocket server with path
-const wss = new WebSocket.Server({ 
-  server,
-  path: '/ws',
-  clientTracking: true,
-  handleProtocols: (protocols, req) => {
-    return protocols[0];
+const startServer = async () => {
+  try {
+    // Initialize database
+    const db = await initializeDatabase();
+    
+    // Add process.env.PORT as fallback ports
+    const port = process.env.PORT || 3001;  // Changed from 3000
+    const wsPort = process.env.WS_PORT || 4001;  // Changed from 4000
+    
+    const server = app.listen(port, () => {
+      console.log(`Server is running on port ${port}`);
+      console.log(`Environment: ${process.env.NODE_ENV}`);
+    });
+
+    // Setup WebSocket server
+    const wss = new WebSocket.Server({ 
+      server,
+      path: '/ws',
+      clientTracking: true,
+      handleProtocols: (protocols, req) => {
+        return protocols[0];
+      }
+    });
+
+    // Add error handler for the WebSocket server
+    wss.on('error', (error) => {
+      console.error('WebSocket Server Error:', error);
+    });
+
+    // Update the connection handler
+    wss.on('connection', (ws, req) => {
+      console.log('New WebSocket connection from:', req.socket.remoteAddress);
+
+      // Add error handler for each connection
+      ws.on('error', (error) => {
+        console.error('WebSocket Connection Error:', error);
+      });
+
+      // Send initial connection message
+      ws.send(JSON.stringify({ type: 'connection', message: 'Connected to server' }));
+
+      // Handle incoming messages
+      ws.on('message', (message) => {
+        try {
+          const data = JSON.parse(message);
+          console.log('Received:', data);
+          
+          // Handle different message types
+          switch(data.type) {
+            case 'ping':
+              if (ws.readyState === WebSocket.OPEN) {
+                ws.send(JSON.stringify({ type: 'pong', timestamp: Date.now() }));
+              }
+              break;
+            default:
+              if (ws.readyState === WebSocket.OPEN) {
+                ws.send(JSON.stringify({ type: 'error', message: 'Unknown message type' }));
+              }
+          }
+        } catch (error) {
+          console.error('WebSocket message error:', error);
+          if (ws.readyState === WebSocket.OPEN) {
+            ws.send(JSON.stringify({ type: 'error', message: 'Invalid message format' }));
+          }
+        }
+      });
+
+      // Handle client disconnect
+      ws.on('close', () => {
+        console.log('Client disconnected');
+      });
+    });
+
+    // Setup cleanup interval
+    setInterval(cleanupExpiredUTRs, 1000 * 60 * 60); // Run every hour
+    cleanupExpiredUTRs(); // Run immediately on startup
+
+    // Graceful shutdown with cleanup
+    process.on('SIGTERM', () => {
+      console.log('SIGTERM signal received: closing HTTP server');
+      server.close(() => {
+        console.log('HTTP server closed');
+        // Add any cleanup operations here
+        process.exit(0);
+      });
+    });
+
+    return server;
+  } catch (error) {
+    console.error('Failed to start server:', error);
+    process.exit(1);
   }
-});
+};
 
-// Add error handler for the WebSocket server
-wss.on('error', (error) => {
-  console.error('WebSocket Server Error:', error);
-});
-
-// Update the connection handler
-wss.on('connection', (ws, req) => {
-  console.log('New WebSocket connection from:', req.socket.remoteAddress);
-
-  // Add error handler for each connection
-  ws.on('error', (error) => {
-    console.error('WebSocket Connection Error:', error);
-  });
-
-  // Send initial connection message
-  ws.send(JSON.stringify({ type: 'connection', message: 'Connected to server' }));
-
-  // Handle incoming messages
-  ws.on('message', (message) => {
-    try {
-      const data = JSON.parse(message);
-      console.log('Received:', data);
-      
-      // Handle different message types
-      switch(data.type) {
-        case 'ping':
-          if (ws.readyState === WebSocket.OPEN) {
-            ws.send(JSON.stringify({ type: 'pong', timestamp: Date.now() }));
-          }
-          break;
-        default:
-          if (ws.readyState === WebSocket.OPEN) {
-            ws.send(JSON.stringify({ type: 'error', message: 'Unknown message type' }));
-          }
-      }
-    } catch (error) {
-      console.error('WebSocket message error:', error);
-      if (ws.readyState === WebSocket.OPEN) {
-        ws.send(JSON.stringify({ type: 'error', message: 'Invalid message format' }));
-      }
-    }
-  });
-
-  // Handle client disconnect
-  ws.on('close', () => {
-    console.log('Client disconnected');
-  });
-});
-
-// Graceful shutdown with cleanup
-process.on('SIGTERM', () => {
-  console.log('SIGTERM signal received: closing HTTP server');
-  server.close(() => {
-    console.log('HTTP server closed');
-    // Add any cleanup operations here
-    process.exit(0);
-  });
+// Start the server
+startServer().catch(error => {
+  console.error('Failed to start server:', error);
+  process.exit(1);
 });
 
 // Handle uncaught exceptions
