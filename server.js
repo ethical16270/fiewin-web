@@ -45,7 +45,16 @@ app.use(cors({
 }));
 
 app.use(helmet({
-  contentSecurityPolicy: false, // Disable CSP temporarily for debugging
+  contentSecurityPolicy: {
+    directives: {
+      defaultSrc: ["'self'"],
+      scriptSrc: ["'self'", "'unsafe-inline'", "'unsafe-eval'"],
+      styleSrc: ["'self'", "'unsafe-inline'"],
+      imgSrc: ["'self'", "data:", "blob:"],
+      fontSrc: ["'self'", "data:"],
+      connectSrc: ["'self'", "ws:", "wss:"],
+    }
+  },
   crossOriginEmbedderPolicy: false,
   crossOriginResourcePolicy: { policy: "cross-origin" }
 }));
@@ -72,23 +81,85 @@ app.use((req, res, next) => {
   next();
 });
 
-// API routes before static files and catch-all
-app.use('/api', apiRoutes);
+// Add near the top after middleware
+app.use((req, res, next) => {
+  console.log('Request URL:', req.url);
+  console.log('Request Headers:', req.headers);
+  next();
+});
 
-// Serve static files from the 'public' directory
+// Add this middleware before other routes to handle %PUBLIC_URL% requests
+app.use((req, res, next) => {
+  if (req.url.includes('%PUBLIC_URL%')) {
+    // Remove %PUBLIC_URL% and forward to static files
+    const newUrl = req.url.replace(/%PUBLIC_URL%/g, '');
+    console.log('Redirecting %PUBLIC_URL% request:', req.url, 'to:', newUrl);
+    req.url = newUrl;
+  }
+  next();
+});
+
+// Serve static files in the correct order
+app.use('/static', express.static(path.join(__dirname, 'build/static'), {
+  setHeaders: (res, path) => {
+    if (path.endsWith('.js')) {
+      res.setHeader('Content-Type', 'application/javascript');
+    } else if (path.endsWith('.css')) {
+      res.setHeader('Content-Type', 'text/css');
+    }
+  }
+}));
+
+app.use(express.static(path.join(__dirname, 'build'), {
+  setHeaders: (res, path) => {
+    if (path.endsWith('.js')) {
+      res.setHeader('Content-Type', 'application/javascript');
+    } else if (path.endsWith('.css')) {
+      res.setHeader('Content-Type', 'text/css');
+    }
+  }
+}));
+
 app.use(express.static(path.join(__dirname, 'public')));
 
-// Serve static files from the React build directory
-app.use(express.static(path.join(__dirname, 'build')));
+// Keep other static file middleware
+app.use((req, res, next) => {
+  res.header('Access-Control-Allow-Origin', '*');
+  res.header('Access-Control-Allow-Methods', 'GET');
+  res.header('Access-Control-Allow-Headers', 'Content-Type');
+  next();
+});
+
+// Handle favicon.ico specifically
+app.get('/favicon.ico', (req, res) => {
+  res.sendFile(path.join(__dirname, 'build', 'favicon.ico'));
+});
 
 // Special handling for app.config.js
 app.get('/app.config.js', (req, res) => {
   res.sendFile(path.join(__dirname, 'public', 'app.config.js'));
 });
 
-// Catch-all route for React app should be last
+// API routes
+app.use('/api', apiRoutes);
+
+// Error handling for malformed URLs
+app.use((err, req, res, next) => {
+  if (err instanceof URIError) {
+    return res.status(400).send('Bad Request');
+  }
+  next(err);
+});
+
+// Update the catch-all route with logging
 app.get('*', (req, res) => {
-  res.sendFile(path.join(__dirname, 'build', 'index.html'));
+  console.log('Serving index.html for:', req.url);
+  res.sendFile(path.join(__dirname, 'build', 'index.html'), err => {
+    if (err) {
+      console.error('Error sending file:', err);
+      res.status(500).send('Error loading page');
+    }
+  });
 });
 
 // Error handling middleware must be last
@@ -341,4 +412,19 @@ process.on('uncaughtException', (error) => {
 process.on('unhandledRejection', (reason, promise) => {
   console.error('Unhandled Rejection at:', promise, 'reason:', reason);
   // Perform any necessary cleanup
-}); 
+});
+
+// Add production security headers
+if (process.env.NODE_ENV === 'production') {
+  app.use(helmet());
+  app.use(compression());
+  app.disable('x-powered-by');
+  
+  // Serve static files from build folder
+  app.use(express.static(path.join(__dirname, 'build')));
+  
+  // Handle React routing
+  app.get('*', (req, res) => {
+    res.sendFile(path.join(__dirname, 'build', 'index.html'));
+  });
+} 
