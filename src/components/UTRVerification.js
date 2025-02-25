@@ -82,14 +82,20 @@ const UTRVerification = () => {
         // Clear any existing data first
         localStorage.clear();
         
-        // Store all relevant data
-        localStorage.setItem('hackAccess', data.utrNumber);
+        // Store the UTR number from the response
+        const token = data.utrNumber;
+        console.log('About to store token:', token); // Debug log
+        
+        localStorage.setItem('hackAccess', token);
+        console.log('Stored token:', localStorage.getItem('hackAccess')); // Verify storage
+        
         localStorage.setItem('hackPlanType', data.planType);
-        localStorage.setItem('hackGamesAllowed', data.gamesAllowed.toString());
-        localStorage.setItem('hackGamesUsed', (data.gamesUsed || 0).toString());
+        localStorage.setItem('hackGamesAllowed', data.gamesAllowed);
+        localStorage.setItem('hackGamesUsed', data.gamesUsed || 0);
         localStorage.setItem('hackExpiry', data.expiresAt);
         
-        console.log('Stored values:', {
+        // Log all stored values
+        console.log('All stored values:', {
           access: localStorage.getItem('hackAccess'),
           planType: localStorage.getItem('hackPlanType'),
           gamesAllowed: localStorage.getItem('hackGamesAllowed'),
@@ -97,12 +103,20 @@ const UTRVerification = () => {
           expiry: localStorage.getItem('hackExpiry')
         });
 
+        // Verify the token was stored correctly
+        const storedToken = localStorage.getItem('hackAccess');
+        if (!storedToken || storedToken !== token) {
+          console.error('Token storage failed. Expected:', token, 'Got:', storedToken);
+          setError('Verification failed. Please try again.');
+          return;
+        }
+
         navigate('/select-website');
       } else {
-        setError(data.message || 'Verification failed');
+        setError(data.message || 'Invalid UTR number');
       }
-    } catch (error) {
-      console.error('Verification error:', error);
+    } catch (err) {
+      console.error('Verification error:', err);
       setError('Verification failed. Please try again.');
     } finally {
       setLoading(false);

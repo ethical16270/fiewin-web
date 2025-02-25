@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useRef } from 'react';
+import React, { useState, useEffect } from 'react';
 import { 
   Box, 
   Typography, 
@@ -23,36 +23,105 @@ import HackButton from './HackButton';
 
 const HackInterface = () => {
   const navigate = useNavigate();
-  const [loading, setLoading] = useState(true);
   const [accessInfo, setAccessInfo] = useState(null);
-  const [gamesUsed, setGamesUsed] = useState(0);
-  const [gamesAllowed, setGamesAllowed] = useState(3);
-  const [timeRemaining, setTimeRemaining] = useState('');
   const [showUpgradeDialog, setShowUpgradeDialog] = useState(false);
-  const [upgradeTimer, setUpgradeTimer] = useState(10);
-  const mountedRef = useRef(false);
-  const checkingRef = useRef(false);
-
+  const [timeRemaining, setTimeRemaining] = useState('');
+  const [loading, setLoading] = useState(true);
+  const [gamesUsed, setGamesUsed] = useState(0);
+  const [gamesAllowed, setGamesAllowed] = useState(0);
+  const [upgradeTimer, setUpgradeTimer] = useState(null);
+  
   useEffect(() => {
-    mountedRef.current = true;
-    let intervalId = null;
-
     const checkAccess = async () => {
-      // Prevent duplicate calls
-      if (checkingRef.current) return;
-      checkingRef.current = true;
-
       try {
         const accessToken = localStorage.getItem('hackAccess');
+        console.log('Checking access with token:', accessToken);
 
-        if (!accessToken) {
-          if (mountedRef.current) {
-            localStorage.clear();
-            navigate('/verify');
-          }
+        if (!accessToken || accessToken === 'undefined' || accessToken === 'null') {
+          console.log('No valid access token found');
+          localStorage.clear();
+          navigate('/verify');
           return;
         }
 
+        const response = await fetch('/api/check-access', {
+          method: 'GET',
+          headers: {
+            'Authorization': `Bearer ${accessToken.trim()}`,
+            'Content-Type': 'application/json'
+          }
+        });
+
+        const data = await response.json();
+        console.log('Found UTR:', data.utr);
+
+        // If access is expired, delete the UTR
+        if (!response.ok || !data.success || data.access?.expired) {
+          console.log('Access expired, deleting UTR');
+          if (data.utr?.id) {
+            try {
+              const deleteResponse = await fetch(`/api/admin/utr/${data.utr.id}`, {
+                method: 'DELETE',
+                headers: {
+                  'Authorization': `Bearer ${accessToken}`,
+                  'Content-Type': 'application/json'
+                }
+              });
+              console.log('Delete UTR response:', deleteResponse.status);
+            } catch (error) {
+              console.error('Failed to delete UTR:', error);
+            }
+          }
+          localStorage.clear();
+          navigate('/verify');
+          return;
+        }
+
+        const planType = localStorage.getItem('hackPlanType');
+        const storedGamesUsed = parseInt(localStorage.getItem('hackGamesUsed') || '0');
+        const maxGames = planType === 'demo' ? 3 : Infinity;
+        
+        console.log('Current games:', { used: storedGamesUsed, allowed: maxGames });
+        
+        setGamesUsed(storedGamesUsed);
+        setGamesAllowed(maxGames);
+
+        // Update games tracking with server data if available
+        const serverGamesUsed = parseInt(data.access?.gamesUsed || '0');
+        const currentGamesUsed = Math.max(serverGamesUsed, storedGamesUsed);
+        
+        // Sync the games count
+        localStorage.setItem('hackGamesUsed', currentGamesUsed.toString());
+        setGamesUsed(currentGamesUsed);
+        
+        // Store the UTR ID from the correct location in the response
+        setAccessInfo({
+          ...data.access,
+          gamesRemaining: maxGames - currentGamesUsed,
+          id: data.utr?.id // Get ID from the utr object
+        });
+        
+        updateTimeRemaining(data.access.expiresAt);
+        setLoading(false);
+
+      } catch (error) {
+        console.error('Access check failed:', error);
+        localStorage.clear();
+        navigate('/verify');
+      }
+    };
+
+    checkAccess();
+    const interval = setInterval(checkAccess, 60000); // Check every minute
+    return () => clearInterval(interval);
+  }, [navigate]);
+
+  useEffect(() => {
+    const syncGamesCount = async () => {
+      if (!accessInfo?.planType === 'demo') return;
+      
+      try {
+        const accessToken = localStorage.getItem('hackAccess');
         const response = await fetch('/api/check-access', {
           method: 'GET',
           headers: {
@@ -61,116 +130,25 @@ const HackInterface = () => {
           }
         });
 
-        if (!mountedRef.current) return;
-
         const data = await response.json();
-
-        if (!mountedRef.current) return;
-
-        if (!response.ok || !data.success || data.access?.expired) {
-          localStorage.clear();
-          navigate('/verify');
-          return;
+        if (data.success && data.access) {
+          const serverCount = parseInt(data.access.gamesUsed || '0');
+          const localCount = parseInt(localStorage.getItem('hackGamesUsed') || '0');
+          
+          if (serverCount !== localCount) {
+            console.log('Syncing games count:', { server: serverCount, local: localCount });
+            setGamesUsed(serverCount);
+            localStorage.setItem('hackGamesUsed', serverCount.toString());
+          }
         }
-
-        const serverGamesUsed = data.access.gamesUsed || 0;
-        const serverGamesAllowed = data.access.gamesAllowed || 3;
-        
-        localStorage.setItem('hackGamesUsed', serverGamesUsed.toString());
-        localStorage.setItem('hackGamesAllowed', serverGamesAllowed.toString());
-        
-        setGamesUsed(serverGamesUsed);
-        setGamesAllowed(serverGamesAllowed);
-        setAccessInfo({
-          ...data.access,
-          gamesRemaining: Math.max(0, serverGamesAllowed - serverGamesUsed)
-        });
-
-        updateTimeRemaining(data.access.expiresAt);
-        setLoading(false);
-
       } catch (error) {
-        if (mountedRef.current) {
-          console.error('Access check failed:', error);
-          localStorage.clear();
-          navigate('/verify');
-        }
-      } finally {
-        checkingRef.current = false;
+        console.error('Failed to sync games count:', error);
       }
     };
 
-    checkAccess();
-    
-    // Set up interval with delay to prevent immediate second call
-    intervalId = setInterval(checkAccess, 60000);
-
-    return () => {
-      mountedRef.current = false;
-      if (intervalId) {
-        clearInterval(intervalId);
-      }
-    };
-  }, [navigate]);
-
-  const handleGamePlayed = async () => {
-    try {
-      console.log('handleGamePlayed - Current state:', {
-        gamesUsed,
-        gamesAllowed,
-        accessInfo
-      });
-
-      const accessToken = localStorage.getItem('hackAccess');
-      if (!accessToken) {
-        throw new Error('No access token found');
-      }
-
-      const response = await fetch('/api/game/start', {
-        method: 'POST',
-        headers: {
-          'Authorization': `Bearer ${accessToken}`,
-          'Content-Type': 'application/json'
-        }
-      });
-
-      const data = await response.json();
-      console.log('Game start response:', data);
-
-      if (!response.ok) {
-        throw new Error(data.message || 'Failed to start game');
-      }
-
-      if (data.success) {
-        // Update state with server values
-        const newGamesUsed = data.gamesUsed;
-        const newGamesAllowed = data.gamesAllowed;
-        const newGamesRemaining = data.gamesRemaining;
-
-        // Update localStorage
-        localStorage.setItem('hackGamesUsed', newGamesUsed.toString());
-        localStorage.setItem('hackGamesAllowed', newGamesAllowed.toString());
-
-        // Update state
-        setGamesUsed(newGamesUsed);
-        setGamesAllowed(newGamesAllowed);
-        setAccessInfo(prev => ({
-          ...prev,
-          gamesRemaining: newGamesRemaining,
-          gamesUsed: newGamesUsed,
-          gamesAllowed: newGamesAllowed
-        }));
-
-        // Check if demo limit reached
-        if (accessInfo?.planType === 'demo' && newGamesUsed >= newGamesAllowed) {
-          setShowUpgradeDialog(true);
-          setUpgradeTimer(10);
-        }
-      }
-    } catch (error) {
-      console.error('Game start error:', error);
-    }
-  };
+    const syncInterval = setInterval(syncGamesCount, 30000); // Sync every 30 seconds
+    return () => clearInterval(syncInterval);
+  }, [accessInfo?.planType]);
 
   const updateTimeRemaining = (expiresAt) => {
     const expiry = new Date(expiresAt);
@@ -184,6 +162,111 @@ const HackInterface = () => {
       setTimeRemaining(`${diffHours}h remaining`);
     } else {
       setTimeRemaining(`${Math.ceil(diffHours/24)}d remaining`);
+    }
+  };
+
+  const handleGamePlayed = async () => {
+    try {
+        // Debug current state
+        console.log('handleGamePlayed triggered', {
+            gamesUsed,
+            planType: accessInfo?.planType,
+            gamesAllowed,
+            storedGames: localStorage.getItem('hackGamesUsed')
+        });
+
+        // Validate access info
+        if (!accessInfo) {
+            console.error('No access info available');
+            return;
+        }
+
+        // Increment games used first
+        const newGamesUsed = gamesUsed + 1;
+        
+        // Check if this game will reach the limit
+        if (accessInfo.planType === 'demo' && newGamesUsed >= 3) {
+            console.log('Demo limit reached, showing upgrade dialog');
+            
+            // Update local state
+            setGamesUsed(newGamesUsed);
+            localStorage.setItem('hackGamesUsed', newGamesUsed.toString());
+            
+            // Send final update to server before starting timer
+            try {
+                const accessToken = localStorage.getItem('hackAccess');
+                await fetch('/api/verify-utr', {
+                    method: 'POST',
+                    headers: {
+                        'Authorization': `Bearer ${accessToken}`,
+                        'Content-Type': 'application/json'
+                    },
+                    body: JSON.stringify({
+                        utr: accessToken,
+                        gamesUsed: newGamesUsed,
+                        planType: 'demo',
+                        action: 'update-games'
+                    })
+                });
+            } catch (error) {
+                console.error('Failed to update final game count:', error);
+            }
+            
+            // Show dialog and start timer
+            setShowUpgradeDialog(true);
+            setUpgradeTimer(10);
+            return;
+        }
+
+        // Update local state first
+        setGamesUsed(newGamesUsed);
+        localStorage.setItem('hackGamesUsed', newGamesUsed.toString());
+
+        // Get access token
+        const accessToken = localStorage.getItem('hackAccess');
+        if (!accessToken) {
+            throw new Error('No access token found');
+        }
+
+        // Send update to server with the correct endpoint
+        const response = await fetch('/api/verify-utr', { // Changed to /api/verify-utr
+            method: 'POST',
+            headers: {
+                'Authorization': `Bearer ${accessToken}`,
+                'Content-Type': 'application/json'
+            },
+            body: JSON.stringify({
+                utr: accessToken,
+                gamesUsed: newGamesUsed,
+                planType: accessInfo.planType,
+                action: 'update-games'
+            })
+        });
+
+        if (!response.ok) {
+            throw new Error(`Server returned ${response.status}`);
+        }
+
+        const data = await response.json();
+        console.log('Server response:', data);
+
+        if (!data.success) {
+            throw new Error(data.message || 'Failed to update games count');
+        }
+
+        // Update access info state
+        setAccessInfo(prev => ({
+            ...prev,
+            gamesRemaining: gamesAllowed - newGamesUsed
+        }));
+
+    } catch (error) {
+        console.error('Failed to update games count:', error);
+        // Revert local changes on failure
+        const storedGames = parseInt(localStorage.getItem('hackGamesUsed') || '0');
+        setGamesUsed(storedGames);
+        // Don't show alert to user, just handle silently
+        console.warn('Reverting to stored games count:', storedGames);
     }
   };
 

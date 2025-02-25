@@ -1,61 +1,36 @@
-const verifyToken = (req, res, next) => {
-  try {
-    const authHeader = req.headers.authorization;
-    console.log('Auth middleware - headers:', req.headers);
-    
-    if (!authHeader || !authHeader.startsWith('Bearer ')) {
-      console.log('Invalid auth header format:', authHeader);
-      return res.status(401).json({
-        success: false,
-        message: 'Invalid authorization header',
-        shouldClearStorage: false
-      });
-    }
-
-    const token = authHeader.split(' ')[1].trim();
-    console.log('Extracted token:', token);
-
-    // Store the token in the request object
-    req.token = token;
-    next();
-  } catch (error) {
-    console.error('Auth middleware error:', error);
-    return res.status(500).json({
-      success: false,
-      message: 'Authentication error',
-      shouldClearStorage: false
-    });
-  }
-};
-
 const verifyAdmin = (req, res, next) => {
   try {
     const authHeader = req.headers.authorization;
     
-    if (!authHeader || !authHeader.startsWith('Bearer ')) {
+    if (!authHeader) {
       return res.status(401).json({
         success: false,
-        message: 'Invalid authorization header'
+        message: 'No authorization token provided'
       });
     }
 
-    const token = authHeader.split(' ')[1].trim();
+    // For now, just check if it's a valid token format
+    const token = authHeader.replace('Bearer ', '');
     
-    if (token !== 'admin_token') {
+    if (!token || token.length < 10) {
       return res.status(401).json({
         success: false,
-        message: 'Invalid admin token'
+        message: 'Invalid token'
       });
     }
 
+    // Store the token in request for later use if needed
+    req.adminToken = token;
     next();
   } catch (error) {
-    console.error('Admin auth error:', error);
-    res.status(500).json({
+    console.error('Auth middleware error:', error);
+    return res.status(500).json({
       success: false,
       message: 'Authentication error'
     });
   }
 };
 
-module.exports = { verifyToken, verifyAdmin }; 
+module.exports = {
+  verifyAdmin
+}; 

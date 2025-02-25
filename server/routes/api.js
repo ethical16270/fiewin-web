@@ -1,6 +1,6 @@
 const express = require('express');
 const router = express.Router();
-const { verifyAdmin, verifyToken } = require('../middleware/auth');
+const { verifyAdmin } = require('../middleware/auth');
 const db = require('../utils/database');
 
 // In-memory storage (replace with database in production)
@@ -540,12 +540,24 @@ router.get('/admin/analytics', verifyAdmin, (req, res) => {
 });
 
 // Update the check-access endpoint
-router.get('/check-access', verifyToken, async (req, res) => {
+router.get('/check-access', async (req, res) => {
   try {
-    // Token is now available in req.token
-    const token = req.token;
-    console.log('Checking access for token:', token);
+    console.log('Headers:', req.headers); // Log all headers
+    const authHeader = req.headers.authorization;
+    console.log('Auth header:', authHeader);
 
+    if (!authHeader || !authHeader.startsWith('Bearer ')) {
+      console.log('Invalid auth header format');
+      return res.status(401).json({
+        success: false,
+        message: 'Invalid authorization header'
+      });
+    }
+
+    const token = authHeader.split(' ')[1].trim(); // Ensure token is trimmed
+    console.log('Extracted token:', token);
+
+    // Get UTR details and validate expiry
     db.get(
       `SELECT * FROM utrs WHERE utr_number = ?`,
       [token],
@@ -554,32 +566,37 @@ router.get('/check-access', verifyToken, async (req, res) => {
           console.error('Database error:', err);
           return res.status(500).json({
             success: false,
-            message: 'Failed to check access',
-            shouldClearStorage: false
+            message: 'Failed to check access'
           });
         }
+
+        console.log('Found UTR:', utr);
 
         if (!utr) {
           console.log('No UTR found for token:', token);
           return res.status(401).json({
             success: false,
-            message: 'Invalid or expired access',
-            shouldClearStorage: true
+            message: 'Invalid or expired access'
           });
         }
 
         const now = new Date();
         const expiresAt = new Date(utr.expires_at);
+        console.log('Checking expiry:', { now, expiresAt });
 
         if (expiresAt < now) {
+          console.log('Access expired');
           return res.json({
             success: false,
             message: 'Access expired',
-            access: { expired: true },
-            shouldClearStorage: true
+            access: {
+              expired: true
+            }
           });
         }
 
+        // Valid access
+        console.log('Access valid');
         res.json({
           success: true,
           access: {
@@ -587,11 +604,8 @@ router.get('/check-access', verifyToken, async (req, res) => {
             expiresAt: utr.expires_at,
             gamesRemaining: utr.plan_type === 'demo' ? 
               Math.max(0, utr.games_allowed - (utr.games_used || 0)) : -1,
-            gamesUsed: utr.games_used || 0,
-            gamesAllowed: utr.games_allowed,
             expired: false
-          },
-          shouldClearStorage: false
+          }
         });
       }
     );
@@ -599,13 +613,12 @@ router.get('/check-access', verifyToken, async (req, res) => {
     console.error('Access check error:', error);
     res.status(500).json({
       success: false,
-      message: 'Internal server error',
-      shouldClearStorage: false
+      message: 'Internal server error'
     });
   }
 });
 
-// Update the game/start endpoint
+// Add this endpoint to track game usage
 router.post('/game/start', async (req, res) => {
   const token = req.headers.authorization?.replace('Bearer ', '');
   
@@ -648,20 +661,17 @@ router.post('/game/start', async (req, res) => {
 
         // For demo users, check game limit
         if (utr.plan_type === 'demo') {
-          const gamesUsed = utr.games_used || 0;
-          if (gamesUsed >= utr.games_allowed) {
+          if (utr.games_used >= utr.games_allowed) {
             return res.status(403).json({
               success: false,
-              message: 'Game limit reached',
-              gamesUsed: gamesUsed,
-              gamesAllowed: utr.games_allowed
+              message: 'Game limit reached'
             });
           }
 
           // Increment games used
           db.run(
-            'UPDATE utrs SET games_used = ? WHERE utr_number = ?',
-            [gamesUsed + 1, token],
+            'UPDATE utrs SET games_used = games_used + 1 WHERE utr_number = ?',
+            [token],
             (err) => {
               if (err) {
                 console.error('Database error:', err);
@@ -673,9 +683,7 @@ router.post('/game/start', async (req, res) => {
 
               res.json({
                 success: true,
-                gamesRemaining: utr.games_allowed - (gamesUsed + 1),
-                gamesUsed: gamesUsed + 1,
-                gamesAllowed: utr.games_allowed
+                gamesRemaining: utr.games_allowed - (utr.games_used + 1)
               });
             }
           );
@@ -683,9 +691,7 @@ router.post('/game/start', async (req, res) => {
           // Premium users have unlimited access
           res.json({
             success: true,
-            gamesRemaining: -1,
-            gamesUsed: utr.games_used || 0,
-            gamesAllowed: -1
+            gamesRemaining: -1
           });
         }
       }
@@ -699,8 +705,8 @@ router.post('/game/start', async (req, res) => {
   }
 });
 
-// Update the delete-utr endpoint
-router.post('/delete-utr', verifyAdmin, async (req, res) => {
+// Add new route for deleting UTR
+router.post('/delete-utr', async (req, res) => {
     try {
         const { utr_number } = req.body;
         
@@ -711,64 +717,31 @@ router.post('/delete-utr', verifyAdmin, async (req, res) => {
             });
         }
 
-        // First check if UTR exists and get its details
-        db.get(
-            'SELECT * FROM utrs WHERE utr_number = ?',
+        // Delete the UTR from database
+        db.run(
+            'DELETE FROM utrs WHERE utr_number = ?',
             [utr_number],
-            (err, utr) => {
+            function(err) {
                 if (err) {
                     console.error('Database error:', err);
                     return res.status(500).json({
                         success: false,
-                        message: 'Failed to check UTR'
+                        message: 'Failed to delete UTR'
                     });
                 }
 
-                if (!utr) {
+                if (this.changes === 0) {
                     return res.status(404).json({
                         success: false,
                         message: 'UTR not found'
                     });
                 }
 
-                // Only allow deletion if UTR is unused or expired
-                const now = new Date();
-                const expiresAt = utr.expires_at ? new Date(utr.expires_at) : null;
-                
-                if (utr.used_at && expiresAt && expiresAt > now && utr.games_used < utr.games_allowed) {
-                    return res.status(400).json({
-                        success: false,
-                        message: 'Cannot delete active UTR with remaining games'
-                    });
-                }
-
-                // Proceed with deletion
-                db.run(
-                    'DELETE FROM utrs WHERE utr_number = ?',
-                    [utr_number],
-                    function(err) {
-                        if (err) {
-                            console.error('Database error:', err);
-                            return res.status(500).json({
-                                success: false,
-                                message: 'Failed to delete UTR'
-                            });
-                        }
-
-                        if (this.changes === 0) {
-                            return res.status(404).json({
-                                success: false,
-                                message: 'UTR not found'
-                            });
-                        }
-
-                        console.log('UTR deleted successfully:', utr_number);
-                        res.json({
-                            success: true,
-                            message: 'UTR deleted successfully'
-                        });
-                    }
-                );
+                console.log('UTR deleted successfully:', utr_number);
+                res.json({
+                    success: true,
+                    message: 'UTR deleted successfully'
+                });
             }
         );
     } catch (error) {
@@ -813,67 +786,6 @@ router.get('/admin/verify', verifyAdmin, (req, res) => {
       message: 'Internal server error'
     });
   }
-});
-
-// Add UTR status check endpoint
-router.get('/admin/utr/status', verifyAdmin, async (req, res) => {
-    try {
-        const { utr_number } = req.query;
-        
-        if (!utr_number) {
-            return res.status(400).json({
-                success: false,
-                message: 'UTR number is required'
-            });
-        }
-
-        db.get(
-            'SELECT * FROM utrs WHERE utr_number = ?',
-            [utr_number],
-            (err, utr) => {
-                if (err) {
-                    console.error('Database error:', err);
-                    return res.status(500).json({
-                        success: false,
-                        message: 'Failed to check UTR status'
-                    });
-                }
-
-                if (!utr) {
-                    return res.status(404).json({
-                        success: false,
-                        message: 'UTR not found'
-                    });
-                }
-
-                const now = new Date();
-                const expiresAt = utr.expires_at ? new Date(utr.expires_at) : null;
-                const isActive = utr.used_at && 
-                               expiresAt && 
-                               expiresAt > now && 
-                               utr.games_used < utr.games_allowed;
-
-                res.json({
-                    success: true,
-                    isActive,
-                    utr: {
-                        number: utr.utr_number,
-                        planType: utr.plan_type,
-                        gamesUsed: utr.games_used || 0,
-                        gamesAllowed: utr.games_allowed,
-                        expiresAt: utr.expires_at,
-                        usedAt: utr.used_at
-                    }
-                });
-            }
-        );
-    } catch (error) {
-        console.error('UTR status check error:', error);
-        res.status(500).json({
-            success: false,
-            message: 'Internal server error'
-        });
-    }
 });
 
 // Add error handler middleware at the end of your routes

@@ -1,4 +1,4 @@
-import React, { useEffect, useState, useRef } from 'react';
+import React, { useEffect, useState } from 'react';
 import { Box, Grid, Card, Typography, Button, CircularProgress, Container } from '@mui/material';
 import { useNavigate } from 'react-router-dom';
 import { motion } from 'framer-motion';
@@ -49,84 +49,67 @@ const itemVariants = {
 const WebsiteSelector = () => {
   const navigate = useNavigate();
   const [loading, setLoading] = useState(true);
-  const [error, setError] = useState(null);
-  const mountedRef = useRef(false);
-  const checkingRef = useRef(false);
 
   useEffect(() => {
-    mountedRef.current = true;
-
     const checkAccess = async () => {
-      // Prevent duplicate calls
-      if (checkingRef.current) return;
-      checkingRef.current = true;
-
       try {
+        // Get the stored access token
         const accessToken = localStorage.getItem('hackAccess');
-        
-        if (!accessToken) {
-          if (mountedRef.current) {
-            navigate('/verify');
-          }
-          return;
-        }
+        console.log('Stored access token in WebsiteSelector:', accessToken); // Debug log
 
-        const response = await fetch('/api/check-access', {
-          method: 'GET',
-          headers: {
-            'Authorization': `Bearer ${accessToken}`,
-            'Content-Type': 'application/json'
-          }
-        });
-
-        if (!mountedRef.current) return;
-
-        const data = await response.json();
-
-        if (!mountedRef.current) return;
-
-        if (data.shouldClearStorage) {
+        if (!accessToken || accessToken === 'undefined' || accessToken === 'null') {
+          console.log('Invalid access token, redirecting to verify');
           localStorage.clear();
           navigate('/verify');
           return;
         }
 
+        // Log localStorage contents for debugging
+        console.log('All localStorage items:', {
+          access: localStorage.getItem('hackAccess'),
+          planType: localStorage.getItem('hackPlanType'),
+          gamesAllowed: localStorage.getItem('hackGamesAllowed'),
+          gamesUsed: localStorage.getItem('hackGamesUsed'),
+          expiry: localStorage.getItem('hackExpiry')
+        });
+
+        const response = await fetch('/api/check-access', {
+          method: 'GET',
+          headers: {
+            'Authorization': `Bearer ${accessToken.trim()}`,
+            'Content-Type': 'application/json'
+          },
+          credentials: 'same-origin' // Add this to ensure cookies are sent
+        });
+
+        console.log('Check access response status:', response.status);
+        const data = await response.json();
+        console.log('Check access response data:', data);
+
         if (!response.ok) {
-          setError('Failed to verify access. Please try again.');
-          setLoading(false);
+          console.log('Response not ok:', response.status);
+          localStorage.clear();
+          navigate('/verify');
           return;
         }
 
-        if (data.success && data.access) {
-          if (data.access.gamesUsed !== undefined) {
-            localStorage.setItem('hackGamesUsed', data.access.gamesUsed.toString());
-          }
-          if (data.access.gamesAllowed !== undefined) {
-            localStorage.setItem('hackGamesAllowed', data.access.gamesAllowed.toString());
-          }
-          if (data.access.expiresAt) {
-            localStorage.setItem('hackExpiry', data.access.expiresAt);
-          }
+        if (!data.success || data.access?.expired) {
+          console.log('Access invalid or expired:', data);
+          localStorage.clear();
+          navigate('/verify');
+          return;
         }
 
         setLoading(false);
-
       } catch (error) {
-        if (mountedRef.current) {
-          console.error('Access check error:', error);
-          setError('Connection error. Please try again.');
-          setLoading(false);
-        }
-      } finally {
-        checkingRef.current = false;
+        console.error('Access check failed:', error);
+        localStorage.clear();
+        navigate('/verify');
       }
     };
 
+    // Call checkAccess immediately
     checkAccess();
-
-    return () => {
-      mountedRef.current = false;
-    };
   }, [navigate]);
 
   const handleSelect = (url) => {
@@ -167,17 +150,6 @@ const WebsiteSelector = () => {
           Loading...
         </Typography>
       </Box>
-    );
-  }
-
-  if (error) {
-    return (
-      <div>
-        <p>Error: {error}</p>
-        <button onClick={() => window.location.reload()}>
-          Retry
-        </button>
-      </div>
     );
   }
 
