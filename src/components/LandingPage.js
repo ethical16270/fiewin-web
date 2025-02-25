@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React, { useEffect, useState, useRef } from 'react';
 import { Box, Card, Typography, Button, Container, Grid, CircularProgress, ToggleButtonGroup, ToggleButton, Divider } from '@mui/material';
 import { useNavigate } from 'react-router-dom';
 import useMediaQuery from '@mui/material/useMediaQuery';
@@ -106,37 +106,40 @@ const LandingPage = () => {
 
   const [showPlanDetails, setShowPlanDetails] = useState(null);
 
+  const mountedRef = useRef(false);
+  const fetchingRef = useRef(false);
+
   useEffect(() => {
-    const fetchInitialData = async () => {
-      setLoading(true);
+    mountedRef.current = true;
+
+    const fetchPaymentDetails = async () => {
+      if (fetchingRef.current) return;
+      fetchingRef.current = true;
+
       try {
-        console.log('Fetching payment details...');
         const response = await fetch('/api/payment-details');
-        const data = await response.json();
-        console.log('Received data:', data);
         
+        if (!mountedRef.current) return;
+        
+        const data = await response.json();
+        
+        if (!mountedRef.current) return;
+
         if (data.success) {
-          setPaymentDetails(data.upi);
-          if (data.plans) {
-            console.log('Setting plan amounts:', data.plans);
-            setPlanAmounts({
-              demo: data.plans.demoAmount,
-              paid: data.plans.paidAmount
-            });
-          }
-          setActiveDetails({
-            upi: data.upi,
-            plans: data.plans
-          });
+          setActiveDetails(data);
         }
       } catch (error) {
-        console.error('Error fetching data:', error);
+        console.error('Failed to fetch payment details:', error);
       } finally {
-        setLoading(false);
+        fetchingRef.current = false;
       }
     };
 
-    fetchInitialData();
+    fetchPaymentDetails();
+
+    return () => {
+      mountedRef.current = false;
+    };
   }, []);
 
   // Add a console log when planAmounts changes

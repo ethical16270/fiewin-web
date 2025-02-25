@@ -369,7 +369,7 @@ const AdminPanel = () => {
     try {
       const response = await fetch('/api/admin/plans', {
         headers: {
-          'Authorization': token
+          'Authorization': `Bearer ${token}`
         }
       });
 
@@ -479,14 +479,38 @@ const AdminPanel = () => {
   };
 
   const handleDeleteUTR = async (utrNumber) => {
-    if (!window.confirm('Are you sure you want to delete this UTR?')) {
-        return;
-    }
-
     try {
+        // First check UTR status
+        const checkResponse = await fetch(`/api/admin/utr/status`, {
+            method: 'GET',
+            headers: {
+                'Authorization': `Bearer ${token}`,
+                'Content-Type': 'application/json'
+            },
+            body: JSON.stringify({
+                utr_number: utrNumber
+            })
+        });
+
+        const checkData = await checkResponse.json();
+        
+        if (checkData.isActive) {
+            setError({
+                message: 'Cannot delete active UTR with remaining games',
+                show: true,
+                severity: 'error'
+            });
+            return;
+        }
+
+        if (!window.confirm('Are you sure you want to delete this UTR?')) {
+            return;
+        }
+
         const response = await fetch('/api/delete-utr', {
             method: 'POST',
             headers: {
+                'Authorization': `Bearer ${token}`,
                 'Content-Type': 'application/json'
             },
             body: JSON.stringify({
@@ -511,8 +535,9 @@ const AdminPanel = () => {
     } catch (error) {
         console.error('Delete error:', error);
         setError({
-            message: error.message,
-            show: true
+            message: error.message || 'Failed to delete UTR',
+            show: true,
+            severity: 'error'
         });
     }
   };
@@ -538,7 +563,7 @@ const AdminPanel = () => {
   const fetchStats = async () => {
     try {
       const response = await fetch('/api/admin/stats', {
-        headers: { 'Authorization': token }
+        headers: { 'Authorization': `Bearer ${token}` }
       });
       const data = await response.json();
       if (response.ok) {
@@ -553,7 +578,7 @@ const AdminPanel = () => {
     try {
       const response = await fetch('/api/payment-details', {
         headers: {
-          'Authorization': token
+          'Authorization': `Bearer ${token}`
         }
       });
 
@@ -1046,7 +1071,7 @@ const AdminPanel = () => {
         try {
           const response = await fetch('/api/admin/verify', {
             headers: {
-              'Authorization': token
+              'Authorization': `Bearer ${token}`
             }
           });
           

@@ -1,0 +1,2095 @@
+2025-02-20 15:25:23: Connected to SQLite database
+2025-02-20 15:25:23: Database created successfully
+2025-02-20 15:25:23: UTR table created/verified
+2025-02-20 15:25:23: UPI details table created/verified
+2025-02-20 15:25:23: Plan settings table created/verified
+2025-02-20 15:25:23: Transactions table created/verified
+2025-02-20 15:25:23: Server is running on port 3000
+2025-02-20 15:25:23: Environment: production
+2025-02-20 15:25:23: Expired UTRs cleaned up successfully
+2025-02-20 15:25:27: GET /admin
+2025-02-20 15:25:27: Request URL: /admin
+2025-02-20 15:25:27: Request Headers: {
+  connection: 'upgrade',
+  host: '64.227.147.125',
+  'x-real-ip': '106.219.236.203',
+  'x-forwarded-for': '106.219.236.203',
+  'cache-control': 'max-age=0',
+  dnt: '1',
+  'upgrade-insecure-requests': '1',
+  'user-agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36',
+  accept: 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7',
+  'accept-encoding': 'gzip, deflate',
+  'accept-language': 'en-GB,en-US;q=0.9,en;q=0.8,hi;q=0.7',
+  'if-none-match': 'W/"26b-1952368cfae"',
+  'if-modified-since': 'Thu, 20 Feb 2025 12:50:26 GMT'
+}
+2025-02-20 15:25:27: Serving index.html for: /admin
+2025-02-20 15:25:27: {"timestamp":"2025-02-20T15:25:27.735Z","method":"GET","url":"/admin","status":200,"ip":"::ffff:127.0.0.1","userAgent":"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36","error":null}
+2025-02-20 15:25:27: GET /admin 200 13ms
+2025-02-20 15:25:30: GET /admin
+2025-02-20 15:25:30: Request URL: /admin
+2025-02-20 15:25:30: Request Headers: {
+  connection: 'upgrade',
+  host: '64.227.147.125',
+  'x-real-ip': '106.219.236.203',
+  'x-forwarded-for': '106.219.236.203',
+  'cache-control': 'max-age=0',
+  dnt: '1',
+  'upgrade-insecure-requests': '1',
+  'user-agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36',
+  accept: 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7',
+  'accept-encoding': 'gzip, deflate',
+  'accept-language': 'en-GB,en-US;q=0.9,en;q=0.8,hi;q=0.7',
+  'if-none-match': 'W/"2c9-19523ecc2a4"',
+  'if-modified-since': 'Thu, 20 Feb 2025 15:14:33 GMT'
+}
+2025-02-20 15:25:30: Serving index.html for: /admin
+2025-02-20 15:25:30: {"timestamp":"2025-02-20T15:25:30.639Z","method":"GET","url":"/admin","status":304,"ip":"::ffff:127.0.0.1","userAgent":"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36","error":null}
+2025-02-20 15:25:30: GET /admin 304 7ms
+2025-02-20 15:25:34: GET /api/payment-details
+2025-02-20 15:25:34: Request URL: /api/payment-details
+2025-02-20 15:25:34: Request Headers: {
+  connection: 'upgrade',
+  host: '64.227.147.125',
+  'x-real-ip': '106.219.236.203',
+  'x-forwarded-for': '106.219.236.203',
+  'user-agent': 'Mozilla/5.0 (iPhone; CPU iPhone OS 16_6 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/16.6 Mobile/15E148 Safari/604.1',
+  dnt: '1',
+  accept: '*/*',
+  'accept-encoding': 'gzip, deflate',
+  'accept-language': 'en-GB,en-US;q=0.9,en;q=0.8,hi;q=0.7'
+}
+2025-02-20 15:25:34: {"timestamp":"2025-02-20T15:25:34.190Z","method":"GET","url":"/payment-details","status":200,"ip":"::1","userAgent":"Mozilla/5.0 (iPhone; CPU iPhone OS 16_6 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/16.6 Mobile/15E148 Safari/604.1","error":null}
+2025-02-20 15:25:34: GET /payment-details 200 6ms
+2025-02-20 15:25:40: POST /api/admin/login
+2025-02-20 15:25:40: Request URL: /api/admin/login
+2025-02-20 15:25:40: Request Headers: {
+  connection: 'upgrade',
+  host: '64.227.147.125',
+  'x-real-ip': '106.219.236.203',
+  'x-forwarded-for': '106.219.236.203',
+  'content-length': '39',
+  'user-agent': 'Mozilla/5.0 (iPhone; CPU iPhone OS 16_6 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/16.6 Mobile/15E148 Safari/604.1',
+  dnt: '1',
+  'content-type': 'application/json',
+  accept: '*/*',
+  origin: 'http://64.227.147.125',
+  'accept-encoding': 'gzip, deflate',
+  'accept-language': 'en-GB,en-US;q=0.9,en;q=0.8,hi;q=0.7'
+}
+2025-02-20 15:25:40: Login attempt: { username: 'admin', password: 'admin' }
+2025-02-20 15:25:40: Login successful
+2025-02-20 15:25:40: {"timestamp":"2025-02-20T15:25:40.205Z","method":"POST","url":"/admin/login","status":200,"ip":"::ffff:127.0.0.1","userAgent":"Mozilla/5.0 (iPhone; CPU iPhone OS 16_6 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/16.6 Mobile/15E148 Safari/604.1","error":null}
+2025-02-20 15:25:40: POST /admin/login 200 4ms
+2025-02-20 15:25:40: GET /api/admin/verify
+2025-02-20 15:25:40: Request URL: /api/admin/verify
+2025-02-20 15:25:40: Request Headers: {
+  connection: 'upgrade',
+  host: '64.227.147.125',
+  'x-real-ip': '106.219.236.203',
+  'x-forwarded-for': '106.219.236.203',
+  'user-agent': 'Mozilla/5.0 (iPhone; CPU iPhone OS 16_6 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/16.6 Mobile/15E148 Safari/604.1',
+  dnt: '1',
+  authorization: 'admin_token',
+  accept: '*/*',
+  'accept-encoding': 'gzip, deflate',
+  'accept-language': 'en-GB,en-US;q=0.9,en;q=0.8,hi;q=0.7'
+}
+2025-02-20 15:25:40: Serving index.html for: /api/admin/verify
+2025-02-20 15:25:40: {"timestamp":"2025-02-20T15:25:40.337Z","method":"GET","url":"/api/admin/verify","status":200,"ip":"::1","userAgent":"Mozilla/5.0 (iPhone; CPU iPhone OS 16_6 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/16.6 Mobile/15E148 Safari/604.1","error":null}
+2025-02-20 15:25:40: GET /api/admin/verify 200 7ms
+2025-02-20 15:25:40: GET /api/admin/stats
+2025-02-20 15:25:40: Request URL: /api/admin/stats
+2025-02-20 15:25:40: Request Headers: {
+  connection: 'upgrade',
+  host: '64.227.147.125',
+  'x-real-ip': '106.219.236.203',
+  'x-forwarded-for': '106.219.236.203',
+  'user-agent': 'Mozilla/5.0 (iPhone; CPU iPhone OS 16_6 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/16.6 Mobile/15E148 Safari/604.1',
+  dnt: '1',
+  authorization: 'admin_token',
+  accept: '*/*',
+  'accept-encoding': 'gzip, deflate',
+  'accept-language': 'en-GB,en-US;q=0.9,en;q=0.8,hi;q=0.7',
+  'if-none-match': 'W/"62-rSOBp+jxJBvJRFhZZRV0kQ1P7Dg"'
+}
+2025-02-20 15:25:40: GET /api/payment-details
+2025-02-20 15:25:40: Request URL: /api/payment-details
+2025-02-20 15:25:40: Request Headers: {
+  connection: 'upgrade',
+  host: '64.227.147.125',
+  'x-real-ip': '106.219.236.203',
+  'x-forwarded-for': '106.219.236.203',
+  'user-agent': 'Mozilla/5.0 (iPhone; CPU iPhone OS 16_6 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/16.6 Mobile/15E148 Safari/604.1',
+  dnt: '1',
+  authorization: 'admin_token',
+  accept: '*/*',
+  'accept-encoding': 'gzip, deflate',
+  'accept-language': 'en-GB,en-US;q=0.9,en;q=0.8,hi;q=0.7',
+  'if-none-match': 'W/"6d-Z9phQ8j+BbSQlZb23fpEGnY9RxI"'
+}
+2025-02-20 15:25:40: {"timestamp":"2025-02-20T15:25:40.419Z","method":"GET","url":"/admin/stats","status":304,"ip":"::ffff:127.0.0.1","userAgent":"Mozilla/5.0 (iPhone; CPU iPhone OS 16_6 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/16.6 Mobile/15E148 Safari/604.1","error":null}
+2025-02-20 15:25:40: GET /admin/stats 304 13ms
+2025-02-20 15:25:40: GET /api/admin/plans
+2025-02-20 15:25:40: Request URL: /api/admin/plans
+2025-02-20 15:25:40: Request Headers: {
+  connection: 'upgrade',
+  host: '64.227.147.125',
+  'x-real-ip': '106.219.236.203',
+  'x-forwarded-for': '106.219.236.203',
+  'user-agent': 'Mozilla/5.0 (iPhone; CPU iPhone OS 16_6 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/16.6 Mobile/15E148 Safari/604.1',
+  dnt: '1',
+  authorization: 'admin_token',
+  accept: '*/*',
+  'accept-encoding': 'gzip, deflate',
+  'accept-language': 'en-GB,en-US;q=0.9,en;q=0.8,hi;q=0.7',
+  'if-none-match': 'W/"33-VmDTKOu0WCzHkkqUHyIHPkLc/jQ"'
+}
+2025-02-20 15:25:40: GET /api/admin/analytics
+2025-02-20 15:25:40: Request URL: /api/admin/analytics
+2025-02-20 15:25:40: Request Headers: {
+  connection: 'upgrade',
+  host: '64.227.147.125',
+  'x-real-ip': '106.219.236.203',
+  'x-forwarded-for': '106.219.236.203',
+  'user-agent': 'Mozilla/5.0 (iPhone; CPU iPhone OS 16_6 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/16.6 Mobile/15E148 Safari/604.1',
+  dnt: '1',
+  authorization: 'Bearer admin_token',
+  accept: '*/*',
+  'accept-encoding': 'gzip, deflate',
+  'accept-language': 'en-GB,en-US;q=0.9,en;q=0.8,hi;q=0.7',
+  'if-none-match': 'W/"bb-6HmGhGeq0ymIkC2et+n3uAPbTWs"'
+}
+2025-02-20 15:25:40: {"timestamp":"2025-02-20T15:25:40.430Z","method":"GET","url":"/payment-details","status":304,"ip":"::1","userAgent":"Mozilla/5.0 (iPhone; CPU iPhone OS 16_6 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/16.6 Mobile/15E148 Safari/604.1","error":null}
+2025-02-20 15:25:40: GET /payment-details 304 18ms
+2025-02-20 15:25:40: {"timestamp":"2025-02-20T15:25:40.433Z","method":"GET","url":"/admin/plans","status":304,"ip":"::ffff:127.0.0.1","userAgent":"Mozilla/5.0 (iPhone; CPU iPhone OS 16_6 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/16.6 Mobile/15E148 Safari/604.1","error":null}
+2025-02-20 15:25:40: GET /admin/plans 304 11ms
+2025-02-20 15:25:40: GET /api/admin/utr/list
+2025-02-20 15:25:40: Request URL: /api/admin/utr/list
+2025-02-20 15:25:40: Request Headers: {
+  connection: 'upgrade',
+  host: '64.227.147.125',
+  'x-real-ip': '106.219.236.203',
+  'x-forwarded-for': '106.219.236.203',
+  'user-agent': 'Mozilla/5.0 (iPhone; CPU iPhone OS 16_6 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/16.6 Mobile/15E148 Safari/604.1',
+  dnt: '1',
+  authorization: 'Bearer admin_token',
+  accept: '*/*',
+  'accept-encoding': 'gzip, deflate',
+  'accept-language': 'en-GB,en-US;q=0.9,en;q=0.8,hi;q=0.7',
+  'if-none-match': 'W/"f0-USMhyphw7hKZryIyM16+5YKIhiA"'
+}
+2025-02-20 15:25:40: {"timestamp":"2025-02-20T15:25:40.441Z","method":"GET","url":"/admin/analytics","status":304,"ip":"::1","userAgent":"Mozilla/5.0 (iPhone; CPU iPhone OS 16_6 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/16.6 Mobile/15E148 Safari/604.1","error":null}
+2025-02-20 15:25:40: GET /admin/analytics 304 14ms
+2025-02-20 15:25:40: {"timestamp":"2025-02-20T15:25:40.446Z","method":"GET","url":"/admin/utr/list","status":304,"ip":"::ffff:127.0.0.1","userAgent":"Mozilla/5.0 (iPhone; CPU iPhone OS 16_6 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/16.6 Mobile/15E148 Safari/604.1","error":null}
+2025-02-20 15:25:40: GET /admin/utr/list 304 10ms
+2025-02-20 15:25:40: GET /api/admin/stats
+2025-02-20 15:25:40: Request URL: /api/admin/stats
+2025-02-20 15:25:40: Request Headers: {
+  connection: 'upgrade',
+  host: '64.227.147.125',
+  'x-real-ip': '106.219.236.203',
+  'x-forwarded-for': '106.219.236.203',
+  'user-agent': 'Mozilla/5.0 (iPhone; CPU iPhone OS 16_6 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/16.6 Mobile/15E148 Safari/604.1',
+  dnt: '1',
+  authorization: 'Bearer admin_token',
+  accept: '*/*',
+  'accept-encoding': 'gzip, deflate',
+  'accept-language': 'en-GB,en-US;q=0.9,en;q=0.8,hi;q=0.7',
+  'if-none-match': 'W/"62-rSOBp+jxJBvJRFhZZRV0kQ1P7Dg"'
+}
+2025-02-20 15:25:40: {"timestamp":"2025-02-20T15:25:40.501Z","method":"GET","url":"/admin/stats","status":304,"ip":"::1","userAgent":"Mozilla/5.0 (iPhone; CPU iPhone OS 16_6 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/16.6 Mobile/15E148 Safari/604.1","error":null}
+2025-02-20 15:25:40: GET /admin/stats 304 4ms
+2025-02-20 15:25:40: GET /api/admin/utr/list
+2025-02-20 15:25:40: Request URL: /api/admin/utr/list
+2025-02-20 15:25:40: Request Headers: {
+  connection: 'upgrade',
+  host: '64.227.147.125',
+  'x-real-ip': '106.219.236.203',
+  'x-forwarded-for': '106.219.236.203',
+  'user-agent': 'Mozilla/5.0 (iPhone; CPU iPhone OS 16_6 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/16.6 Mobile/15E148 Safari/604.1',
+  dnt: '1',
+  authorization: 'Bearer admin_token',
+  accept: '*/*',
+  'accept-encoding': 'gzip, deflate',
+  'accept-language': 'en-GB,en-US;q=0.9,en;q=0.8,hi;q=0.7',
+  'if-none-match': 'W/"f0-USMhyphw7hKZryIyM16+5YKIhiA"'
+}
+2025-02-20 15:25:40: {"timestamp":"2025-02-20T15:25:40.533Z","method":"GET","url":"/admin/utr/list","status":304,"ip":"::ffff:127.0.0.1","userAgent":"Mozilla/5.0 (iPhone; CPU iPhone OS 16_6 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/16.6 Mobile/15E148 Safari/604.1","error":null}
+2025-02-20 15:25:40: GET /admin/utr/list 304 4ms
+2025-02-20 15:25:40: GET /api/payment-details
+2025-02-20 15:25:40: Request URL: /api/payment-details
+2025-02-20 15:25:40: Request Headers: {
+  connection: 'upgrade',
+  host: '64.227.147.125',
+  'x-real-ip': '106.219.236.203',
+  'x-forwarded-for': '106.219.236.203',
+  'user-agent': 'Mozilla/5.0 (iPhone; CPU iPhone OS 16_6 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/16.6 Mobile/15E148 Safari/604.1',
+  dnt: '1',
+  authorization: 'Bearer admin_token',
+  accept: '*/*',
+  'accept-encoding': 'gzip, deflate',
+  'accept-language': 'en-GB,en-US;q=0.9,en;q=0.8,hi;q=0.7',
+  'if-none-match': 'W/"6d-Z9phQ8j+BbSQlZb23fpEGnY9RxI"'
+}
+2025-02-20 15:25:40: {"timestamp":"2025-02-20T15:25:40.585Z","method":"GET","url":"/payment-details","status":304,"ip":"::1","userAgent":"Mozilla/5.0 (iPhone; CPU iPhone OS 16_6 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/16.6 Mobile/15E148 Safari/604.1","error":null}
+2025-02-20 15:25:40: GET /payment-details 304 4ms
+2025-02-20 15:25:46: GET /content.dart.js
+2025-02-20 15:25:46: Request URL: /content.dart.js
+2025-02-20 15:25:46: Request Headers: {
+  connection: 'upgrade',
+  host: '64.227.147.125',
+  'x-real-ip': '35.184.238.160',
+  'x-forwarded-for': '35.184.238.160',
+  'x-sentry-token': '1a6db7bcc7d511ec978a6ac4644b5ea1',
+  'user-agent': 'symbolicator/25.2.0',
+  accept: '*/*',
+  'accept-encoding': 'gzip, br, deflate'
+}
+2025-02-20 15:25:46: Serving index.html for: /content.dart.js
+2025-02-20 15:25:46: {"timestamp":"2025-02-20T15:25:46.442Z","method":"GET","url":"/content.dart.js","status":200,"ip":"::ffff:127.0.0.1","userAgent":"symbolicator/25.2.0","error":null}
+2025-02-20 15:25:46: GET /content.dart.js 200 5ms
+2025-02-20 15:25:52: POST /api/admin/utr/add
+2025-02-20 15:25:52: Request URL: /api/admin/utr/add
+2025-02-20 15:25:52: Request Headers: {
+  connection: 'upgrade',
+  host: '64.227.147.125',
+  'x-real-ip': '106.219.236.203',
+  'x-forwarded-for': '106.219.236.203',
+  'content-length': '50',
+  authorization: 'Bearer admin_token',
+  'user-agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36',
+  dnt: '1',
+  'content-type': 'application/json',
+  accept: '*/*',
+  origin: 'http://64.227.147.125',
+  'accept-encoding': 'gzip, deflate',
+  'accept-language': 'en-GB,en-US;q=0.9,en;q=0.8,hi;q=0.7'
+}
+2025-02-20 15:25:52: {"timestamp":"2025-02-20T15:25:52.521Z","method":"POST","url":"/admin/utr/add","status":200,"ip":"::1","userAgent":"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36","error":null}
+2025-02-20 15:25:52: POST /admin/utr/add 200 11ms
+2025-02-20 15:25:52: GET /api/admin/utr/list
+2025-02-20 15:25:52: Request URL: /api/admin/utr/list
+2025-02-20 15:25:52: Request Headers: {
+  connection: 'upgrade',
+  host: '64.227.147.125',
+  'x-real-ip': '106.219.236.203',
+  'x-forwarded-for': '106.219.236.203',
+  'user-agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36',
+  dnt: '1',
+  authorization: 'Bearer admin_token',
+  accept: '*/*',
+  'accept-encoding': 'gzip, deflate',
+  'accept-language': 'en-GB,en-US;q=0.9,en;q=0.8,hi;q=0.7',
+  'if-none-match': 'W/"f0-USMhyphw7hKZryIyM16+5YKIhiA"'
+}
+2025-02-20 15:25:52: {"timestamp":"2025-02-20T15:25:52.605Z","method":"GET","url":"/admin/utr/list","status":200,"ip":"::ffff:127.0.0.1","userAgent":"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36","error":null}
+2025-02-20 15:25:52: GET /admin/utr/list 200 5ms
+2025-02-20 15:26:01: GET /api/payment-details
+2025-02-20 15:26:01: Request URL: /api/payment-details
+2025-02-20 15:26:01: Request Headers: {
+  connection: 'upgrade',
+  host: '64.227.147.125',
+  'x-real-ip': '106.219.236.203',
+  'x-forwarded-for': '106.219.236.203',
+  'user-agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36',
+  dnt: '1',
+  accept: '*/*',
+  'accept-encoding': 'gzip, deflate',
+  'accept-language': 'en-GB,en-US;q=0.9,en;q=0.8,hi;q=0.7',
+  'if-none-match': 'W/"6d-Z9phQ8j+BbSQlZb23fpEGnY9RxI"'
+}
+2025-02-20 15:26:01: {"timestamp":"2025-02-20T15:26:01.202Z","method":"GET","url":"/payment-details","status":304,"ip":"::1","userAgent":"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36","error":null}
+2025-02-20 15:26:01: GET /payment-details 304 4ms
+2025-02-20 15:26:04: GET /api/check-access
+2025-02-20 15:26:04: Request URL: /api/check-access
+2025-02-20 15:26:04: Request Headers: {
+  connection: 'upgrade',
+  host: '64.227.147.125',
+  'x-real-ip': '106.219.236.203',
+  'x-forwarded-for': '106.219.236.203',
+  authorization: 'Bearer demo',
+  'user-agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36',
+  dnt: '1',
+  'content-type': 'application/json',
+  accept: '*/*',
+  'accept-encoding': 'gzip, deflate',
+  'accept-language': 'en-GB,en-US;q=0.9,en;q=0.8,hi;q=0.7',
+  'if-none-match': 'W/"7b-pR0dXB3dNIi4uLIjxStgNLX9xgI"'
+}
+2025-02-20 15:26:04: Headers: {
+  connection: 'upgrade',
+  host: '64.227.147.125',
+  'x-real-ip': '106.219.236.203',
+  'x-forwarded-for': '106.219.236.203',
+  authorization: 'Bearer demo',
+  'user-agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36',
+  dnt: '1',
+  'content-type': 'application/json',
+  accept: '*/*',
+  'accept-encoding': 'gzip, deflate',
+  'accept-language': 'en-GB,en-US;q=0.9,en;q=0.8,hi;q=0.7',
+  'if-none-match': 'W/"7b-pR0dXB3dNIi4uLIjxStgNLX9xgI"'
+}
+2025-02-20 15:26:04: Auth header: Bearer demo
+2025-02-20 15:26:04: Extracted token: demo
+2025-02-20 15:26:04: Found UTR: undefined
+2025-02-20 15:26:04: No UTR found for token: demo
+2025-02-20 15:26:04: {"timestamp":"2025-02-20T15:26:04.679Z","method":"GET","url":"/check-access","status":401,"ip":"::ffff:127.0.0.1","userAgent":"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36","error":null}
+2025-02-20 15:26:04: GET /check-access 401 8ms
+2025-02-20 15:26:08: POST /api/verify-utr
+2025-02-20 15:26:08: Request URL: /api/verify-utr
+2025-02-20 15:26:08: Request Headers: {
+  connection: 'upgrade',
+  host: '64.227.147.125',
+  'x-real-ip': '106.219.236.203',
+  'x-forwarded-for': '106.219.236.203',
+  'content-length': '15',
+  'user-agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36',
+  dnt: '1',
+  'content-type': 'application/json',
+  accept: '*/*',
+  origin: 'http://64.227.147.125',
+  'accept-encoding': 'gzip, deflate',
+  'accept-language': 'en-GB,en-US;q=0.9,en;q=0.8,hi;q=0.7'
+}
+2025-02-20 15:26:08: Received UTR: sunny
+2025-02-20 15:26:08: Sending response: {
+  success: true,
+  message: 'UTR verified successfully',
+  utrNumber: 'sunny',
+  planType: 'demo',
+  gamesAllowed: 3,
+  gamesUsed: 0,
+  expiresAt: '2025-02-21T15:26:08.126Z'
+}
+2025-02-20 15:26:08: {"timestamp":"2025-02-20T15:26:08.139Z","method":"POST","url":"/verify-utr","status":200,"ip":"::1","userAgent":"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36","error":null}
+2025-02-20 15:26:08: POST /verify-utr 200 18ms
+2025-02-20 15:26:09: GET /api/check-access
+2025-02-20 15:26:09: Request URL: /api/check-access
+2025-02-20 15:26:09: Request Headers: {
+  connection: 'upgrade',
+  host: '64.227.147.125',
+  'x-real-ip': '106.219.236.203',
+  'x-forwarded-for': '106.219.236.203',
+  authorization: 'Bearer sunny',
+  'user-agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36',
+  dnt: '1',
+  'content-type': 'application/json',
+  accept: '*/*',
+  'accept-encoding': 'gzip, deflate',
+  'accept-language': 'en-GB,en-US;q=0.9,en;q=0.8,hi;q=0.7',
+  'if-none-match': 'W/"7b-pR0dXB3dNIi4uLIjxStgNLX9xgI"'
+}
+2025-02-20 15:26:09: Headers: {
+  connection: 'upgrade',
+  host: '64.227.147.125',
+  'x-real-ip': '106.219.236.203',
+  'x-forwarded-for': '106.219.236.203',
+  authorization: 'Bearer sunny',
+  'user-agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36',
+  dnt: '1',
+  'content-type': 'application/json',
+  accept: '*/*',
+  'accept-encoding': 'gzip, deflate',
+  'accept-language': 'en-GB,en-US;q=0.9,en;q=0.8,hi;q=0.7',
+  'if-none-match': 'W/"7b-pR0dXB3dNIi4uLIjxStgNLX9xgI"'
+}
+2025-02-20 15:26:09: Auth header: Bearer sunny
+2025-02-20 15:26:09: Extracted token: sunny
+2025-02-20 15:26:09: Found UTR: {
+  id: 8,
+  utr_number: 'sunny',
+  plan_type: 'demo',
+  duration_hours: 24,
+  games_allowed: 3,
+  games_used: 0,
+  created_at: '2025-02-20T15:25:52.512Z',
+  used_at: '2025-02-20T15:26:08.126Z',
+  used_by: null,
+  expires_at: '2025-02-21T15:26:08.126Z',
+  status: 'active'
+}
+2025-02-20 15:26:09: Checking expiry: { now: 2025-02-20T15:26:09.587Z, expiresAt: 2025-02-21T15:26:08.126Z }
+2025-02-20 15:26:09: Access valid
+2025-02-20 15:26:09: {"timestamp":"2025-02-20T15:26:09.590Z","method":"GET","url":"/check-access","status":200,"ip":"::ffff:127.0.0.1","userAgent":"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36","error":null}
+2025-02-20 15:26:09: GET /check-access 200 14ms
+2025-02-20 15:26:11: GET /api/check-access
+2025-02-20 15:26:11: Request URL: /api/check-access
+2025-02-20 15:26:11: Request Headers: {
+  connection: 'upgrade',
+  host: '64.227.147.125',
+  'x-real-ip': '106.219.236.203',
+  'x-forwarded-for': '106.219.236.203',
+  authorization: 'Bearer sunny',
+  'user-agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36',
+  dnt: '1',
+  'content-type': 'application/json',
+  accept: '*/*',
+  'accept-encoding': 'gzip, deflate',
+  'accept-language': 'en-GB,en-US;q=0.9,en;q=0.8,hi;q=0.7',
+  'if-none-match': 'W/"77-RI3bICRRS3HAfP6FjWR54wE/3N4"'
+}
+2025-02-20 15:26:11: Headers: {
+  connection: 'upgrade',
+  host: '64.227.147.125',
+  'x-real-ip': '106.219.236.203',
+  'x-forwarded-for': '106.219.236.203',
+  authorization: 'Bearer sunny',
+  'user-agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36',
+  dnt: '1',
+  'content-type': 'application/json',
+  accept: '*/*',
+  'accept-encoding': 'gzip, deflate',
+  'accept-language': 'en-GB,en-US;q=0.9,en;q=0.8,hi;q=0.7',
+  'if-none-match': 'W/"77-RI3bICRRS3HAfP6FjWR54wE/3N4"'
+}
+2025-02-20 15:26:11: Auth header: Bearer sunny
+2025-02-20 15:26:11: Extracted token: sunny
+2025-02-20 15:26:11: Found UTR: {
+  id: 8,
+  utr_number: 'sunny',
+  plan_type: 'demo',
+  duration_hours: 24,
+  games_allowed: 3,
+  games_used: 0,
+  created_at: '2025-02-20T15:25:52.512Z',
+  used_at: '2025-02-20T15:26:08.126Z',
+  used_by: null,
+  expires_at: '2025-02-21T15:26:08.126Z',
+  status: 'active'
+}
+2025-02-20 15:26:11: Checking expiry: { now: 2025-02-20T15:26:11.911Z, expiresAt: 2025-02-21T15:26:08.126Z }
+2025-02-20 15:26:11: Access valid
+2025-02-20 15:26:11: {"timestamp":"2025-02-20T15:26:11.913Z","method":"GET","url":"/check-access","status":304,"ip":"::1","userAgent":"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36","error":null}
+2025-02-20 15:26:11: GET /check-access 304 7ms
+2025-02-20 15:26:12: GET /proxy
+2025-02-20 15:26:12: Request URL: /proxy
+2025-02-20 15:26:12: Request Headers: {
+  connection: 'upgrade',
+  host: '64.227.147.125',
+  'x-real-ip': '106.219.236.203',
+  'x-forwarded-for': '106.219.236.203',
+  dnt: '1',
+  'upgrade-insecure-requests': '1',
+  'user-agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36',
+  accept: 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7',
+  'accept-encoding': 'gzip, deflate',
+  'accept-language': 'en-GB,en-US;q=0.9,en;q=0.8,hi;q=0.7',
+  'if-none-match': 'W/"26b-1952368cfae"',
+  'if-modified-since': 'Thu, 20 Feb 2025 12:50:26 GMT'
+}
+2025-02-20 15:26:12: Serving index.html for: /proxy
+2025-02-20 15:26:12: {"timestamp":"2025-02-20T15:26:12.011Z","method":"GET","url":"/proxy","status":200,"ip":"::ffff:127.0.0.1","userAgent":"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36","error":null}
+2025-02-20 15:26:12: GET /proxy 200 5ms
+2025-02-20 15:26:17: GET /hack
+2025-02-20 15:26:17: Request URL: /hack
+2025-02-20 15:26:17: Request Headers: {
+  connection: 'upgrade',
+  host: '64.227.147.125',
+  'x-real-ip': '106.219.236.203',
+  'x-forwarded-for': '106.219.236.203',
+  'cache-control': 'max-age=0',
+  dnt: '1',
+  'upgrade-insecure-requests': '1',
+  'user-agent': 'Mozilla/5.0 (iPhone; CPU iPhone OS 16_6 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/16.6 Mobile/15E148 Safari/604.1',
+  accept: 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7',
+  'accept-encoding': 'gzip, deflate',
+  'accept-language': 'en-GB,en-US;q=0.9,en;q=0.8,hi;q=0.7',
+  'if-none-match': 'W/"26b-1952368cfae"',
+  'if-modified-since': 'Thu, 20 Feb 2025 12:50:26 GMT'
+}
+2025-02-20 15:26:17: Serving index.html for: /hack
+2025-02-20 15:26:17: {"timestamp":"2025-02-20T15:26:17.971Z","method":"GET","url":"/hack","status":200,"ip":"::1","userAgent":"Mozilla/5.0 (iPhone; CPU iPhone OS 16_6 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/16.6 Mobile/15E148 Safari/604.1","error":null}
+2025-02-20 15:26:17: GET /hack 200 5ms
+2025-02-20 15:26:22: GET /content.dart.js
+2025-02-20 15:26:22: Request URL: /content.dart.js
+2025-02-20 15:26:22: Request Headers: {
+  connection: 'upgrade',
+  host: '64.227.147.125',
+  'x-real-ip': '35.184.238.160',
+  'x-forwarded-for': '35.184.238.160',
+  'x-sentry-token': '1a6db7bcc7d511ec978a6ac4644b5ea1',
+  'user-agent': 'symbolicator/25.2.0',
+  accept: '*/*',
+  'accept-encoding': 'gzip, br, deflate'
+}
+2025-02-20 15:26:22: Serving index.html for: /content.dart.js
+2025-02-20 15:26:22: {"timestamp":"2025-02-20T15:26:22.122Z","method":"GET","url":"/content.dart.js","status":200,"ip":"::ffff:127.0.0.1","userAgent":"symbolicator/25.2.0","error":null}
+2025-02-20 15:26:22: GET /content.dart.js 200 5ms
+2025-02-20 15:26:23: GET /hack
+2025-02-20 15:26:23: Request URL: /hack
+2025-02-20 15:26:23: Request Headers: {
+  connection: 'upgrade',
+  host: '64.227.147.125',
+  'x-real-ip': '106.219.236.203',
+  'x-forwarded-for': '106.219.236.203',
+  'cache-control': 'max-age=0',
+  dnt: '1',
+  'upgrade-insecure-requests': '1',
+  'user-agent': 'Mozilla/5.0 (iPhone; CPU iPhone OS 16_6 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/16.6 Mobile/15E148 Safari/604.1',
+  accept: 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7',
+  'accept-encoding': 'gzip, deflate',
+  'accept-language': 'en-GB,en-US;q=0.9,en;q=0.8,hi;q=0.7',
+  'if-none-match': 'W/"2c9-19523ecc2a4"',
+  'if-modified-since': 'Thu, 20 Feb 2025 15:14:33 GMT'
+}
+2025-02-20 15:26:23: Serving index.html for: /hack
+2025-02-20 15:26:23: {"timestamp":"2025-02-20T15:26:23.655Z","method":"GET","url":"/hack","status":304,"ip":"::1","userAgent":"Mozilla/5.0 (iPhone; CPU iPhone OS 16_6 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/16.6 Mobile/15E148 Safari/604.1","error":null}
+2025-02-20 15:26:23: GET /hack 304 4ms
+2025-02-20 15:26:25: GET /hack
+2025-02-20 15:26:25: Request URL: /hack
+2025-02-20 15:26:25: Request Headers: {
+  connection: 'upgrade',
+  host: '64.227.147.125',
+  'x-real-ip': '106.219.236.203',
+  'x-forwarded-for': '106.219.236.203',
+  'cache-control': 'max-age=0',
+  dnt: '1',
+  'upgrade-insecure-requests': '1',
+  'user-agent': 'Mozilla/5.0 (iPhone; CPU iPhone OS 16_6 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/16.6 Mobile/15E148 Safari/604.1',
+  accept: 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7',
+  'accept-encoding': 'gzip, deflate',
+  'accept-language': 'en-GB,en-US;q=0.9,en;q=0.8,hi;q=0.7',
+  'if-none-match': 'W/"2c9-19523ecc2a4"',
+  'if-modified-since': 'Thu, 20 Feb 2025 15:14:33 GMT'
+}
+2025-02-20 15:26:25: Serving index.html for: /hack
+2025-02-20 15:26:25: {"timestamp":"2025-02-20T15:26:25.164Z","method":"GET","url":"/hack","status":304,"ip":"::ffff:127.0.0.1","userAgent":"Mozilla/5.0 (iPhone; CPU iPhone OS 16_6 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/16.6 Mobile/15E148 Safari/604.1","error":null}
+2025-02-20 15:26:25: GET /hack 304 4ms
+2025-02-20 15:26:27: GET /content.dart.js
+2025-02-20 15:26:27: Request URL: /content.dart.js
+2025-02-20 15:26:27: Request Headers: {
+  connection: 'upgrade',
+  host: '64.227.147.125',
+  'x-real-ip': '104.155.159.182',
+  'x-forwarded-for': '104.155.159.182',
+  'x-sentry-token': '1a6db7bcc7d511ec978a6ac4644b5ea1',
+  'user-agent': 'symbolicator/25.2.0',
+  accept: '*/*',
+  'accept-encoding': 'gzip, br, deflate'
+}
+2025-02-20 15:26:27: Serving index.html for: /content.dart.js
+2025-02-20 15:26:27: {"timestamp":"2025-02-20T15:26:27.885Z","method":"GET","url":"/content.dart.js","status":200,"ip":"::1","userAgent":"symbolicator/25.2.0","error":null}
+2025-02-20 15:26:27: GET /content.dart.js 200 6ms
+2025-02-20 15:26:29: GET /api/payment-details
+2025-02-20 15:26:29: Request URL: /api/payment-details
+2025-02-20 15:26:29: Request Headers: {
+  connection: 'upgrade',
+  host: '64.227.147.125',
+  'x-real-ip': '106.219.236.203',
+  'x-forwarded-for': '106.219.236.203',
+  'user-agent': 'Mozilla/5.0 (iPhone; CPU iPhone OS 16_6 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/16.6 Mobile/15E148 Safari/604.1',
+  dnt: '1',
+  accept: '*/*',
+  'accept-encoding': 'gzip, deflate',
+  'accept-language': 'en-GB,en-US;q=0.9,en;q=0.8,hi;q=0.7',
+  'if-none-match': 'W/"6d-Z9phQ8j+BbSQlZb23fpEGnY9RxI"'
+}
+2025-02-20 15:26:29: {"timestamp":"2025-02-20T15:26:29.629Z","method":"GET","url":"/payment-details","status":304,"ip":"::ffff:127.0.0.1","userAgent":"Mozilla/5.0 (iPhone; CPU iPhone OS 16_6 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/16.6 Mobile/15E148 Safari/604.1","error":null}
+2025-02-20 15:26:29: GET /payment-details 304 4ms
+2025-02-20 15:26:32: GET /content.dart.js
+2025-02-20 15:26:32: Request URL: /content.dart.js
+2025-02-20 15:26:32: Request Headers: {
+  connection: 'upgrade',
+  host: '64.227.147.125',
+  'x-real-ip': '35.184.238.160',
+  'x-forwarded-for': '35.184.238.160',
+  'x-sentry-token': '1a6db7bcc7d511ec978a6ac4644b5ea1',
+  'user-agent': 'symbolicator/25.2.0',
+  accept: '*/*',
+  'accept-encoding': 'gzip, br, deflate'
+}
+2025-02-20 15:26:32: Serving index.html for: /content.dart.js
+2025-02-20 15:26:32: {"timestamp":"2025-02-20T15:26:32.619Z","method":"GET","url":"/content.dart.js","status":200,"ip":"::1","userAgent":"symbolicator/25.2.0","error":null}
+2025-02-20 15:26:32: GET /content.dart.js 200 7ms
+2025-02-20 15:26:33: GET /api/check-access
+2025-02-20 15:26:33: Request URL: /api/check-access
+2025-02-20 15:26:33: Request Headers: {
+  connection: 'upgrade',
+  host: '64.227.147.125',
+  'x-real-ip': '106.219.236.203',
+  'x-forwarded-for': '106.219.236.203',
+  authorization: 'Bearer demo',
+  'user-agent': 'Mozilla/5.0 (iPhone; CPU iPhone OS 16_6 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/16.6 Mobile/15E148 Safari/604.1',
+  dnt: '1',
+  'content-type': 'application/json',
+  accept: '*/*',
+  'accept-encoding': 'gzip, deflate',
+  'accept-language': 'en-GB,en-US;q=0.9,en;q=0.8,hi;q=0.7',
+  'if-none-match': 'W/"77-RI3bICRRS3HAfP6FjWR54wE/3N4"'
+}
+2025-02-20 15:26:33: Headers: {
+  connection: 'upgrade',
+  host: '64.227.147.125',
+  'x-real-ip': '106.219.236.203',
+  'x-forwarded-for': '106.219.236.203',
+  authorization: 'Bearer demo',
+  'user-agent': 'Mozilla/5.0 (iPhone; CPU iPhone OS 16_6 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/16.6 Mobile/15E148 Safari/604.1',
+  dnt: '1',
+  'content-type': 'application/json',
+  accept: '*/*',
+  'accept-encoding': 'gzip, deflate',
+  'accept-language': 'en-GB,en-US;q=0.9,en;q=0.8,hi;q=0.7',
+  'if-none-match': 'W/"77-RI3bICRRS3HAfP6FjWR54wE/3N4"'
+}
+2025-02-20 15:26:33: Auth header: Bearer demo
+2025-02-20 15:26:33: Extracted token: demo
+2025-02-20 15:26:33: Found UTR: undefined
+2025-02-20 15:26:33: No UTR found for token: demo
+2025-02-20 15:26:33: {"timestamp":"2025-02-20T15:26:33.278Z","method":"GET","url":"/check-access","status":401,"ip":"::ffff:127.0.0.1","userAgent":"Mozilla/5.0 (iPhone; CPU iPhone OS 16_6 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/16.6 Mobile/15E148 Safari/604.1","error":null}
+2025-02-20 15:26:33: GET /check-access 401 8ms
+2025-02-20 15:26:36: POST /api/verify-utr
+2025-02-20 15:26:36: Request URL: /api/verify-utr
+2025-02-20 15:26:36: Request Headers: {
+  connection: 'upgrade',
+  host: '64.227.147.125',
+  'x-real-ip': '106.219.236.203',
+  'x-forwarded-for': '106.219.236.203',
+  'content-length': '15',
+  'user-agent': 'Mozilla/5.0 (iPhone; CPU iPhone OS 16_6 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/16.6 Mobile/15E148 Safari/604.1',
+  dnt: '1',
+  'content-type': 'application/json',
+  accept: '*/*',
+  origin: 'http://64.227.147.125',
+  'accept-encoding': 'gzip, deflate',
+  'accept-language': 'en-GB,en-US;q=0.9,en;q=0.8,hi;q=0.7'
+}
+2025-02-20 15:26:36: Received UTR: sunny
+2025-02-20 15:26:36: Sending response: {
+  success: true,
+  message: 'Access restored',
+  utrNumber: 'sunny',
+  planType: 'demo',
+  gamesAllowed: 3,
+  gamesUsed: 0,
+  expiresAt: '2025-02-21T15:26:08.126Z'
+}
+2025-02-20 15:26:36: {"timestamp":"2025-02-20T15:26:36.422Z","method":"POST","url":"/verify-utr","status":200,"ip":"::1","userAgent":"Mozilla/5.0 (iPhone; CPU iPhone OS 16_6 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/16.6 Mobile/15E148 Safari/604.1","error":null}
+2025-02-20 15:26:36: POST /verify-utr 200 6ms
+2025-02-20 15:26:38: GET /api/check-access
+2025-02-20 15:26:38: Request URL: /api/check-access
+2025-02-20 15:26:38: Request Headers: {
+  connection: 'upgrade',
+  host: '64.227.147.125',
+  'x-real-ip': '106.219.236.203',
+  'x-forwarded-for': '106.219.236.203',
+  authorization: 'Bearer sunny',
+  'user-agent': 'Mozilla/5.0 (iPhone; CPU iPhone OS 16_6 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/16.6 Mobile/15E148 Safari/604.1',
+  dnt: '1',
+  'content-type': 'application/json',
+  accept: '*/*',
+  'accept-encoding': 'gzip, deflate',
+  'accept-language': 'en-GB,en-US;q=0.9,en;q=0.8,hi;q=0.7',
+  'if-none-match': 'W/"77-RI3bICRRS3HAfP6FjWR54wE/3N4"'
+}
+2025-02-20 15:26:38: Headers: {
+  connection: 'upgrade',
+  host: '64.227.147.125',
+  'x-real-ip': '106.219.236.203',
+  'x-forwarded-for': '106.219.236.203',
+  authorization: 'Bearer sunny',
+  'user-agent': 'Mozilla/5.0 (iPhone; CPU iPhone OS 16_6 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/16.6 Mobile/15E148 Safari/604.1',
+  dnt: '1',
+  'content-type': 'application/json',
+  accept: '*/*',
+  'accept-encoding': 'gzip, deflate',
+  'accept-language': 'en-GB,en-US;q=0.9,en;q=0.8,hi;q=0.7',
+  'if-none-match': 'W/"77-RI3bICRRS3HAfP6FjWR54wE/3N4"'
+}
+2025-02-20 15:26:38: Auth header: Bearer sunny
+2025-02-20 15:26:38: Extracted token: sunny
+2025-02-20 15:26:38: Found UTR: {
+  id: 8,
+  utr_number: 'sunny',
+  plan_type: 'demo',
+  duration_hours: 24,
+  games_allowed: 3,
+  games_used: 0,
+  created_at: '2025-02-20T15:25:52.512Z',
+  used_at: '2025-02-20T15:26:08.126Z',
+  used_by: null,
+  expires_at: '2025-02-21T15:26:08.126Z',
+  status: 'active'
+}
+2025-02-20 15:26:38: Checking expiry: { now: 2025-02-20T15:26:38.541Z, expiresAt: 2025-02-21T15:26:08.126Z }
+2025-02-20 15:26:38: Access valid
+2025-02-20 15:26:38: {"timestamp":"2025-02-20T15:26:38.544Z","method":"GET","url":"/check-access","status":304,"ip":"::ffff:127.0.0.1","userAgent":"Mozilla/5.0 (iPhone; CPU iPhone OS 16_6 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/16.6 Mobile/15E148 Safari/604.1","error":null}
+2025-02-20 15:26:38: GET /check-access 304 9ms
+2025-02-20 15:26:45: GET /api/check-access
+2025-02-20 15:26:45: Request URL: /api/check-access
+2025-02-20 15:26:45: Request Headers: {
+  connection: 'upgrade',
+  host: '64.227.147.125',
+  'x-real-ip': '106.219.236.203',
+  'x-forwarded-for': '106.219.236.203',
+  authorization: 'Bearer sunny',
+  'user-agent': 'Mozilla/5.0 (iPhone; CPU iPhone OS 16_6 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/16.6 Mobile/15E148 Safari/604.1',
+  dnt: '1',
+  'content-type': 'application/json',
+  accept: '*/*',
+  'accept-encoding': 'gzip, deflate',
+  'accept-language': 'en-GB,en-US;q=0.9,en;q=0.8,hi;q=0.7',
+  'if-none-match': 'W/"77-RI3bICRRS3HAfP6FjWR54wE/3N4"'
+}
+2025-02-20 15:26:45: Headers: {
+  connection: 'upgrade',
+  host: '64.227.147.125',
+  'x-real-ip': '106.219.236.203',
+  'x-forwarded-for': '106.219.236.203',
+  authorization: 'Bearer sunny',
+  'user-agent': 'Mozilla/5.0 (iPhone; CPU iPhone OS 16_6 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/16.6 Mobile/15E148 Safari/604.1',
+  dnt: '1',
+  'content-type': 'application/json',
+  accept: '*/*',
+  'accept-encoding': 'gzip, deflate',
+  'accept-language': 'en-GB,en-US;q=0.9,en;q=0.8,hi;q=0.7',
+  'if-none-match': 'W/"77-RI3bICRRS3HAfP6FjWR54wE/3N4"'
+}
+2025-02-20 15:26:45: Auth header: Bearer sunny
+2025-02-20 15:26:45: Extracted token: sunny
+2025-02-20 15:26:45: Found UTR: {
+  id: 8,
+  utr_number: 'sunny',
+  plan_type: 'demo',
+  duration_hours: 24,
+  games_allowed: 3,
+  games_used: 0,
+  created_at: '2025-02-20T15:25:52.512Z',
+  used_at: '2025-02-20T15:26:08.126Z',
+  used_by: null,
+  expires_at: '2025-02-21T15:26:08.126Z',
+  status: 'active'
+}
+2025-02-20 15:26:45: Checking expiry: { now: 2025-02-20T15:26:45.411Z, expiresAt: 2025-02-21T15:26:08.126Z }
+2025-02-20 15:26:45: Access valid
+2025-02-20 15:26:45: {"timestamp":"2025-02-20T15:26:45.413Z","method":"GET","url":"/check-access","status":304,"ip":"::1","userAgent":"Mozilla/5.0 (iPhone; CPU iPhone OS 16_6 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/16.6 Mobile/15E148 Safari/604.1","error":null}
+2025-02-20 15:26:45: GET /check-access 304 8ms
+2025-02-20 15:26:45: GET /proxy
+2025-02-20 15:26:45: Request URL: /proxy
+2025-02-20 15:26:45: Request Headers: {
+  connection: 'upgrade',
+  host: '64.227.147.125',
+  'x-real-ip': '106.219.236.203',
+  'x-forwarded-for': '106.219.236.203',
+  dnt: '1',
+  'upgrade-insecure-requests': '1',
+  'user-agent': 'Mozilla/5.0 (iPhone; CPU iPhone OS 16_6 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/16.6 Mobile/15E148 Safari/604.1',
+  accept: 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7',
+  'accept-encoding': 'gzip, deflate',
+  'accept-language': 'en-GB,en-US;q=0.9,en;q=0.8,hi;q=0.7',
+  'if-none-match': 'W/"2c9-19523ecc2a4"',
+  'if-modified-since': 'Thu, 20 Feb 2025 15:14:33 GMT'
+}
+2025-02-20 15:26:45: Serving index.html for: /proxy
+2025-02-20 15:26:45: {"timestamp":"2025-02-20T15:26:45.531Z","method":"GET","url":"/proxy","status":304,"ip":"::ffff:127.0.0.1","userAgent":"Mozilla/5.0 (iPhone; CPU iPhone OS 16_6 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/16.6 Mobile/15E148 Safari/604.1","error":null}
+2025-02-20 15:26:45: GET /proxy 304 5ms
+2025-02-20 15:27:15: GET /hack
+2025-02-20 15:27:15: Request URL: /hack
+2025-02-20 15:27:15: Request Headers: {
+  connection: 'upgrade',
+  host: '64.227.147.125',
+  'x-real-ip': '106.219.236.203',
+  'x-forwarded-for': '106.219.236.203',
+  'cache-control': 'max-age=0',
+  dnt: '1',
+  'upgrade-insecure-requests': '1',
+  'user-agent': 'Mozilla/5.0 (iPhone; CPU iPhone OS 16_6 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/16.6 Mobile/15E148 Safari/604.1',
+  accept: 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7',
+  'accept-encoding': 'gzip, deflate',
+  'accept-language': 'en-GB,en-US;q=0.9,en;q=0.8,hi;q=0.7',
+  'if-none-match': 'W/"2c9-19523ecc2a4"',
+  'if-modified-since': 'Thu, 20 Feb 2025 15:14:33 GMT'
+}
+2025-02-20 15:27:15: Serving index.html for: /hack
+2025-02-20 15:27:15: {"timestamp":"2025-02-20T15:27:15.592Z","method":"GET","url":"/hack","status":304,"ip":"::1","userAgent":"Mozilla/5.0 (iPhone; CPU iPhone OS 16_6 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/16.6 Mobile/15E148 Safari/604.1","error":null}
+2025-02-20 15:27:15: GET /hack 304 13ms
+2025-02-20 15:27:15: GET /api/check-access
+2025-02-20 15:27:15: Request URL: /api/check-access
+2025-02-20 15:27:15: Request Headers: {
+  connection: 'upgrade',
+  host: '64.227.147.125',
+  'x-real-ip': '106.219.236.203',
+  'x-forwarded-for': '106.219.236.203',
+  authorization: 'Bearer sunny',
+  'user-agent': 'Mozilla/5.0 (iPhone; CPU iPhone OS 16_6 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/16.6 Mobile/15E148 Safari/604.1',
+  dnt: '1',
+  'content-type': 'application/json',
+  accept: '*/*',
+  'accept-encoding': 'gzip, deflate',
+  'accept-language': 'en-GB,en-US;q=0.9,en;q=0.8,hi;q=0.7',
+  'if-none-match': 'W/"77-RI3bICRRS3HAfP6FjWR54wE/3N4"'
+}
+2025-02-20 15:27:15: Headers: {
+  connection: 'upgrade',
+  host: '64.227.147.125',
+  'x-real-ip': '106.219.236.203',
+  'x-forwarded-for': '106.219.236.203',
+  authorization: 'Bearer sunny',
+  'user-agent': 'Mozilla/5.0 (iPhone; CPU iPhone OS 16_6 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/16.6 Mobile/15E148 Safari/604.1',
+  dnt: '1',
+  'content-type': 'application/json',
+  accept: '*/*',
+  'accept-encoding': 'gzip, deflate',
+  'accept-language': 'en-GB,en-US;q=0.9,en;q=0.8,hi;q=0.7',
+  'if-none-match': 'W/"77-RI3bICRRS3HAfP6FjWR54wE/3N4"'
+}
+2025-02-20 15:27:15: Auth header: Bearer sunny
+2025-02-20 15:27:15: Extracted token: sunny
+2025-02-20 15:27:15: Found UTR: {
+  id: 8,
+  utr_number: 'sunny',
+  plan_type: 'demo',
+  duration_hours: 24,
+  games_allowed: 3,
+  games_used: 0,
+  created_at: '2025-02-20T15:25:52.512Z',
+  used_at: '2025-02-20T15:26:08.126Z',
+  used_by: null,
+  expires_at: '2025-02-21T15:26:08.126Z',
+  status: 'active'
+}
+2025-02-20 15:27:15: Checking expiry: { now: 2025-02-20T15:27:15.612Z, expiresAt: 2025-02-21T15:26:08.126Z }
+2025-02-20 15:27:15: Access valid
+2025-02-20 15:27:15: {"timestamp":"2025-02-20T15:27:15.615Z","method":"GET","url":"/check-access","status":304,"ip":"::ffff:127.0.0.1","userAgent":"Mozilla/5.0 (iPhone; CPU iPhone OS 16_6 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/16.6 Mobile/15E148 Safari/604.1","error":null}
+2025-02-20 15:27:15: GET /check-access 304 18ms
+2025-02-20 15:27:18: GET /hack
+2025-02-20 15:27:18: Request URL: /hack
+2025-02-20 15:27:18: Request Headers: {
+  connection: 'upgrade',
+  host: '64.227.147.125',
+  'x-real-ip': '106.219.236.203',
+  'x-forwarded-for': '106.219.236.203',
+  'cache-control': 'max-age=0',
+  dnt: '1',
+  'upgrade-insecure-requests': '1',
+  'user-agent': 'Mozilla/5.0 (iPhone; CPU iPhone OS 16_6 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/16.6 Mobile/15E148 Safari/604.1',
+  accept: 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7',
+  'accept-encoding': 'gzip, deflate',
+  'accept-language': 'en-GB,en-US;q=0.9,en;q=0.8,hi;q=0.7',
+  'if-none-match': 'W/"2c9-19523ecc2a4"',
+  'if-modified-since': 'Thu, 20 Feb 2025 15:14:33 GMT'
+}
+2025-02-20 15:27:18: Serving index.html for: /hack
+2025-02-20 15:27:18: {"timestamp":"2025-02-20T15:27:18.780Z","method":"GET","url":"/hack","status":304,"ip":"::1","userAgent":"Mozilla/5.0 (iPhone; CPU iPhone OS 16_6 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/16.6 Mobile/15E148 Safari/604.1","error":null}
+2025-02-20 15:27:18: GET /hack 304 10ms
+2025-02-20 15:27:28: GET /api/payment-details
+2025-02-20 15:27:28: Request URL: /api/payment-details
+2025-02-20 15:27:28: Request Headers: {
+  connection: 'upgrade',
+  host: '64.227.147.125',
+  'x-real-ip': '106.219.236.203',
+  'x-forwarded-for': '106.219.236.203',
+  'user-agent': 'Mozilla/5.0 (iPhone; CPU iPhone OS 16_6 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/16.6 Mobile/15E148 Safari/604.1',
+  dnt: '1',
+  accept: '*/*',
+  'accept-encoding': 'gzip, deflate',
+  'accept-language': 'en-GB,en-US;q=0.9,en;q=0.8,hi;q=0.7',
+  'if-none-match': 'W/"6d-Z9phQ8j+BbSQlZb23fpEGnY9RxI"'
+}
+2025-02-20 15:27:28: {"timestamp":"2025-02-20T15:27:28.732Z","method":"GET","url":"/payment-details","status":304,"ip":"::ffff:127.0.0.1","userAgent":"Mozilla/5.0 (iPhone; CPU iPhone OS 16_6 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/16.6 Mobile/15E148 Safari/604.1","error":null}
+2025-02-20 15:27:28: GET /payment-details 304 6ms
+2025-02-20 15:27:29: GET /content.dart.js
+2025-02-20 15:27:29: Request URL: /content.dart.js
+2025-02-20 15:27:29: Request Headers: {
+  connection: 'upgrade',
+  host: '64.227.147.125',
+  'x-real-ip': '130.211.230.102',
+  'x-forwarded-for': '130.211.230.102',
+  'x-sentry-token': '1a6db7bcc7d511ec978a6ac4644b5ea1',
+  'user-agent': 'symbolicator/25.2.0',
+  accept: '*/*',
+  'accept-encoding': 'gzip, br, deflate'
+}
+2025-02-20 15:27:29: Serving index.html for: /content.dart.js
+2025-02-20 15:27:29: {"timestamp":"2025-02-20T15:27:29.833Z","method":"GET","url":"/content.dart.js","status":200,"ip":"::1","userAgent":"symbolicator/25.2.0","error":null}
+2025-02-20 15:27:29: GET /content.dart.js 200 10ms
+2025-02-20 15:27:39: GET /content.dart.js
+2025-02-20 15:27:39: Request URL: /content.dart.js
+2025-02-20 15:27:39: Request Headers: {
+  connection: 'upgrade',
+  host: '64.227.147.125',
+  'x-real-ip': '130.211.230.102',
+  'x-forwarded-for': '130.211.230.102',
+  'x-sentry-token': '1a6db7bcc7d511ec978a6ac4644b5ea1',
+  'user-agent': 'symbolicator/25.2.0',
+  accept: '*/*',
+  'accept-encoding': 'gzip, br, deflate'
+}
+2025-02-20 15:27:39: Serving index.html for: /content.dart.js
+2025-02-20 15:27:40: {"timestamp":"2025-02-20T15:27:40.002Z","method":"GET","url":"/content.dart.js","status":200,"ip":"::ffff:127.0.0.1","userAgent":"symbolicator/25.2.0","error":null}
+2025-02-20 15:27:40: GET /content.dart.js 200 8ms
+2025-02-20 15:27:42: GET /api/payment-details
+2025-02-20 15:27:42: Request URL: /api/payment-details
+2025-02-20 15:27:42: Request Headers: {
+  connection: 'upgrade',
+  host: '64.227.147.125',
+  'x-real-ip': '106.219.236.203',
+  'x-forwarded-for': '106.219.236.203',
+  'user-agent': 'Mozilla/5.0 (iPhone; CPU iPhone OS 16_6 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/16.6 Mobile/15E148 Safari/604.1',
+  dnt: '1',
+  accept: '*/*',
+  'accept-encoding': 'gzip, deflate',
+  'accept-language': 'en-GB,en-US;q=0.9,en;q=0.8,hi;q=0.7',
+  'if-none-match': 'W/"6d-Z9phQ8j+BbSQlZb23fpEGnY9RxI"'
+}
+2025-02-20 15:27:42: {"timestamp":"2025-02-20T15:27:42.883Z","method":"GET","url":"/payment-details","status":304,"ip":"::1","userAgent":"Mozilla/5.0 (iPhone; CPU iPhone OS 16_6 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/16.6 Mobile/15E148 Safari/604.1","error":null}
+2025-02-20 15:27:42: GET /payment-details 304 7ms
+2025-02-20 15:27:45: GET /content.dart.js
+2025-02-20 15:27:45: Request URL: /content.dart.js
+2025-02-20 15:27:45: Request Headers: {
+  connection: 'upgrade',
+  host: '64.227.147.125',
+  'x-real-ip': '104.155.159.182',
+  'x-forwarded-for': '104.155.159.182',
+  'x-sentry-token': '1a6db7bcc7d511ec978a6ac4644b5ea1',
+  'user-agent': 'symbolicator/25.2.0',
+  accept: '*/*',
+  'accept-encoding': 'gzip, br, deflate'
+}
+2025-02-20 15:27:45: Serving index.html for: /content.dart.js
+2025-02-20 15:27:45: {"timestamp":"2025-02-20T15:27:45.021Z","method":"GET","url":"/content.dart.js","status":200,"ip":"::ffff:127.0.0.1","userAgent":"symbolicator/25.2.0","error":null}
+2025-02-20 15:27:45: GET /content.dart.js 200 10ms
+2025-02-20 15:27:46: GET /api/check-access
+2025-02-20 15:27:46: Request URL: /api/check-access
+2025-02-20 15:27:46: Request Headers: {
+  connection: 'upgrade',
+  host: '64.227.147.125',
+  'x-real-ip': '106.219.236.203',
+  'x-forwarded-for': '106.219.236.203',
+  authorization: 'Bearer demo',
+  'user-agent': 'Mozilla/5.0 (iPhone; CPU iPhone OS 16_6 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/16.6 Mobile/15E148 Safari/604.1',
+  dnt: '1',
+  'content-type': 'application/json',
+  accept: '*/*',
+  'accept-encoding': 'gzip, deflate',
+  'accept-language': 'en-GB,en-US;q=0.9,en;q=0.8,hi;q=0.7'
+}
+2025-02-20 15:27:46: Headers: {
+  connection: 'upgrade',
+  host: '64.227.147.125',
+  'x-real-ip': '106.219.236.203',
+  'x-forwarded-for': '106.219.236.203',
+  authorization: 'Bearer demo',
+  'user-agent': 'Mozilla/5.0 (iPhone; CPU iPhone OS 16_6 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/16.6 Mobile/15E148 Safari/604.1',
+  dnt: '1',
+  'content-type': 'application/json',
+  accept: '*/*',
+  'accept-encoding': 'gzip, deflate',
+  'accept-language': 'en-GB,en-US;q=0.9,en;q=0.8,hi;q=0.7'
+}
+2025-02-20 15:27:46: Auth header: Bearer demo
+2025-02-20 15:27:46: Extracted token: demo
+2025-02-20 15:27:46: Found UTR: undefined
+2025-02-20 15:27:46: No UTR found for token: demo
+2025-02-20 15:27:46: {"timestamp":"2025-02-20T15:27:46.534Z","method":"GET","url":"/check-access","status":401,"ip":"::1","userAgent":"Mozilla/5.0 (iPhone; CPU iPhone OS 16_6 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/16.6 Mobile/15E148 Safari/604.1","error":null}
+2025-02-20 15:27:46: GET /check-access 401 14ms
+2025-02-20 15:27:49: POST /api/verify-utr
+2025-02-20 15:27:49: Request URL: /api/verify-utr
+2025-02-20 15:27:49: Request Headers: {
+  connection: 'upgrade',
+  host: '64.227.147.125',
+  'x-real-ip': '106.219.236.203',
+  'x-forwarded-for': '106.219.236.203',
+  'content-length': '15',
+  'user-agent': 'Mozilla/5.0 (iPhone; CPU iPhone OS 16_6 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/16.6 Mobile/15E148 Safari/604.1',
+  dnt: '1',
+  'content-type': 'application/json',
+  accept: '*/*',
+  origin: 'http://64.227.147.125',
+  'accept-encoding': 'gzip, deflate',
+  'accept-language': 'en-GB,en-US;q=0.9,en;q=0.8,hi;q=0.7'
+}
+2025-02-20 15:27:49: Received UTR: sunny
+2025-02-20 15:27:49: Sending response: {
+  success: true,
+  message: 'Access restored',
+  utrNumber: 'sunny',
+  planType: 'demo',
+  gamesAllowed: 3,
+  gamesUsed: 0,
+  expiresAt: '2025-02-21T15:26:08.126Z'
+}
+2025-02-20 15:27:49: {"timestamp":"2025-02-20T15:27:49.916Z","method":"POST","url":"/verify-utr","status":200,"ip":"::ffff:127.0.0.1","userAgent":"Mozilla/5.0 (iPhone; CPU iPhone OS 16_6 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/16.6 Mobile/15E148 Safari/604.1","error":null}
+2025-02-20 15:27:49: POST /verify-utr 200 5ms
+2025-02-20 15:27:56: GET /api/check-access
+2025-02-20 15:27:56: Request URL: /api/check-access
+2025-02-20 15:27:56: Request Headers: {
+  connection: 'upgrade',
+  host: '64.227.147.125',
+  'x-real-ip': '106.219.236.203',
+  'x-forwarded-for': '106.219.236.203',
+  authorization: 'Bearer sunny',
+  'user-agent': 'Mozilla/5.0 (iPhone; CPU iPhone OS 16_6 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/16.6 Mobile/15E148 Safari/604.1',
+  dnt: '1',
+  'content-type': 'application/json',
+  accept: '*/*',
+  'accept-encoding': 'gzip, deflate',
+  'accept-language': 'en-GB,en-US;q=0.9,en;q=0.8,hi;q=0.7'
+}
+2025-02-20 15:27:56: Headers: {
+  connection: 'upgrade',
+  host: '64.227.147.125',
+  'x-real-ip': '106.219.236.203',
+  'x-forwarded-for': '106.219.236.203',
+  authorization: 'Bearer sunny',
+  'user-agent': 'Mozilla/5.0 (iPhone; CPU iPhone OS 16_6 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/16.6 Mobile/15E148 Safari/604.1',
+  dnt: '1',
+  'content-type': 'application/json',
+  accept: '*/*',
+  'accept-encoding': 'gzip, deflate',
+  'accept-language': 'en-GB,en-US;q=0.9,en;q=0.8,hi;q=0.7'
+}
+2025-02-20 15:27:56: Auth header: Bearer sunny
+2025-02-20 15:27:56: Extracted token: sunny
+2025-02-20 15:27:56: Found UTR: {
+  id: 8,
+  utr_number: 'sunny',
+  plan_type: 'demo',
+  duration_hours: 24,
+  games_allowed: 3,
+  games_used: 0,
+  created_at: '2025-02-20T15:25:52.512Z',
+  used_at: '2025-02-20T15:26:08.126Z',
+  used_by: null,
+  expires_at: '2025-02-21T15:26:08.126Z',
+  status: 'active'
+}
+2025-02-20 15:27:56: Checking expiry: { now: 2025-02-20T15:27:56.387Z, expiresAt: 2025-02-21T15:26:08.126Z }
+2025-02-20 15:27:56: Access valid
+2025-02-20 15:27:56: {"timestamp":"2025-02-20T15:27:56.391Z","method":"GET","url":"/check-access","status":200,"ip":"::1","userAgent":"Mozilla/5.0 (iPhone; CPU iPhone OS 16_6 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/16.6 Mobile/15E148 Safari/604.1","error":null}
+2025-02-20 15:27:56: GET /check-access 200 16ms
+2025-02-20 15:29:34: GET /api/check-access
+2025-02-20 15:29:34: Request URL: /api/check-access
+2025-02-20 15:29:34: Request Headers: {
+  connection: 'upgrade',
+  host: '64.227.147.125',
+  'x-real-ip': '106.219.236.203',
+  'x-forwarded-for': '106.219.236.203',
+  authorization: 'Bearer sunny',
+  'user-agent': 'Mozilla/5.0 (iPhone; CPU iPhone OS 16_6 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/16.6 Mobile/15E148 Safari/604.1',
+  dnt: '1',
+  'content-type': 'application/json',
+  accept: '*/*',
+  'accept-encoding': 'gzip, deflate',
+  'accept-language': 'en-GB,en-US;q=0.9,en;q=0.8,hi;q=0.7',
+  'if-none-match': 'W/"77-RI3bICRRS3HAfP6FjWR54wE/3N4"'
+}
+2025-02-20 15:29:34: Headers: {
+  connection: 'upgrade',
+  host: '64.227.147.125',
+  'x-real-ip': '106.219.236.203',
+  'x-forwarded-for': '106.219.236.203',
+  authorization: 'Bearer sunny',
+  'user-agent': 'Mozilla/5.0 (iPhone; CPU iPhone OS 16_6 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/16.6 Mobile/15E148 Safari/604.1',
+  dnt: '1',
+  'content-type': 'application/json',
+  accept: '*/*',
+  'accept-encoding': 'gzip, deflate',
+  'accept-language': 'en-GB,en-US;q=0.9,en;q=0.8,hi;q=0.7',
+  'if-none-match': 'W/"77-RI3bICRRS3HAfP6FjWR54wE/3N4"'
+}
+2025-02-20 15:29:34: Auth header: Bearer sunny
+2025-02-20 15:29:34: Extracted token: sunny
+2025-02-20 15:29:34: Found UTR: {
+  id: 8,
+  utr_number: 'sunny',
+  plan_type: 'demo',
+  duration_hours: 24,
+  games_allowed: 3,
+  games_used: 0,
+  created_at: '2025-02-20T15:25:52.512Z',
+  used_at: '2025-02-20T15:26:08.126Z',
+  used_by: null,
+  expires_at: '2025-02-21T15:26:08.126Z',
+  status: 'active'
+}
+2025-02-20 15:29:34: Checking expiry: { now: 2025-02-20T15:29:34.207Z, expiresAt: 2025-02-21T15:26:08.126Z }
+2025-02-20 15:29:34: Access valid
+2025-02-20 15:29:34: {"timestamp":"2025-02-20T15:29:34.208Z","method":"GET","url":"/check-access","status":304,"ip":"::ffff:127.0.0.1","userAgent":"Mozilla/5.0 (iPhone; CPU iPhone OS 16_6 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/16.6 Mobile/15E148 Safari/604.1","error":null}
+2025-02-20 15:29:34: GET /check-access 304 9ms
+2025-02-20 15:29:34: GET /proxy
+2025-02-20 15:29:34: Request URL: /proxy
+2025-02-20 15:29:34: Request Headers: {
+  connection: 'upgrade',
+  host: '64.227.147.125',
+  'x-real-ip': '106.219.236.203',
+  'x-forwarded-for': '106.219.236.203',
+  dnt: '1',
+  'upgrade-insecure-requests': '1',
+  'user-agent': 'Mozilla/5.0 (iPhone; CPU iPhone OS 16_6 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/16.6 Mobile/15E148 Safari/604.1',
+  accept: 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7',
+  'accept-encoding': 'gzip, deflate',
+  'accept-language': 'en-GB,en-US;q=0.9,en;q=0.8,hi;q=0.7',
+  'if-none-match': 'W/"2c9-19523ecc2a4"',
+  'if-modified-since': 'Thu, 20 Feb 2025 15:14:33 GMT'
+}
+2025-02-20 15:29:34: Serving index.html for: /proxy
+2025-02-20 15:29:34: {"timestamp":"2025-02-20T15:29:34.304Z","method":"GET","url":"/proxy","status":304,"ip":"::1","userAgent":"Mozilla/5.0 (iPhone; CPU iPhone OS 16_6 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/16.6 Mobile/15E148 Safari/604.1","error":null}
+2025-02-20 15:29:34: GET /proxy 304 6ms
+2025-02-20 15:29:58: GET /hack
+2025-02-20 15:29:58: Request URL: /hack
+2025-02-20 15:29:58: Request Headers: {
+  connection: 'upgrade',
+  host: '64.227.147.125',
+  'x-real-ip': '106.219.236.203',
+  'x-forwarded-for': '106.219.236.203',
+  'cache-control': 'max-age=0',
+  dnt: '1',
+  'upgrade-insecure-requests': '1',
+  'user-agent': 'Mozilla/5.0 (iPhone; CPU iPhone OS 16_6 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/16.6 Mobile/15E148 Safari/604.1',
+  accept: 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7',
+  'accept-encoding': 'gzip, deflate',
+  'accept-language': 'en-GB,en-US;q=0.9,en;q=0.8,hi;q=0.7',
+  'if-none-match': 'W/"2c9-19523ecc2a4"',
+  'if-modified-since': 'Thu, 20 Feb 2025 15:14:33 GMT'
+}
+2025-02-20 15:29:58: Serving index.html for: /hack
+2025-02-20 15:29:58: {"timestamp":"2025-02-20T15:29:58.328Z","method":"GET","url":"/hack","status":304,"ip":"::ffff:127.0.0.1","userAgent":"Mozilla/5.0 (iPhone; CPU iPhone OS 16_6 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/16.6 Mobile/15E148 Safari/604.1","error":null}
+2025-02-20 15:29:58: GET /hack 304 5ms
+2025-02-20 15:30:07: GET /hack
+2025-02-20 15:30:07: Request URL: /hack
+2025-02-20 15:30:07: Request Headers: {
+  connection: 'upgrade',
+  host: '64.227.147.125',
+  'x-real-ip': '106.219.236.203',
+  'x-forwarded-for': '106.219.236.203',
+  pragma: 'no-cache',
+  'cache-control': 'no-cache',
+  dnt: '1',
+  'upgrade-insecure-requests': '1',
+  'user-agent': 'Mozilla/5.0 (iPhone; CPU iPhone OS 16_6 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/16.6 Mobile/15E148 Safari/604.1',
+  accept: 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7',
+  'accept-encoding': 'gzip, deflate',
+  'accept-language': 'en-GB,en-US;q=0.9,en;q=0.8,hi;q=0.7'
+}
+2025-02-20 15:30:07: Serving index.html for: /hack
+2025-02-20 15:30:07: {"timestamp":"2025-02-20T15:30:07.150Z","method":"GET","url":"/hack","status":200,"ip":"::1","userAgent":"Mozilla/5.0 (iPhone; CPU iPhone OS 16_6 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/16.6 Mobile/15E148 Safari/604.1","error":null}
+2025-02-20 15:30:07: GET /hack 200 10ms
+2025-02-20 15:30:12: GET /hack
+2025-02-20 15:30:12: Request URL: /hack
+2025-02-20 15:30:12: Request Headers: {
+  connection: 'upgrade',
+  host: '64.227.147.125',
+  'x-real-ip': '106.219.236.203',
+  'x-forwarded-for': '106.219.236.203',
+  'cache-control': 'max-age=0',
+  dnt: '1',
+  'upgrade-insecure-requests': '1',
+  'user-agent': 'Mozilla/5.0 (iPhone; CPU iPhone OS 16_6 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/16.6 Mobile/15E148 Safari/604.1',
+  accept: 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7',
+  'accept-encoding': 'gzip, deflate',
+  'accept-language': 'en-GB,en-US;q=0.9,en;q=0.8,hi;q=0.7',
+  'if-none-match': 'W/"2c9-19523ecc2a4"',
+  'if-modified-since': 'Thu, 20 Feb 2025 15:14:33 GMT'
+}
+2025-02-20 15:30:12: Serving index.html for: /hack
+2025-02-20 15:30:12: {"timestamp":"2025-02-20T15:30:12.127Z","method":"GET","url":"/hack","status":304,"ip":"::ffff:127.0.0.1","userAgent":"Mozilla/5.0 (iPhone; CPU iPhone OS 16_6 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/16.6 Mobile/15E148 Safari/604.1","error":null}
+2025-02-20 15:30:12: GET /hack 304 8ms
+2025-02-20 15:30:36: GET /content.dart.js
+2025-02-20 15:30:36: Request URL: /content.dart.js
+2025-02-20 15:30:36: Request Headers: {
+  connection: 'upgrade',
+  host: '64.227.147.125',
+  'x-real-ip': '104.155.149.19',
+  'x-forwarded-for': '104.155.149.19',
+  'x-sentry-token': '1a6db7bcc7d511ec978a6ac4644b5ea1',
+  'user-agent': 'symbolicator/25.2.0',
+  accept: '*/*',
+  'accept-encoding': 'gzip, br, deflate'
+}
+2025-02-20 15:30:36: Serving index.html for: /content.dart.js
+2025-02-20 15:30:36: {"timestamp":"2025-02-20T15:30:36.694Z","method":"GET","url":"/content.dart.js","status":200,"ip":"::1","userAgent":"symbolicator/25.2.0","error":null}
+2025-02-20 15:30:36: GET /content.dart.js 200 7ms
+2025-02-20 15:55:40: GET /
+2025-02-20 15:55:40: Request URL: /
+2025-02-20 15:55:40: Request Headers: {
+  connection: 'upgrade',
+  host: '64.227.147.125',
+  'x-real-ip': '193.68.89.51',
+  'x-forwarded-for': '193.68.89.51'
+}
+2025-02-20 15:55:40: {"timestamp":"2025-02-20T15:55:40.928Z","method":"GET","url":"/","status":200,"ip":"::ffff:127.0.0.1","error":null}
+2025-02-20 15:55:40: GET / 200 5ms
+2025-02-20 16:22:56: GET /
+2025-02-20 16:22:56: Request URL: /
+2025-02-20 16:22:56: Request Headers: {
+  connection: 'upgrade',
+  host: '64.227.147.125',
+  'x-real-ip': '107.197.251.36',
+  'x-forwarded-for': '107.197.251.36',
+  'user-agent': 'curl/7.88.1',
+  accept: '*/*'
+}
+2025-02-20 16:22:56: {"timestamp":"2025-02-20T16:22:56.793Z","method":"GET","url":"/","status":200,"ip":"::1","userAgent":"curl/7.88.1","error":null}
+2025-02-20 16:22:56: GET / 200 5ms
+2025-02-20 16:25:23: Expired UTRs cleaned up successfully
+2025-02-20 16:42:36: GET /hack
+2025-02-20 16:42:36: Request URL: /hack
+2025-02-20 16:42:36: Request Headers: {
+  connection: 'upgrade',
+  host: '64.227.147.125',
+  'x-real-ip': '223.190.83.146',
+  'x-forwarded-for': '223.190.83.146',
+  'cache-control': 'max-age=0',
+  dnt: '1',
+  'upgrade-insecure-requests': '1',
+  'user-agent': 'Mozilla/5.0 (iPhone; CPU iPhone OS 16_6 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/16.6 Mobile/15E148 Safari/604.1',
+  accept: 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7',
+  'accept-encoding': 'gzip, deflate',
+  'accept-language': 'en-GB,en-US;q=0.9,en;q=0.8,hi;q=0.7',
+  'if-none-match': 'W/"2c9-19523ecc2a4"',
+  'if-modified-since': 'Thu, 20 Feb 2025 15:14:33 GMT'
+}
+2025-02-20 16:42:36: Serving index.html for: /hack
+2025-02-20 16:42:36: {"timestamp":"2025-02-20T16:42:36.578Z","method":"GET","url":"/hack","status":304,"ip":"::ffff:127.0.0.1","userAgent":"Mozilla/5.0 (iPhone; CPU iPhone OS 16_6 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/16.6 Mobile/15E148 Safari/604.1","error":null}
+2025-02-20 16:42:36: GET /hack 304 4ms
+2025-02-20 16:42:38: GET /content.dart.js
+2025-02-20 16:42:38: Request URL: /content.dart.js
+2025-02-20 16:42:38: Request Headers: {
+  connection: 'upgrade',
+  host: '64.227.147.125',
+  'x-real-ip': '35.184.238.160',
+  'x-forwarded-for': '35.184.238.160',
+  'x-sentry-token': '1a6db7bcc7d511ec978a6ac4644b5ea1',
+  'user-agent': 'symbolicator/25.2.0',
+  accept: '*/*',
+  'accept-encoding': 'gzip, br, deflate'
+}
+2025-02-20 16:42:38: Serving index.html for: /content.dart.js
+2025-02-20 16:42:38: {"timestamp":"2025-02-20T16:42:38.150Z","method":"GET","url":"/content.dart.js","status":200,"ip":"::1","userAgent":"symbolicator/25.2.0","error":null}
+2025-02-20 16:42:38: GET /content.dart.js 200 4ms
+2025-02-20 16:42:38: GET /hack
+2025-02-20 16:42:38: Request URL: /hack
+2025-02-20 16:42:38: Request Headers: {
+  connection: 'upgrade',
+  host: '64.227.147.125',
+  'x-real-ip': '223.190.83.146',
+  'x-forwarded-for': '223.190.83.146',
+  'cache-control': 'max-age=0',
+  dnt: '1',
+  'upgrade-insecure-requests': '1',
+  'user-agent': 'Mozilla/5.0 (iPhone; CPU iPhone OS 16_6 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/16.6 Mobile/15E148 Safari/604.1',
+  accept: 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7',
+  'accept-encoding': 'gzip, deflate',
+  'accept-language': 'en-GB,en-US;q=0.9,en;q=0.8,hi;q=0.7',
+  'if-none-match': 'W/"2c9-19523ecc2a4"',
+  'if-modified-since': 'Thu, 20 Feb 2025 15:14:33 GMT'
+}
+2025-02-20 16:42:38: Serving index.html for: /hack
+2025-02-20 16:42:38: {"timestamp":"2025-02-20T16:42:38.370Z","method":"GET","url":"/hack","status":304,"ip":"::ffff:127.0.0.1","userAgent":"Mozilla/5.0 (iPhone; CPU iPhone OS 16_6 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/16.6 Mobile/15E148 Safari/604.1","error":null}
+2025-02-20 16:42:38: GET /hack 304 4ms
+2025-02-20 16:42:39: GET /hack
+2025-02-20 16:42:39: Request URL: /hack
+2025-02-20 16:42:39: Request Headers: {
+  connection: 'upgrade',
+  host: '64.227.147.125',
+  'x-real-ip': '223.190.83.146',
+  'x-forwarded-for': '223.190.83.146',
+  'cache-control': 'max-age=0',
+  dnt: '1',
+  'upgrade-insecure-requests': '1',
+  'user-agent': 'Mozilla/5.0 (iPhone; CPU iPhone OS 16_6 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/16.6 Mobile/15E148 Safari/604.1',
+  accept: 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7',
+  'accept-encoding': 'gzip, deflate',
+  'accept-language': 'en-GB,en-US;q=0.9,en;q=0.8,hi;q=0.7',
+  'if-none-match': 'W/"2c9-19523ecc2a4"',
+  'if-modified-since': 'Thu, 20 Feb 2025 15:14:33 GMT'
+}
+2025-02-20 16:42:39: Serving index.html for: /hack
+2025-02-20 16:42:39: {"timestamp":"2025-02-20T16:42:39.428Z","method":"GET","url":"/hack","status":304,"ip":"::1","userAgent":"Mozilla/5.0 (iPhone; CPU iPhone OS 16_6 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/16.6 Mobile/15E148 Safari/604.1","error":null}
+2025-02-20 16:42:39: GET /hack 304 3ms
+2025-02-20 16:42:39: GET /content.dart.js
+2025-02-20 16:42:39: Request URL: /content.dart.js
+2025-02-20 16:42:39: Request Headers: {
+  connection: 'upgrade',
+  host: '64.227.147.125',
+  'x-real-ip': '130.211.230.102',
+  'x-forwarded-for': '130.211.230.102',
+  'x-sentry-token': '1a6db7bcc7d511ec978a6ac4644b5ea1',
+  'user-agent': 'symbolicator/25.2.0',
+  accept: '*/*',
+  'accept-encoding': 'gzip, br, deflate'
+}
+2025-02-20 16:42:39: Serving index.html for: /content.dart.js
+2025-02-20 16:42:39: {"timestamp":"2025-02-20T16:42:39.999Z","method":"GET","url":"/content.dart.js","status":200,"ip":"::ffff:127.0.0.1","userAgent":"symbolicator/25.2.0","error":null}
+2025-02-20 16:42:39: GET /content.dart.js 200 5ms
+2025-02-20 16:42:41: GET /content.dart.js
+2025-02-20 16:42:41: Request URL: /content.dart.js
+2025-02-20 16:42:41: Request Headers: {
+  connection: 'upgrade',
+  host: '64.227.147.125',
+  'x-real-ip': '104.155.159.182',
+  'x-forwarded-for': '104.155.159.182',
+  'x-sentry-token': '1a6db7bcc7d511ec978a6ac4644b5ea1',
+  'user-agent': 'symbolicator/25.2.0',
+  accept: '*/*',
+  'accept-encoding': 'gzip, br, deflate'
+}
+2025-02-20 16:42:41: Serving index.html for: /content.dart.js
+2025-02-20 16:42:41: {"timestamp":"2025-02-20T16:42:41.721Z","method":"GET","url":"/content.dart.js","status":200,"ip":"::1","userAgent":"symbolicator/25.2.0","error":null}
+2025-02-20 16:42:41: GET /content.dart.js 200 3ms
+2025-02-20 16:42:42: GET /content.dart.js
+2025-02-20 16:42:42: Request URL: /content.dart.js
+2025-02-20 16:42:42: Request Headers: {
+  connection: 'upgrade',
+  host: '64.227.147.125',
+  'x-real-ip': '35.184.238.160',
+  'x-forwarded-for': '35.184.238.160',
+  'x-sentry-token': '1a6db7bcc7d511ec978a6ac4644b5ea1',
+  'user-agent': 'symbolicator/25.2.0',
+  accept: '*/*',
+  'accept-encoding': 'gzip, br, deflate'
+}
+2025-02-20 16:42:42: Serving index.html for: /content.dart.js
+2025-02-20 16:42:42: {"timestamp":"2025-02-20T16:42:42.835Z","method":"GET","url":"/content.dart.js","status":200,"ip":"::ffff:127.0.0.1","userAgent":"symbolicator/25.2.0","error":null}
+2025-02-20 16:42:42: GET /content.dart.js 200 5ms
+2025-02-20 16:46:03: GET /
+2025-02-20 16:46:03: Request URL: /
+2025-02-20 16:46:03: Request Headers: {
+  connection: 'upgrade',
+  host: '64.227.147.125',
+  'x-real-ip': '193.68.89.51',
+  'x-forwarded-for': '193.68.89.51'
+}
+2025-02-20 16:46:03: {"timestamp":"2025-02-20T16:46:03.862Z","method":"GET","url":"/","status":200,"ip":"::1","error":null}
+2025-02-20 16:46:03: GET / 200 4ms
+2025-02-20 16:48:48: GET /
+2025-02-20 16:48:48: Request URL: /
+2025-02-20 16:48:48: Request Headers: {
+  connection: 'upgrade',
+  host: '64.227.147.125',
+  'x-real-ip': '194.120.230.215',
+  'x-forwarded-for': '194.120.230.215',
+  'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/90.0.4430.85 Safari/537.36 Edg/90.0.818.46',
+  'accept-encoding': 'gzip, deflate, gzip, deflate',
+  accept: '*/*',
+  'x-requested-with': 'XMLHttpRequest',
+  'content-type': 'application/x-www-form-urlencoded; charset=UTF-8',
+  'accept-language': 'en US,en;q=0.9,sv;q=0.8'
+}
+2025-02-20 16:48:48: {"timestamp":"2025-02-20T16:48:48.034Z","method":"GET","url":"/","status":200,"ip":"::ffff:127.0.0.1","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/90.0.4430.85 Safari/537.36 Edg/90.0.818.46","error":null}
+2025-02-20 16:48:48: GET / 200 4ms
+2025-02-20 17:00:07: GET /hack
+2025-02-20 17:00:08: Request URL: /hack
+2025-02-20 17:00:08: Request Headers: {
+  connection: 'upgrade',
+  host: '64.227.147.125',
+  'x-real-ip': '223.190.83.146',
+  'x-forwarded-for': '223.190.83.146',
+  'cache-control': 'max-age=0',
+  dnt: '1',
+  'upgrade-insecure-requests': '1',
+  'user-agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36',
+  accept: 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7',
+  'accept-encoding': 'gzip, deflate',
+  'accept-language': 'en-GB,en-US;q=0.9,en;q=0.8,hi;q=0.7',
+  'if-none-match': 'W/"2c9-19523ecc2a4"',
+  'if-modified-since': 'Thu, 20 Feb 2025 15:14:33 GMT'
+}
+2025-02-20 17:00:08: Serving index.html for: /hack
+2025-02-20 17:00:08: {"timestamp":"2025-02-20T17:00:08.006Z","method":"GET","url":"/hack","status":304,"ip":"::1","userAgent":"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36","error":null}
+2025-02-20 17:00:08: GET /hack 304 6ms
+2025-02-20 17:00:12: GET /api/payment-details
+2025-02-20 17:00:12: Request URL: /api/payment-details
+2025-02-20 17:00:12: Request Headers: {
+  connection: 'upgrade',
+  host: '64.227.147.125',
+  'x-real-ip': '223.190.83.146',
+  'x-forwarded-for': '223.190.83.146',
+  'user-agent': 'Mozilla/5.0 (iPhone; CPU iPhone OS 16_6 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/16.6 Mobile/15E148 Safari/604.1',
+  dnt: '1',
+  accept: '*/*',
+  'accept-encoding': 'gzip, deflate',
+  'accept-language': 'en-GB,en-US;q=0.9,en;q=0.8,hi;q=0.7',
+  'if-none-match': 'W/"6d-Z9phQ8j+BbSQlZb23fpEGnY9RxI"'
+}
+2025-02-20 17:00:12: {"timestamp":"2025-02-20T17:00:12.348Z","method":"GET","url":"/payment-details","status":304,"ip":"::ffff:127.0.0.1","userAgent":"Mozilla/5.0 (iPhone; CPU iPhone OS 16_6 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/16.6 Mobile/15E148 Safari/604.1","error":null}
+2025-02-20 17:00:12: GET /payment-details 304 5ms
+2025-02-20 17:00:14: GET /
+2025-02-20 17:00:14: Request URL: /
+2025-02-20 17:00:14: Request Headers: {
+  connection: 'upgrade',
+  host: '64.227.147.125',
+  'x-real-ip': '223.190.83.146',
+  'x-forwarded-for': '223.190.83.146',
+  'cache-control': 'max-age=0',
+  dnt: '1',
+  'upgrade-insecure-requests': '1',
+  'user-agent': 'Mozilla/5.0 (iPhone; CPU iPhone OS 16_6 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/16.6 Mobile/15E148 Safari/604.1',
+  accept: 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7',
+  'accept-encoding': 'gzip, deflate',
+  'accept-language': 'en-GB,en-US;q=0.9,en;q=0.8,hi;q=0.7',
+  'if-modified-since': 'Thu, 20 Feb 2025 12:50:26 GMT'
+}
+2025-02-20 17:00:14: {"timestamp":"2025-02-20T17:00:14.639Z","method":"GET","url":"/","status":200,"ip":"::1","userAgent":"Mozilla/5.0 (iPhone; CPU iPhone OS 16_6 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/16.6 Mobile/15E148 Safari/604.1","error":null}
+2025-02-20 17:00:14: GET / 200 3ms
+2025-02-20 17:00:15: GET /content.dart.js
+2025-02-20 17:00:15: Request URL: /content.dart.js
+2025-02-20 17:00:15: Request Headers: {
+  connection: 'upgrade',
+  host: '64.227.147.125',
+  'x-real-ip': '130.211.230.102',
+  'x-forwarded-for': '130.211.230.102',
+  'x-sentry-token': '1a6db7bcc7d511ec978a6ac4644b5ea1',
+  'user-agent': 'symbolicator/25.2.0',
+  accept: '*/*',
+  'accept-encoding': 'gzip, br, deflate'
+}
+2025-02-20 17:00:15: Serving index.html for: /content.dart.js
+2025-02-20 17:00:15: {"timestamp":"2025-02-20T17:00:15.631Z","method":"GET","url":"/content.dart.js","status":200,"ip":"::ffff:127.0.0.1","userAgent":"symbolicator/25.2.0","error":null}
+2025-02-20 17:00:15: GET /content.dart.js 200 4ms
+2025-02-20 17:00:18: GET /content.dart.js
+2025-02-20 17:00:18: Request URL: /content.dart.js
+2025-02-20 17:00:18: Request Headers: {
+  connection: 'upgrade',
+  host: '64.227.147.125',
+  'x-real-ip': '104.155.149.19',
+  'x-forwarded-for': '104.155.149.19',
+  'x-sentry-token': '1a6db7bcc7d511ec978a6ac4644b5ea1',
+  'user-agent': 'symbolicator/25.2.0',
+  accept: '*/*',
+  'accept-encoding': 'gzip, br, deflate'
+}
+2025-02-20 17:00:18: Serving index.html for: /content.dart.js
+2025-02-20 17:00:18: {"timestamp":"2025-02-20T17:00:18.393Z","method":"GET","url":"/content.dart.js","status":200,"ip":"::1","userAgent":"symbolicator/25.2.0","error":null}
+2025-02-20 17:00:18: GET /content.dart.js 200 5ms
+2025-02-20 17:00:18: GET /
+2025-02-20 17:00:18: Request URL: /
+2025-02-20 17:00:18: Request Headers: {
+  connection: 'upgrade',
+  host: '64.227.147.125',
+  'x-real-ip': '223.190.83.146',
+  'x-forwarded-for': '223.190.83.146',
+  'cache-control': 'max-age=0',
+  dnt: '1',
+  'upgrade-insecure-requests': '1',
+  'user-agent': 'Mozilla/5.0 (iPhone; CPU iPhone OS 16_6 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/16.6 Mobile/15E148 Safari/604.1',
+  accept: 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7',
+  'accept-encoding': 'gzip, deflate',
+  'accept-language': 'en-GB,en-US;q=0.9,en;q=0.8,hi;q=0.7',
+  'if-none-match': 'W/"2c9-19523ecc2a4"',
+  'if-modified-since': 'Thu, 20 Feb 2025 15:14:33 GMT'
+}
+2025-02-20 17:00:18: {"timestamp":"2025-02-20T17:00:18.654Z","method":"GET","url":"/","status":304,"ip":"::ffff:127.0.0.1","userAgent":"Mozilla/5.0 (iPhone; CPU iPhone OS 16_6 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/16.6 Mobile/15E148 Safari/604.1","error":null}
+2025-02-20 17:00:18: GET / 304 2ms
+2025-02-20 17:00:21: GET /content.dart.js
+2025-02-20 17:00:21: Request URL: /content.dart.js
+2025-02-20 17:00:21: Request Headers: {
+  connection: 'upgrade',
+  host: '64.227.147.125',
+  'x-real-ip': '104.155.149.19',
+  'x-forwarded-for': '104.155.149.19',
+  'x-sentry-token': '1a6db7bcc7d511ec978a6ac4644b5ea1',
+  'user-agent': 'symbolicator/25.2.0',
+  accept: '*/*',
+  'accept-encoding': 'gzip, br, deflate'
+}
+2025-02-20 17:00:21: Serving index.html for: /content.dart.js
+2025-02-20 17:00:21: {"timestamp":"2025-02-20T17:00:21.957Z","method":"GET","url":"/content.dart.js","status":200,"ip":"::1","userAgent":"symbolicator/25.2.0","error":null}
+2025-02-20 17:00:21: GET /content.dart.js 200 3ms
+2025-02-20 17:00:22: GET /hack
+2025-02-20 17:00:22: Request URL: /hack
+2025-02-20 17:00:22: Request Headers: {
+  connection: 'upgrade',
+  host: '64.227.147.125',
+  'x-real-ip': '223.190.83.146',
+  'x-forwarded-for': '223.190.83.146',
+  dnt: '1',
+  'upgrade-insecure-requests': '1',
+  'user-agent': 'Mozilla/5.0 (iPhone; CPU iPhone OS 16_6 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/16.6 Mobile/15E148 Safari/604.1',
+  accept: 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7',
+  'accept-encoding': 'gzip, deflate',
+  'accept-language': 'en-GB,en-US;q=0.9,en;q=0.8,hi;q=0.7',
+  'if-none-match': 'W/"2c9-19523ecc2a4"',
+  'if-modified-since': 'Thu, 20 Feb 2025 15:14:33 GMT'
+}
+2025-02-20 17:00:22: Serving index.html for: /hack
+2025-02-20 17:00:22: {"timestamp":"2025-02-20T17:00:22.934Z","method":"GET","url":"/hack","status":304,"ip":"::ffff:127.0.0.1","userAgent":"Mozilla/5.0 (iPhone; CPU iPhone OS 16_6 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/16.6 Mobile/15E148 Safari/604.1","error":null}
+2025-02-20 17:00:22: GET /hack 304 4ms
+2025-02-20 17:00:27: GET /content.dart.js
+2025-02-20 17:00:27: Request URL: /content.dart.js
+2025-02-20 17:00:27: Request Headers: {
+  connection: 'upgrade',
+  host: '64.227.147.125',
+  'x-real-ip': '104.155.149.19',
+  'x-forwarded-for': '104.155.149.19',
+  'x-sentry-token': '1a6db7bcc7d511ec978a6ac4644b5ea1',
+  'user-agent': 'symbolicator/25.2.0',
+  accept: '*/*',
+  'accept-encoding': 'gzip, br, deflate'
+}
+2025-02-20 17:00:27: Serving index.html for: /content.dart.js
+2025-02-20 17:00:27: {"timestamp":"2025-02-20T17:00:27.401Z","method":"GET","url":"/content.dart.js","status":200,"ip":"::1","userAgent":"symbolicator/25.2.0","error":null}
+2025-02-20 17:00:27: GET /content.dart.js 200 5ms
+2025-02-20 17:00:30: GET /hack
+2025-02-20 17:00:30: Request URL: /hack
+2025-02-20 17:00:30: Request Headers: {
+  connection: 'upgrade',
+  host: '64.227.147.125',
+  'x-real-ip': '223.190.83.146',
+  'x-forwarded-for': '223.190.83.146',
+  'cache-control': 'max-age=0',
+  dnt: '1',
+  'upgrade-insecure-requests': '1',
+  'user-agent': 'Mozilla/5.0 (iPhone; CPU iPhone OS 16_6 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/16.6 Mobile/15E148 Safari/604.1',
+  accept: 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7',
+  'accept-encoding': 'gzip, deflate',
+  'accept-language': 'en-GB,en-US;q=0.9,en;q=0.8,hi;q=0.7',
+  'if-none-match': 'W/"2c9-19523ecc2a4"',
+  'if-modified-since': 'Thu, 20 Feb 2025 15:14:33 GMT'
+}
+2025-02-20 17:00:30: Serving index.html for: /hack
+2025-02-20 17:00:30: {"timestamp":"2025-02-20T17:00:30.737Z","method":"GET","url":"/hack","status":304,"ip":"::ffff:127.0.0.1","userAgent":"Mozilla/5.0 (iPhone; CPU iPhone OS 16_6 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/16.6 Mobile/15E148 Safari/604.1","error":null}
+2025-02-20 17:00:30: GET /hack 304 3ms
+2025-02-20 17:00:32: GET /content.dart.js
+2025-02-20 17:00:32: Request URL: /content.dart.js
+2025-02-20 17:00:32: Request Headers: {
+  connection: 'upgrade',
+  host: '64.227.147.125',
+  'x-real-ip': '104.155.159.182',
+  'x-forwarded-for': '104.155.159.182',
+  'x-sentry-token': '1a6db7bcc7d511ec978a6ac4644b5ea1',
+  'user-agent': 'symbolicator/25.2.0',
+  accept: '*/*',
+  'accept-encoding': 'gzip, br, deflate'
+}
+2025-02-20 17:00:32: Serving index.html for: /content.dart.js
+2025-02-20 17:00:32: {"timestamp":"2025-02-20T17:00:32.834Z","method":"GET","url":"/content.dart.js","status":200,"ip":"::1","userAgent":"symbolicator/25.2.0","error":null}
+2025-02-20 17:00:32: GET /content.dart.js 200 4ms
+2025-02-20 17:00:33: GET /
+2025-02-20 17:00:33: Request URL: /
+2025-02-20 17:00:33: Request Headers: {
+  connection: 'upgrade',
+  host: '64.227.147.125',
+  'x-real-ip': '223.190.83.146',
+  'x-forwarded-for': '223.190.83.146',
+  dnt: '1',
+  'upgrade-insecure-requests': '1',
+  'user-agent': 'Mozilla/5.0 (iPhone; CPU iPhone OS 16_6 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/16.6 Mobile/15E148 Safari/604.1',
+  accept: 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7',
+  'accept-encoding': 'gzip, deflate',
+  'accept-language': 'en-GB,en-US;q=0.9,en;q=0.8,hi;q=0.7',
+  'if-none-match': 'W/"2c9-19523ecc2a4"',
+  'if-modified-since': 'Thu, 20 Feb 2025 15:14:33 GMT'
+}
+2025-02-20 17:00:33: {"timestamp":"2025-02-20T17:00:33.117Z","method":"GET","url":"/","status":304,"ip":"::ffff:127.0.0.1","userAgent":"Mozilla/5.0 (iPhone; CPU iPhone OS 16_6 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/16.6 Mobile/15E148 Safari/604.1","error":null}
+2025-02-20 17:00:33: GET / 304 2ms
+2025-02-20 17:00:36: GET /content.dart.js
+2025-02-20 17:00:36: Request URL: /content.dart.js
+2025-02-20 17:00:36: Request Headers: {
+  connection: 'upgrade',
+  host: '64.227.147.125',
+  'x-real-ip': '104.155.159.182',
+  'x-forwarded-for': '104.155.159.182',
+  'x-sentry-token': '1a6db7bcc7d511ec978a6ac4644b5ea1',
+  'user-agent': 'symbolicator/25.2.0',
+  accept: '*/*',
+  'accept-encoding': 'gzip, br, deflate'
+}
+2025-02-20 17:00:36: Serving index.html for: /content.dart.js
+2025-02-20 17:00:36: {"timestamp":"2025-02-20T17:00:36.307Z","method":"GET","url":"/content.dart.js","status":200,"ip":"::1","userAgent":"symbolicator/25.2.0","error":null}
+2025-02-20 17:00:36: GET /content.dart.js 200 4ms
+2025-02-20 17:00:36: GET /
+2025-02-20 17:00:36: Request URL: /
+2025-02-20 17:00:36: Request Headers: {
+  connection: 'upgrade',
+  host: '64.227.147.125',
+  'x-real-ip': '223.190.83.146',
+  'x-forwarded-for': '223.190.83.146',
+  dnt: '1',
+  'upgrade-insecure-requests': '1',
+  'user-agent': 'Mozilla/5.0 (iPhone; CPU iPhone OS 16_6 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/16.6 Mobile/15E148 Safari/604.1',
+  accept: 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7',
+  'accept-encoding': 'gzip, deflate',
+  'accept-language': 'en-GB,en-US;q=0.9,en;q=0.8,hi;q=0.7',
+  'if-none-match': 'W/"2c9-19523ecc2a4"',
+  'if-modified-since': 'Thu, 20 Feb 2025 15:14:33 GMT'
+}
+2025-02-20 17:00:36: {"timestamp":"2025-02-20T17:00:36.355Z","method":"GET","url":"/","status":304,"ip":"::ffff:127.0.0.1","userAgent":"Mozilla/5.0 (iPhone; CPU iPhone OS 16_6 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/16.6 Mobile/15E148 Safari/604.1","error":null}
+2025-02-20 17:00:36: GET / 304 3ms
+2025-02-20 17:00:41: GET /content.dart.js
+2025-02-20 17:00:41: Request URL: /content.dart.js
+2025-02-20 17:00:41: Request Headers: {
+  connection: 'upgrade',
+  host: '64.227.147.125',
+  'x-real-ip': '104.155.149.19',
+  'x-forwarded-for': '104.155.149.19',
+  'x-sentry-token': '1a6db7bcc7d511ec978a6ac4644b5ea1',
+  'user-agent': 'symbolicator/25.2.0',
+  accept: '*/*',
+  'accept-encoding': 'gzip, br, deflate'
+}
+2025-02-20 17:00:41: Serving index.html for: /content.dart.js
+2025-02-20 17:00:41: {"timestamp":"2025-02-20T17:00:41.733Z","method":"GET","url":"/content.dart.js","status":200,"ip":"::1","userAgent":"symbolicator/25.2.0","error":null}
+2025-02-20 17:00:41: GET /content.dart.js 200 4ms
+2025-02-20 17:01:06: GET /.env
+2025-02-20 17:01:06: Request URL: /.env
+2025-02-20 17:01:06: Request Headers: {
+  connection: 'upgrade',
+  host: '64.227.147.125',
+  'x-real-ip': '78.153.140.93',
+  'x-forwarded-for': '78.153.140.93',
+  'accept-encoding': 'gzip, deflate',
+  accept: '*/*',
+  'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/116.0.5845.140 Safari/537.36'
+}
+2025-02-20 17:01:06: Serving index.html for: /.env
+2025-02-20 17:01:06: {"timestamp":"2025-02-20T17:01:06.777Z","method":"GET","url":"/.env","status":200,"ip":"::ffff:127.0.0.1","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/116.0.5845.140 Safari/537.36","error":null}
+2025-02-20 17:01:06: GET /.env 200 4ms
+2025-02-20 17:01:07: POST /
+2025-02-20 17:01:07: Request URL: /
+2025-02-20 17:01:07: Request Headers: {
+  connection: 'upgrade',
+  host: '64.227.147.125',
+  'x-real-ip': '78.153.140.93',
+  'x-forwarded-for': '78.153.140.93',
+  'content-length': '20',
+  'accept-encoding': 'gzip, deflate',
+  accept: '*/*',
+  'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/116.0.5845.140 Safari/537.36',
+  'content-type': 'application/x-www-form-urlencoded'
+}
+2025-02-20 17:01:07: {"timestamp":"2025-02-20T17:01:07.307Z","method":"POST","url":"/","status":404,"ip":"::1","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/116.0.5845.140 Safari/537.36","error":null}
+2025-02-20 17:01:07: POST / 404 2ms
+2025-02-20 17:01:58: GET /
+2025-02-20 17:01:58: Request URL: /
+2025-02-20 17:01:58: Request Headers: {
+  connection: 'upgrade',
+  host: '64.227.147.125',
+  'x-real-ip': '223.190.83.146',
+  'x-forwarded-for': '223.190.83.146',
+  'cache-control': 'max-age=0',
+  dnt: '1',
+  'upgrade-insecure-requests': '1',
+  'user-agent': 'Mozilla/5.0 (iPhone; CPU iPhone OS 16_6 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/16.6 Mobile/15E148 Safari/604.1',
+  accept: 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7',
+  'accept-encoding': 'gzip, deflate',
+  'accept-language': 'en-GB,en-US;q=0.9,en;q=0.8,hi;q=0.7',
+  'if-none-match': 'W/"2c9-19523ecc2a4"',
+  'if-modified-since': 'Thu, 20 Feb 2025 15:14:33 GMT'
+}
+2025-02-20 17:01:58: {"timestamp":"2025-02-20T17:01:58.512Z","method":"GET","url":"/","status":304,"ip":"::ffff:127.0.0.1","userAgent":"Mozilla/5.0 (iPhone; CPU iPhone OS 16_6 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/16.6 Mobile/15E148 Safari/604.1","error":null}
+2025-02-20 17:01:58: GET / 304 3ms
+2025-02-20 17:02:03: GET /content.dart.js
+2025-02-20 17:02:03: Request URL: /content.dart.js
+2025-02-20 17:02:03: Request Headers: {
+  connection: 'upgrade',
+  host: '64.227.147.125',
+  'x-real-ip': '104.155.149.19',
+  'x-forwarded-for': '104.155.149.19',
+  'x-sentry-token': '1a6db7bcc7d511ec978a6ac4644b5ea1',
+  'user-agent': 'symbolicator/25.2.0',
+  accept: '*/*',
+  'accept-encoding': 'gzip, br, deflate'
+}
+2025-02-20 17:02:03: Serving index.html for: /content.dart.js
+2025-02-20 17:02:03: {"timestamp":"2025-02-20T17:02:03.761Z","method":"GET","url":"/content.dart.js","status":200,"ip":"::1","userAgent":"symbolicator/25.2.0","error":null}
+2025-02-20 17:02:03: GET /content.dart.js 200 5ms
+2025-02-20 17:03:17: GET /
+2025-02-20 17:03:17: Request URL: /
+2025-02-20 17:03:17: Request Headers: {
+  connection: 'upgrade',
+  host: '64.227.147.125',
+  'x-real-ip': '223.190.83.146',
+  'x-forwarded-for': '223.190.83.146',
+  'cache-control': 'max-age=0',
+  dnt: '1',
+  'upgrade-insecure-requests': '1',
+  'user-agent': 'Mozilla/5.0 (iPhone; CPU iPhone OS 16_6 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/16.6 Mobile/15E148 Safari/604.1',
+  accept: 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7',
+  'accept-encoding': 'gzip, deflate',
+  'accept-language': 'en-GB,en-US;q=0.9,en;q=0.8,hi;q=0.7',
+  'if-none-match': 'W/"2c9-19523ecc2a4"',
+  'if-modified-since': 'Thu, 20 Feb 2025 15:14:33 GMT'
+}
+2025-02-20 17:03:17: {"timestamp":"2025-02-20T17:03:17.493Z","method":"GET","url":"/","status":304,"ip":"::ffff:127.0.0.1","userAgent":"Mozilla/5.0 (iPhone; CPU iPhone OS 16_6 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/16.6 Mobile/15E148 Safari/604.1","error":null}
+2025-02-20 17:03:17: GET / 304 2ms
+2025-02-20 17:03:19: GET /content.dart.js
+2025-02-20 17:03:19: Request URL: /content.dart.js
+2025-02-20 17:03:19: Request Headers: {
+  connection: 'upgrade',
+  host: '64.227.147.125',
+  'x-real-ip': '35.184.238.160',
+  'x-forwarded-for': '35.184.238.160',
+  'x-sentry-token': '1a6db7bcc7d511ec978a6ac4644b5ea1',
+  'user-agent': 'symbolicator/25.2.0',
+  accept: '*/*',
+  'accept-encoding': 'gzip, br, deflate'
+}
+2025-02-20 17:03:19: Serving index.html for: /content.dart.js
+2025-02-20 17:03:19: {"timestamp":"2025-02-20T17:03:19.165Z","method":"GET","url":"/content.dart.js","status":200,"ip":"::1","userAgent":"symbolicator/25.2.0","error":null}
+2025-02-20 17:03:19: GET /content.dart.js 200 4ms
+2025-02-20 17:08:03: GET /
+2025-02-20 17:08:03: Request URL: /
+2025-02-20 17:08:03: Request Headers: {
+  connection: 'upgrade',
+  host: '64.227.147.125',
+  'x-real-ip': '45.156.128.47',
+  'x-forwarded-for': '45.156.128.47',
+  'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3112.113 Safari/537.36',
+  accept: '*/*',
+  'accept-encoding': 'gzip'
+}
+2025-02-20 17:08:03: {"timestamp":"2025-02-20T17:08:03.667Z","method":"GET","url":"/","status":200,"ip":"::ffff:127.0.0.1","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3112.113 Safari/537.36","error":null}
+2025-02-20 17:08:03: GET / 200 3ms
+2025-02-20 17:10:53: GET /
+2025-02-20 17:10:53: Request URL: /
+2025-02-20 17:10:53: Request Headers: {
+  connection: 'upgrade',
+  host: '64.227.147.125',
+  'x-real-ip': '193.68.89.10',
+  'x-forwarded-for': '193.68.89.10',
+  'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/90.0.4430.85 Safari/537.36 Edg/90.0.818.46',
+  'accept-encoding': 'gzip, deflate, gzip, deflate',
+  accept: '*/*',
+  'x-requested-with': 'XMLHttpRequest',
+  'content-type': 'application/x-www-form-urlencoded; charset=UTF-8',
+  'accept-language': 'en US,en;q=0.9,sv;q=0.8'
+}
+2025-02-20 17:10:53: {"timestamp":"2025-02-20T17:10:53.383Z","method":"GET","url":"/","status":200,"ip":"::1","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/90.0.4430.85 Safari/537.36 Edg/90.0.818.46","error":null}
+2025-02-20 17:10:53: GET / 200 3ms
+2025-02-20 17:18:00: GET /
+2025-02-20 17:18:00: Request URL: /
+2025-02-20 17:18:00: Request Headers: {
+  connection: 'upgrade',
+  host: '64.227.147.125',
+  'x-real-ip': '194.120.230.215',
+  'x-forwarded-for': '194.120.230.215',
+  'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/90.0.4430.85 Safari/537.36 Edg/90.0.818.46',
+  'accept-encoding': 'gzip, deflate, gzip, deflate',
+  accept: '*/*',
+  'x-requested-with': 'XMLHttpRequest',
+  'content-type': 'application/x-www-form-urlencoded; charset=UTF-8',
+  'accept-language': 'en US,en;q=0.9,sv;q=0.8'
+}
+2025-02-20 17:18:00: {"timestamp":"2025-02-20T17:18:00.289Z","method":"GET","url":"/","status":200,"ip":"::ffff:127.0.0.1","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/90.0.4430.85 Safari/537.36 Edg/90.0.818.46","error":null}
+2025-02-20 17:18:00: GET / 200 2ms
+2025-02-20 17:25:23: Expired UTRs cleaned up successfully
+2025-02-20 17:31:12: GET /
+2025-02-20 17:31:12: Request URL: /
+2025-02-20 17:31:12: Request Headers: {
+  connection: 'upgrade',
+  host: '64.227.147.125',
+  'x-real-ip': '193.68.89.51',
+  'x-forwarded-for': '193.68.89.51'
+}
+2025-02-20 17:31:12: {"timestamp":"2025-02-20T17:31:12.496Z","method":"GET","url":"/","status":200,"ip":"::1","error":null}
+2025-02-20 17:31:12: GET / 200 2ms
+2025-02-20 17:37:06: GET /.env
+2025-02-20 17:37:06: Request URL: /.env
+2025-02-20 17:37:06: Request Headers: {
+  connection: 'upgrade',
+  host: '64.227.147.125',
+  'x-real-ip': '78.153.140.93',
+  'x-forwarded-for': '78.153.140.93',
+  'accept-encoding': 'gzip, deflate',
+  accept: '*/*',
+  'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/116.0.5845.140 Safari/537.36'
+}
+2025-02-20 17:37:06: Serving index.html for: /.env
+2025-02-20 17:37:06: {"timestamp":"2025-02-20T17:37:06.016Z","method":"GET","url":"/.env","status":200,"ip":"::ffff:127.0.0.1","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/116.0.5845.140 Safari/537.36","error":null}
+2025-02-20 17:37:06: GET /.env 200 4ms
+2025-02-20 17:37:06: POST /
+2025-02-20 17:37:06: Request URL: /
+2025-02-20 17:37:06: Request Headers: {
+  connection: 'upgrade',
+  host: '64.227.147.125',
+  'x-real-ip': '78.153.140.93',
+  'x-forwarded-for': '78.153.140.93',
+  'content-length': '20',
+  'accept-encoding': 'gzip, deflate',
+  accept: '*/*',
+  'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/116.0.5845.140 Safari/537.36',
+  'content-type': 'application/x-www-form-urlencoded'
+}
+2025-02-20 17:37:06: {"timestamp":"2025-02-20T17:37:06.525Z","method":"POST","url":"/","status":404,"ip":"::1","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/116.0.5845.140 Safari/537.36","error":null}
+2025-02-20 17:37:06: POST / 404 3ms
+2025-02-20 17:43:53: GET /
+2025-02-20 17:43:53: Request URL: /
+2025-02-20 17:43:53: Request Headers: {
+  connection: 'upgrade',
+  host: '64.227.147.125',
+  'x-real-ip': '185.247.137.96',
+  'x-forwarded-for': '185.247.137.96',
+  'user-agent': 'Mozilla/5.0 (compatible; InternetMeasurement/1.0; +https://internet-measurement.com/)',
+  accept: '*/*',
+  'accept-encoding': 'gzip'
+}
+2025-02-20 17:43:53: {"timestamp":"2025-02-20T17:43:53.436Z","method":"GET","url":"/","status":200,"ip":"::ffff:127.0.0.1","userAgent":"Mozilla/5.0 (compatible; InternetMeasurement/1.0; +https://internet-measurement.com/)","error":null}
+2025-02-20 17:43:53: GET / 200 3ms
+2025-02-20 17:43:54: GET /favicon.ico
+2025-02-20 17:43:54: Request URL: /favicon.ico
+2025-02-20 17:43:54: Request Headers: {
+  connection: 'upgrade',
+  host: '64.227.147.125',
+  'x-real-ip': '185.247.137.147',
+  'x-forwarded-for': '185.247.137.147',
+  'user-agent': 'Mozilla/5.0 (compatible; InternetMeasurement/1.0; +https://internet-measurement.com/)',
+  accept: '*/*',
+  'accept-encoding': 'gzip'
+}
+2025-02-20 17:43:54: {"timestamp":"2025-02-20T17:43:54.037Z","method":"GET","url":"/favicon.ico","status":200,"ip":"::1","userAgent":"Mozilla/5.0 (compatible; InternetMeasurement/1.0; +https://internet-measurement.com/)","error":null}
+2025-02-20 17:43:54: GET /favicon.ico 200 3ms
+2025-02-20 17:43:54: GET /logo192.png
+2025-02-20 17:43:54: Request URL: /logo192.png
+2025-02-20 17:43:54: Request Headers: {
+  connection: 'upgrade',
+  host: '64.227.147.125',
+  'x-real-ip': '185.247.137.60',
+  'x-forwarded-for': '185.247.137.60',
+  'user-agent': 'Mozilla/5.0 (compatible; InternetMeasurement/1.0; +https://internet-measurement.com/)',
+  accept: '*/*',
+  'accept-encoding': 'gzip'
+}
+2025-02-20 17:43:54: Serving index.html for: /logo192.png
+2025-02-20 17:43:54: {"timestamp":"2025-02-20T17:43:54.047Z","method":"GET","url":"/logo192.png","status":200,"ip":"::ffff:127.0.0.1","userAgent":"Mozilla/5.0 (compatible; InternetMeasurement/1.0; +https://internet-measurement.com/)","error":null}
+2025-02-20 17:43:54: GET /logo192.png 200 3ms
+2025-02-20 17:46:45: GET /
+2025-02-20 17:46:45: Request URL: /
+2025-02-20 17:46:45: Request Headers: {
+  connection: 'upgrade',
+  host: '64.227.147.125',
+  'x-real-ip': '104.248.24.56',
+  'x-forwarded-for': '104.248.24.56',
+  'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Safari/537.36',
+  accept: '*/*',
+  'accept-encoding': 'gzip'
+}
+2025-02-20 17:46:45: {"timestamp":"2025-02-20T17:46:45.851Z","method":"GET","url":"/","status":200,"ip":"::1","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Safari/537.36","error":null}
+2025-02-20 17:46:45: GET / 200 2ms
+2025-02-20 17:46:46: GET /form.html
+2025-02-20 17:46:46: Request URL: /form.html
+2025-02-20 17:46:46: Request Headers: {
+  connection: 'upgrade',
+  host: '64.227.147.125',
+  'x-real-ip': '104.248.24.56',
+  'x-forwarded-for': '104.248.24.56',
+  'user-agent': 'curl/8.1.2',
+  accept: '*/*',
+  'accept-encoding': 'gzip'
+}
+2025-02-20 17:46:46: Serving index.html for: /form.html
+2025-02-20 17:46:46: {"timestamp":"2025-02-20T17:46:46.134Z","method":"GET","url":"/form.html","status":200,"ip":"::ffff:127.0.0.1","userAgent":"curl/8.1.2","error":null}
+2025-02-20 17:46:46: GET /form.html 200 4ms
+2025-02-20 17:46:46: GET /upl.php
+2025-02-20 17:46:46: Request URL: /upl.php
+2025-02-20 17:46:46: Request Headers: {
+  connection: 'upgrade',
+  host: '64.227.147.125',
+  'x-real-ip': '104.248.24.56',
+  'x-forwarded-for': '104.248.24.56',
+  'user-agent': 'Mozilla/5.0',
+  accept: '*/*',
+  'accept-encoding': 'gzip'
+}
+2025-02-20 17:46:46: Serving index.html for: /upl.php
+2025-02-20 17:46:46: {"timestamp":"2025-02-20T17:46:46.429Z","method":"GET","url":"/upl.php","status":200,"ip":"::1","userAgent":"Mozilla/5.0","error":null}
+2025-02-20 17:46:46: GET /upl.php 200 3ms
+2025-02-20 17:46:46: GET /t4
+2025-02-20 17:46:46: Request URL: /t4
+2025-02-20 17:46:46: Request Headers: {
+  connection: 'upgrade',
+  host: '64.227.147.125',
+  'x-real-ip': '104.248.24.56',
+  'x-forwarded-for': '104.248.24.56',
+  'user-agent': 'Mozilla/5.0',
+  accept: '*/*',
+  'accept-encoding': 'gzip'
+}
+2025-02-20 17:46:46: Serving index.html for: /t4
+2025-02-20 17:46:46: {"timestamp":"2025-02-20T17:46:46.738Z","method":"GET","url":"/t4","status":200,"ip":"::ffff:127.0.0.1","userAgent":"Mozilla/5.0","error":null}
+2025-02-20 17:46:46: GET /t4 200 4ms
+2025-02-20 17:46:47: GET /geoip/
+2025-02-20 17:46:47: Request URL: /geoip/
+2025-02-20 17:46:47: Request Headers: {
+  connection: 'upgrade',
+  host: '64.227.147.125',
+  'x-real-ip': '104.248.24.56',
+  'x-forwarded-for': '104.248.24.56',
+  'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Safari/537.36',
+  accept: '*/*',
+  'accept-encoding': 'gzip'
+}
+2025-02-20 17:46:47: Serving index.html for: /geoip/
+2025-02-20 17:46:47: {"timestamp":"2025-02-20T17:46:47.028Z","method":"GET","url":"/geoip/","status":200,"ip":"::1","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Safari/537.36","error":null}
+2025-02-20 17:46:47: GET /geoip/ 200 4ms
+2025-02-20 17:46:47: GET /favicon.ico
+2025-02-20 17:46:47: Request URL: /favicon.ico
+2025-02-20 17:46:47: Request Headers: {
+  connection: 'upgrade',
+  host: '64.227.147.125',
+  'x-real-ip': '104.248.24.56',
+  'x-forwarded-for': '104.248.24.56',
+  'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Safari/537.36',
+  accept: '*/*',
+  'accept-encoding': 'gzip'
+}
+2025-02-20 17:46:47: {"timestamp":"2025-02-20T17:46:47.302Z","method":"GET","url":"/favicon.ico","status":200,"ip":"::ffff:127.0.0.1","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Safari/537.36","error":null}
+2025-02-20 17:46:47: GET /favicon.ico 200 3ms
+2025-02-20 17:46:47: GET /1.php
+2025-02-20 17:46:47: Request URL: /1.php
+2025-02-20 17:46:47: Request Headers: {
+  connection: 'upgrade',
+  host: '64.227.147.125',
+  'x-real-ip': '104.248.24.56',
+  'x-forwarded-for': '104.248.24.56',
+  'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Safari/537.36',
+  accept: '*/*',
+  'accept-encoding': 'gzip'
+}
+2025-02-20 17:46:47: Serving index.html for: /1.php
+2025-02-20 17:46:47: {"timestamp":"2025-02-20T17:46:47.599Z","method":"GET","url":"/1.php","status":200,"ip":"::1","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Safari/537.36","error":null}
+2025-02-20 17:46:47: GET /1.php 200 3ms
+2025-02-20 17:46:47: GET /systembc/password.php
+2025-02-20 17:46:47: Request URL: /systembc/password.php
+2025-02-20 17:46:47: Request Headers: {
+  connection: 'upgrade',
+  host: '64.227.147.125',
+  'x-real-ip': '104.248.24.56',
+  'x-forwarded-for': '104.248.24.56',
+  'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Safari/537.36',
+  accept: '*/*',
+  'accept-encoding': 'gzip'
+}
+2025-02-20 17:46:47: Serving index.html for: /systembc/password.php
+2025-02-20 17:46:47: {"timestamp":"2025-02-20T17:46:47.903Z","method":"GET","url":"/systembc/password.php","status":200,"ip":"::ffff:127.0.0.1","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Safari/537.36","error":null}
+2025-02-20 17:46:47: GET /systembc/password.php 200 3ms
+2025-02-20 17:46:48: GET /password.php
+2025-02-20 17:46:48: Request URL: /password.php
+2025-02-20 17:46:48: Request Headers: {
+  connection: 'upgrade',
+  host: '64.227.147.125',
+  'x-real-ip': '104.248.24.56',
+  'x-forwarded-for': '104.248.24.56',
+  'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Safari/537.36',
+  accept: '*/*',
+  'accept-encoding': 'gzip'
+}
+2025-02-20 17:46:48: Serving index.html for: /password.php
+2025-02-20 17:46:48: {"timestamp":"2025-02-20T17:46:48.211Z","method":"GET","url":"/password.php","status":200,"ip":"::1","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Safari/537.36","error":null}
+2025-02-20 17:46:48: GET /password.php 200 4ms
+2025-02-20 18:09:19: GET /
+2025-02-20 18:09:19: Request URL: /
+2025-02-20 18:09:19: Request Headers: {
+  connection: 'upgrade',
+  host: '64.227.147.125',
+  'x-real-ip': '64.227.104.103',
+  'x-forwarded-for': '64.227.104.103',
+  'accept-encoding': 'gzip, deflate',
+  accept: 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7',
+  'accept-language': 'en-US,en;q=0.9',
+  pragma: 'no-cache',
+  'cache-control': 'no-cache',
+  'user-agent': 'Mozilla/5.0 (compatible)'
+}
+2025-02-20 18:09:19: {"timestamp":"2025-02-20T18:09:19.122Z","method":"GET","url":"/","status":200,"ip":"::ffff:127.0.0.1","userAgent":"Mozilla/5.0 (compatible)","error":null}
+2025-02-20 18:09:19: GET / 200 2ms
+2025-02-20 18:09:19: GET /favicon.ico
+2025-02-20 18:09:19: Request URL: /favicon.ico
+2025-02-20 18:09:19: Request Headers: {
+  connection: 'upgrade',
+  host: '64.227.147.125',
+  'x-real-ip': '64.227.104.103',
+  'x-forwarded-for': '64.227.104.103',
+  'accept-encoding': 'gzip, deflate',
+  accept: 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7',
+  'accept-language': 'en-US,en;q=0.9',
+  pragma: 'no-cache',
+  'cache-control': 'no-cache',
+  'user-agent': 'Mozilla/5.0 (compatible)',
+  referer: 'http://64.227.147.125/'
+}
+2025-02-20 18:09:19: {"timestamp":"2025-02-20T18:09:19.616Z","method":"GET","url":"/favicon.ico","status":200,"ip":"::1","userAgent":"Mozilla/5.0 (compatible)","error":null}
+2025-02-20 18:09:19: GET /favicon.ico 200 2ms
+2025-02-20 18:25:23: Expired UTRs cleaned up successfully
+2025-02-20 18:51:47: GET /
+2025-02-20 18:51:47: Request URL: /
+2025-02-20 18:51:47: Request Headers: {
+  connection: 'upgrade',
+  host: '64.227.147.125',
+  'x-real-ip': '125.228.91.168',
+  'x-forwarded-for': '125.228.91.168',
+  'user-agent': 'curl/7.88.1',
+  accept: '*/*'
+}
+2025-02-20 18:51:47: {"timestamp":"2025-02-20T18:51:47.094Z","method":"GET","url":"/","status":200,"ip":"::ffff:127.0.0.1","userAgent":"curl/7.88.1","error":null}
+2025-02-20 18:51:47: GET / 200 2ms
+2025-02-20 18:53:10: GET /
+2025-02-20 18:53:10: Request URL: /
+2025-02-20 18:53:10: Request Headers: {
+  connection: 'upgrade',
+  host: '64.227.147.125',
+  'x-real-ip': '193.68.89.10',
+  'x-forwarded-for': '193.68.89.10',
+  'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/90.0.4430.85 Safari/537.36 Edg/90.0.818.46',
+  'accept-encoding': 'gzip, deflate, gzip, deflate',
+  accept: '*/*',
+  'x-requested-with': 'XMLHttpRequest',
+  'content-type': 'application/x-www-form-urlencoded; charset=UTF-8',
+  'accept-language': 'en US,en;q=0.9,sv;q=0.8'
+}
+2025-02-20 18:53:10: {"timestamp":"2025-02-20T18:53:10.400Z","method":"GET","url":"/","status":200,"ip":"::1","userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/90.0.4430.85 Safari/537.36 Edg/90.0.818.46","error":null}
+2025-02-20 18:53:10: GET / 200 2ms
+2025-02-20 19:01:13: GET /
+2025-02-20 19:01:13: Request URL: /
+2025-02-20 19:01:13: Request Headers: {
+  connection: 'upgrade',
+  host: '64.227.147.125',
+  'x-real-ip': '223.190.83.146',
+  'x-forwarded-for': '223.190.83.146',
+  'upgrade-insecure-requests': '1',
+  'user-agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36',
+  accept: 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7',
+  'accept-encoding': 'gzip, deflate',
+  'accept-language': 'en-GB,en-US;q=0.9,en;q=0.8'
+}
+2025-02-20 19:01:13: {"timestamp":"2025-02-20T19:01:13.867Z","method":"GET","url":"/","status":200,"ip":"::ffff:127.0.0.1","userAgent":"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36","error":null}
+2025-02-20 19:01:13: GET / 200 3ms
+2025-02-20 19:01:17: GET /
+2025-02-20 19:01:17: Request URL: /
+2025-02-20 19:01:17: Request Headers: {
+  connection: 'upgrade',
+  host: '64.227.147.125',
+  'x-real-ip': '223.190.83.146',
+  'x-forwarded-for': '223.190.83.146',
+  'cache-control': 'max-age=0',
+  'upgrade-insecure-requests': '1',
+  'user-agent': 'Mozilla/5.0 (Linux; Android 13; SM-G981B) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Mobile Safari/537.36',
+  accept: 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7',
+  'accept-encoding': 'gzip, deflate',
+  'accept-language': 'en-GB,en-US;q=0.9,en;q=0.8',
+  'if-none-match': 'W/"2c9-19523ecc2a4"',
+  'if-modified-since': 'Thu, 20 Feb 2025 15:14:33 GMT'
+}
+2025-02-20 19:01:17: {"timestamp":"2025-02-20T19:01:17.492Z","method":"GET","url":"/","status":304,"ip":"::1","userAgent":"Mozilla/5.0 (Linux; Android 13; SM-G981B) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Mobile Safari/537.36","error":null}
+2025-02-20 19:01:17: GET / 304 2ms
+2025-02-20 19:07:18: GET /
+2025-02-20 19:07:18: Request URL: /
+2025-02-20 19:07:18: Request Headers: {
+  connection: 'upgrade',
+  host: '64.227.147.125',
+  'x-real-ip': '193.68.89.51',
+  'x-forwarded-for': '193.68.89.51'
+}
+2025-02-20 19:07:18: {"timestamp":"2025-02-20T19:07:18.028Z","method":"GET","url":"/","status":200,"ip":"::ffff:127.0.0.1","error":null}
+2025-02-20 19:07:18: GET / 200 11ms
+2025-02-20 19:08:50: GET /
+2025-02-20 19:08:50: Request URL: /
+2025-02-20 19:08:50: Request Headers: {
+  connection: 'upgrade',
+  host: '64.227.147.125',
+  'x-real-ip': '223.190.83.146',
+  'x-forwarded-for': '223.190.83.146',
+  'cache-control': 'max-age=0',
+  'upgrade-insecure-requests': '1',
+  'user-agent': 'Mozilla/5.0 (Linux; Android 13; SM-G981B) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Mobile Safari/537.36',
+  accept: 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7',
+  'accept-encoding': 'gzip, deflate',
+  'accept-language': 'en-GB,en-US;q=0.9,en;q=0.8',
+  'if-none-match': 'W/"2c9-19523ecc2a4"',
+  'if-modified-since': 'Thu, 20 Feb 2025 15:14:33 GMT'
+}
+2025-02-20 19:08:51: {"timestamp":"2025-02-20T19:08:51.194Z","method":"GET","url":"/","status":304,"ip":"::1","userAgent":"Mozilla/5.0 (Linux; Android 13; SM-G981B) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Mobile Safari/537.36","error":null}
+2025-02-20 19:08:51: GET / 304 965ms
