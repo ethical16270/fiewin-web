@@ -53,7 +53,7 @@ const HackInterface = () => {
         });
 
         const data = await response.json();
-        console.log('Found UTR:', data.utr);
+        console.log('Check access response:', data);
 
         // If access is expired, delete the UTR
         if (!response.ok || !data.success || data.access?.expired) {
@@ -77,28 +77,33 @@ const HackInterface = () => {
           return;
         }
 
-        const planType = localStorage.getItem('hackPlanType');
-        const storedGamesUsed = parseInt(localStorage.getItem('hackGamesUsed') || '0');
+        const planType = data.access.planType || localStorage.getItem('hackPlanType');
         const maxGames = planType === 'demo' ? 3 : Infinity;
         
-        console.log('Current games:', { used: storedGamesUsed, allowed: maxGames });
+        // Calculate games used based on gamesRemaining from server
+        let serverGamesUsed = 0;
+        if (data.access.gamesRemaining !== undefined && planType === 'demo') {
+          serverGamesUsed = maxGames - data.access.gamesRemaining;
+        }
         
-        setGamesUsed(storedGamesUsed);
+        console.log('Server games data:', { 
+          remaining: data.access.gamesRemaining,
+          used: serverGamesUsed, 
+          allowed: maxGames 
+        });
+        
+        // Update local storage and state with server data
+        localStorage.setItem('hackPlanType', planType);
+        localStorage.setItem('hackGamesUsed', serverGamesUsed.toString());
+        setGamesUsed(serverGamesUsed);
         setGamesAllowed(maxGames);
-
-        // Update games tracking with server data if available
-        const serverGamesUsed = parseInt(data.access?.gamesUsed || '0');
-        const currentGamesUsed = Math.max(serverGamesUsed, storedGamesUsed);
         
-        // Sync the games count
-        localStorage.setItem('hackGamesUsed', currentGamesUsed.toString());
-        setGamesUsed(currentGamesUsed);
-        
-        // Store the UTR ID from the correct location in the response
+        // Store the access info
         setAccessInfo({
           ...data.access,
-          gamesRemaining: maxGames - currentGamesUsed,
-          id: data.utr?.id // Get ID from the utr object
+          planType,
+          gamesUsed: serverGamesUsed,
+          gamesAllowed: maxGames
         });
         
         updateTimeRemaining(data.access.expiresAt);
@@ -118,7 +123,7 @@ const HackInterface = () => {
 
   useEffect(() => {
     const syncGamesCount = async () => {
-      if (!accessInfo?.planType === 'demo') return;
+      if (accessInfo?.planType !== 'demo') return;
       
       try {
         const accessToken = localStorage.getItem('hackAccess');
@@ -132,13 +137,31 @@ const HackInterface = () => {
 
         const data = await response.json();
         if (data.success && data.access) {
-          const serverCount = parseInt(data.access.gamesUsed || '0');
-          const localCount = parseInt(localStorage.getItem('hackGamesUsed') || '0');
+          const maxGames = 3; // Demo plan has 3 games
+          const gamesRemaining = data.access.gamesRemaining;
           
-          if (serverCount !== localCount) {
-            console.log('Syncing games count:', { server: serverCount, local: localCount });
-            setGamesUsed(serverCount);
-            localStorage.setItem('hackGamesUsed', serverCount.toString());
+          if (gamesRemaining !== undefined) {
+            const serverGamesUsed = maxGames - gamesRemaining;
+            const localGamesUsed = parseInt(localStorage.getItem('hackGamesUsed') || '0');
+            
+            console.log('Sync check:', { 
+              serverRemaining: gamesRemaining, 
+              serverUsed: serverGamesUsed, 
+              localUsed: localGamesUsed 
+            });
+            
+            if (serverGamesUsed !== localGamesUsed) {
+              console.log('Syncing games count with server');
+              setGamesUsed(serverGamesUsed);
+              localStorage.setItem('hackGamesUsed', serverGamesUsed.toString());
+              
+              // Update access info
+              setAccessInfo(prevInfo => ({
+                ...prevInfo,
+                gamesRemaining,
+                gamesUsed: serverGamesUsed
+              }));
+            }
           }
         }
       } catch (error) {
@@ -181,92 +204,70 @@ const HackInterface = () => {
             return;
         }
 
-        // Increment games used first
-        const newGamesUsed = gamesUsed + 1;
-        
-        // Check if this game will reach the limit
-        if (accessInfo.planType === 'demo' && newGamesUsed >= 3) {
-            console.log('Demo limit reached, showing upgrade dialog');
-            
-            // Update local state
-            setGamesUsed(newGamesUsed);
-            localStorage.setItem('hackGamesUsed', newGamesUsed.toString());
-            
-            // Send final update to server before starting timer
-            try {
-                const accessToken = localStorage.getItem('hackAccess');
-                await fetch('/api/verify-utr', {
-                    method: 'POST',
-                    headers: {
-                        'Authorization': `Bearer ${accessToken}`,
-                        'Content-Type': 'application/json'
-                    },
-                    body: JSON.stringify({
-                        utr: accessToken,
-                        gamesUsed: newGamesUsed,
-                        planType: 'demo',
-                        action: 'update-games'
-                    })
-                });
-            } catch (error) {
-                console.error('Failed to update final game count:', error);
-            }
-            
-            // Show dialog and start timer
-            setShowUpgradeDialog(true);
-            setUpgradeTimer(10);
-            return;
-        }
-
-        // Update local state first
-        setGamesUsed(newGamesUsed);
-        localStorage.setItem('hackGamesUsed', newGamesUsed.toString());
-
         // Get access token
         const accessToken = localStorage.getItem('hackAccess');
         if (!accessToken) {
             throw new Error('No access token found');
         }
 
-        // Send update to server with the correct endpoint
-        const response = await fetch('/api/verify-utr', { // Changed to /api/verify-utr
+        // Call the game/start endpoint to track game usage
+        const response = await fetch('/api/game/start', {
             method: 'POST',
             headers: {
                 'Authorization': `Bearer ${accessToken}`,
                 'Content-Type': 'application/json'
-            },
-            body: JSON.stringify({
-                utr: accessToken,
-                gamesUsed: newGamesUsed,
-                planType: accessInfo.planType,
-                action: 'update-games'
-            })
+            }
         });
 
         if (!response.ok) {
+            if (response.status === 403) {
+                // Game limit reached
+                console.log('Game limit reached according to server');
+                setShowUpgradeDialog(true);
+                setUpgradeTimer(10);
+                return;
+            }
             throw new Error(`Server returned ${response.status}`);
         }
 
         const data = await response.json();
-        console.log('Server response:', data);
+        console.log('Game start response:', data);
 
         if (!data.success) {
-            throw new Error(data.message || 'Failed to update games count');
+            throw new Error(data.message || 'Failed to start game');
         }
 
-        // Update access info state
-        setAccessInfo(prev => ({
-            ...prev,
-            gamesRemaining: gamesAllowed - newGamesUsed
+        // Update local state based on server response
+        const newGamesRemaining = data.gamesRemaining;
+        const newGamesUsed = accessInfo.planType === 'demo' ? 
+            (gamesAllowed - newGamesRemaining) : gamesUsed + 1;
+        
+        console.log('Updating game count:', {
+            newGamesRemaining,
+            newGamesUsed,
+            oldGamesUsed: gamesUsed
+        });
+        
+        // Update local state
+        setGamesUsed(newGamesUsed);
+        localStorage.setItem('hackGamesUsed', newGamesUsed.toString());
+        
+        // Update access info
+        setAccessInfo(prevInfo => ({
+            ...prevInfo,
+            gamesRemaining: newGamesRemaining,
+            gamesUsed: newGamesUsed
         }));
 
+        // Check if this was the last game
+        if (accessInfo.planType === 'demo' && newGamesRemaining <= 0) {
+            console.log('Last game played, showing upgrade dialog');
+            setShowUpgradeDialog(true);
+            setUpgradeTimer(10);
+        }
     } catch (error) {
-        console.error('Failed to update games count:', error);
-        // Revert local changes on failure
-        const storedGames = parseInt(localStorage.getItem('hackGamesUsed') || '0');
-        setGamesUsed(storedGames);
-        // Don't show alert to user, just handle silently
-        console.warn('Reverting to stored games count:', storedGames);
+        console.error('Failed to handle game played:', error);
+        alert(`Error: ${error.message}`);
     }
   };
 

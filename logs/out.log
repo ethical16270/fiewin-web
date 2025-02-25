@@ -2093,3 +2093,2125 @@
 }
 2025-02-20 19:08:51: {"timestamp":"2025-02-20T19:08:51.194Z","method":"GET","url":"/","status":304,"ip":"::1","userAgent":"Mozilla/5.0 (Linux; Android 13; SM-G981B) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Mobile Safari/537.36","error":null}
 2025-02-20 19:08:51: GET / 304 965ms
+2025-02-26 01:24:37: Connected to SQLite database
+2025-02-26 01:24:37: Connected to SQLite database
+2025-02-26 01:24:37: Database created successfully
+2025-02-26 01:24:37: Connected to SQLite database
+2025-02-26 01:24:38: Connected to SQLite database
+2025-02-26 01:24:38: UTR table created/verified
+2025-02-26 01:24:38: Database created successfully
+2025-02-26 01:24:38: UTR table created/verified
+2025-02-26 01:24:38: UPI details table created/verified
+2025-02-26 01:24:38: Plan settings table created/verified
+2025-02-26 01:24:37: Database created successfully
+2025-02-26 01:24:38: Database created successfully
+2025-02-26 01:24:38: UPI details table created/verified
+2025-02-26 01:24:38: UTR table created/verified
+2025-02-26 01:24:38: UTR table created/verified
+2025-02-26 01:24:38: Plan settings table created/verified
+2025-02-26 01:24:38: UPI details table created/verified
+2025-02-26 01:24:38: UPI details table created/verified
+2025-02-26 01:24:38: Plan settings table created/verified
+2025-02-26 01:24:38: Transactions table created/verified
+2025-02-26 01:24:38: Plan settings table created/verified
+2025-02-26 01:24:38: Transactions table created/verified
+2025-02-26 01:24:38: Transactions table created/verified
+2025-02-26 01:24:38: Transactions table created/verified
+2025-02-26 01:24:38: Expired UTRs cleaned up successfully
+2025-02-26 01:24:38: Expired UTRs cleaned up successfully
+2025-02-26 01:24:38: Expired UTRs cleaned up successfully
+2025-02-26 01:24:38: Expired UTRs cleaned up successfully
+2025-02-26 01:24:38: Connected to SQLite database
+2025-02-26 01:24:38: Server running on port 3000 in production mode
+2025-02-26 01:24:38: Server running on port 3000 in production mode
+2025-02-26 01:24:38: Database created successfully
+2025-02-26 01:24:38: Server running on port 3000 in production mode
+2025-02-26 01:24:38: Server running on port 3000 in production mode
+2025-02-26 01:24:38: UTR table created/verified
+2025-02-26 01:24:38: UPI details table created/verified
+2025-02-26 01:24:38: Plan settings table created/verified
+2025-02-26 01:24:38: Transactions table created/verified
+2025-02-26 01:24:38: Server running on port 3000 in production mode
+2025-02-26 01:24:38: Expired UTRs cleaned up successfully
+2025-02-26 01:24:38: Connected to SQLite database
+2025-02-26 01:24:38: Database created successfully
+2025-02-26 01:24:38: UTR table created/verified
+2025-02-26 01:24:38: UPI details table created/verified
+2025-02-26 01:24:38: Plan settings table created/verified
+2025-02-26 01:24:38: Transactions table created/verified
+2025-02-26 01:24:38: Expired UTRs cleaned up successfully
+2025-02-26 01:24:38: Connected to SQLite database
+2025-02-26 01:24:38: Database created successfully
+2025-02-26 01:24:38: UTR table created/verified
+2025-02-26 01:24:38: UPI details table created/verified
+2025-02-26 01:24:38: Plan settings table created/verified
+2025-02-26 01:24:38: Server running on port 3000 in production mode
+2025-02-26 01:24:38: Transactions table created/verified
+2025-02-26 01:24:38: Expired UTRs cleaned up successfully
+2025-02-26 01:24:38: Server running on port 3000 in production mode
+2025-02-26 01:24:38: Connected to SQLite database
+2025-02-26 01:24:38: Database created successfully
+2025-02-26 01:24:38: UTR table created/verified
+2025-02-26 01:24:38: UPI details table created/verified
+2025-02-26 01:24:38: Plan settings table created/verified
+2025-02-26 01:24:38: Transactions table created/verified
+2025-02-26 01:24:38: Server running on port 3000 in production mode
+2025-02-26 01:24:38: Expired UTRs cleaned up successfully
+2025-02-26 01:24:44: New WebSocket connection
+2025-02-26 01:24:50: New WebSocket connection
+2025-02-26 01:25:01: Client disconnected
+2025-02-26 01:25:05: GET /
+2025-02-26 01:25:05: Request URL: /
+2025-02-26 01:25:05: Request Headers: {
+  host: 'localhost:3000',
+  connection: 'keep-alive',
+  dnt: '1',
+  'upgrade-insecure-requests': '1',
+  'user-agent': 'Mozilla/5.0 (iPhone; CPU iPhone OS 16_6 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/16.6 Mobile/15E148 Safari/604.1',
+  accept: 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7',
+  'sec-fetch-site': 'none',
+  'sec-fetch-mode': 'navigate',
+  'sec-fetch-user': '?1',
+  'sec-fetch-dest': 'document',
+  'accept-encoding': 'gzip, deflate, br, zstd',
+  'accept-language': 'en-GB,en-US;q=0.9,en;q=0.8,hi;q=0.7',
+  cookie: 'selectedProvider=OpenRouter; selectedModel=google/gemini-flash-1.5; cachedPrompt=',
+  'if-none-match': 'W/"2d1-URiJ8lbDFe9X/Sg3m7duUIL8H1A"'
+}
+2025-02-26 01:25:05: {"timestamp":"2025-02-25T19:55:05.300Z","method":"GET","url":"/","status":200,"ip":"::1","userAgent":"Mozilla/5.0 (iPhone; CPU iPhone OS 16_6 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/16.6 Mobile/15E148 Safari/604.1","error":null}
+2025-02-26 01:25:05: GET / 200 10ms
+2025-02-26 01:25:05: GET /static/js/main.51804d9c.js
+2025-02-26 01:25:05: Request URL: /static/js/main.51804d9c.js
+2025-02-26 01:25:05: Request Headers: {
+  host: 'localhost:3000',
+  connection: 'keep-alive',
+  'user-agent': 'Mozilla/5.0 (iPhone; CPU iPhone OS 16_6 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/16.6 Mobile/15E148 Safari/604.1',
+  dnt: '1',
+  accept: '*/*',
+  'sec-fetch-site': 'same-origin',
+  'sec-fetch-mode': 'no-cors',
+  'sec-fetch-dest': 'script',
+  'accept-encoding': 'gzip, deflate, br, zstd',
+  'accept-language': 'en-GB,en-US;q=0.9,en;q=0.8,hi;q=0.7',
+  cookie: 'selectedProvider=OpenRouter; selectedModel=google/gemini-flash-1.5; cachedPrompt='
+}
+2025-02-26 01:25:05: GET /static/css/main.67981760.css
+2025-02-26 01:25:05: Request URL: /static/css/main.67981760.css
+2025-02-26 01:25:05: Request Headers: {
+  host: 'localhost:3000',
+  connection: 'keep-alive',
+  'user-agent': 'Mozilla/5.0 (iPhone; CPU iPhone OS 16_6 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/16.6 Mobile/15E148 Safari/604.1',
+  dnt: '1',
+  accept: 'text/css,*/*;q=0.1',
+  'sec-fetch-site': 'same-origin',
+  'sec-fetch-mode': 'no-cors',
+  'sec-fetch-dest': 'style',
+  'accept-encoding': 'gzip, deflate, br, zstd',
+  'accept-language': 'en-GB,en-US;q=0.9,en;q=0.8,hi;q=0.7',
+  cookie: 'selectedProvider=OpenRouter; selectedModel=google/gemini-flash-1.5; cachedPrompt='
+}
+2025-02-26 01:25:05: GET /app.config.js
+2025-02-26 01:25:05: {"timestamp":"2025-02-25T19:55:05.432Z","method":"GET","url":"/css/main.67981760.css","status":200,"ip":"::1","userAgent":"Mozilla/5.0 (iPhone; CPU iPhone OS 16_6 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/16.6 Mobile/15E148 Safari/604.1","error":null}
+2025-02-26 01:25:05: GET /css/main.67981760.css 200 17ms
+2025-02-26 01:25:05: Request URL: /app.config.js
+2025-02-26 01:25:05: Request Headers: {
+  host: 'localhost:3000',
+  connection: 'keep-alive',
+  'user-agent': 'Mozilla/5.0 (iPhone; CPU iPhone OS 16_6 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/16.6 Mobile/15E148 Safari/604.1',
+  dnt: '1',
+  accept: '*/*',
+  'sec-fetch-site': 'same-origin',
+  'sec-fetch-mode': 'no-cors',
+  'sec-fetch-dest': 'script',
+  'accept-encoding': 'gzip, deflate, br, zstd',
+  'accept-language': 'en-GB,en-US;q=0.9,en;q=0.8,hi;q=0.7',
+  cookie: 'selectedProvider=OpenRouter; selectedModel=google/gemini-flash-1.5; cachedPrompt=',
+  'if-none-match': 'W/"113-19523e224d0"',
+  'if-modified-since': 'Thu, 20 Feb 2025 15:02:58 GMT'
+}
+2025-02-26 01:25:05: {"timestamp":"2025-02-25T19:55:05.447Z","method":"GET","url":"/app.config.js","status":200,"ip":"::1","userAgent":"Mozilla/5.0 (iPhone; CPU iPhone OS 16_6 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/16.6 Mobile/15E148 Safari/604.1","error":null}
+2025-02-26 01:25:05: GET /app.config.js 200 20ms
+2025-02-26 01:25:05: {"timestamp":"2025-02-25T19:55:05.459Z","method":"GET","url":"/js/main.51804d9c.js","status":200,"ip":"::1","userAgent":"Mozilla/5.0 (iPhone; CPU iPhone OS 16_6 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/16.6 Mobile/15E148 Safari/604.1","error":null}
+2025-02-26 01:25:05: GET /js/main.51804d9c.js 200 78ms
+2025-02-26 01:25:05: GET /static/css/main.67981760.css.map
+2025-02-26 01:25:05: GET /favicon.ico
+2025-02-26 01:25:05: GET /static/js/main.51804d9c.js.map
+2025-02-26 01:25:05: Request URL: /static/js/main.51804d9c.js.map
+2025-02-26 01:25:05: Request Headers: {
+  host: 'localhost:3000',
+  connection: 'keep-alive',
+  'sec-fetch-site': 'same-origin',
+  'sec-fetch-mode': 'no-cors',
+  'sec-fetch-dest': 'empty',
+  'user-agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36',
+  'accept-encoding': 'gzip, deflate, br, zstd',
+  'accept-language': 'en-GB,en-US;q=0.9,en;q=0.8,hi;q=0.7',
+  cookie: 'selectedProvider=OpenRouter; selectedModel=google/gemini-flash-1.5; cachedPrompt='
+}
+2025-02-26 01:25:05: Request URL: /favicon.ico
+2025-02-26 01:25:05: Request Headers: {
+  host: 'localhost:3000',
+  connection: 'keep-alive',
+  'user-agent': 'Mozilla/5.0 (iPhone; CPU iPhone OS 16_6 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/16.6 Mobile/15E148 Safari/604.1',
+  dnt: '1',
+  accept: 'image/avif,image/webp,image/apng,image/svg+xml,image/*,*/*;q=0.8',
+  'sec-fetch-site': 'same-origin',
+  'sec-fetch-mode': 'no-cors',
+  'sec-fetch-dest': 'image',
+  'accept-encoding': 'gzip, deflate, br, zstd',
+  'accept-language': 'en-GB,en-US;q=0.9,en;q=0.8,hi;q=0.7',
+  cookie: 'selectedProvider=OpenRouter; selectedModel=google/gemini-flash-1.5; cachedPrompt=',
+  'if-none-match': 'W/"13e-19523e224d0"',
+  'if-modified-since': 'Thu, 20 Feb 2025 15:02:58 GMT'
+}
+2025-02-26 01:25:05: Request URL: /static/css/main.67981760.css.map
+2025-02-26 01:25:05: Request Headers: {
+  host: 'localhost:3000',
+  connection: 'keep-alive',
+  'sec-fetch-site': 'same-origin',
+  'sec-fetch-mode': 'no-cors',
+  'sec-fetch-dest': 'empty',
+  'user-agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36',
+  'accept-encoding': 'gzip, deflate, br, zstd',
+  'accept-language': 'en-GB,en-US;q=0.9,en;q=0.8,hi;q=0.7',
+  cookie: 'selectedProvider=OpenRouter; selectedModel=google/gemini-flash-1.5; cachedPrompt='
+}
+2025-02-26 01:25:05: GET /api/payment-details
+2025-02-26 01:25:05: {"timestamp":"2025-02-25T19:55:05.888Z","method":"GET","url":"/favicon.ico","status":200,"ip":"::1","userAgent":"Mozilla/5.0 (iPhone; CPU iPhone OS 16_6 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/16.6 Mobile/15E148 Safari/604.1","error":null}
+2025-02-26 01:25:05: GET /favicon.ico 200 14ms
+2025-02-26 01:25:05: {"timestamp":"2025-02-25T19:55:05.892Z","method":"GET","url":"/css/main.67981760.css.map","status":200,"ip":"::1","userAgent":"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36","error":null}
+2025-02-26 01:25:05: Request URL: /api/payment-details
+2025-02-26 01:25:05: Request Headers: {
+  host: 'localhost:3000',
+  connection: 'keep-alive',
+  'user-agent': 'Mozilla/5.0 (iPhone; CPU iPhone OS 16_6 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/16.6 Mobile/15E148 Safari/604.1',
+  dnt: '1',
+  accept: '*/*',
+  'sec-fetch-site': 'same-origin',
+  'sec-fetch-mode': 'cors',
+  'sec-fetch-dest': 'empty',
+  'accept-encoding': 'gzip, deflate, br, zstd',
+  'accept-language': 'en-GB,en-US;q=0.9,en;q=0.8,hi;q=0.7',
+  cookie: 'selectedProvider=OpenRouter; selectedModel=google/gemini-flash-1.5; cachedPrompt=',
+  'if-none-match': 'W/"6d-Z9phQ8j+BbSQlZb23fpEGnY9RxI"'
+}
+2025-02-26 01:25:05: GET /css/main.67981760.css.map 200 20ms
+2025-02-26 01:25:05: {"timestamp":"2025-02-25T19:55:05.898Z","method":"GET","url":"/payment-details","status":304,"ip":"::1","userAgent":"Mozilla/5.0 (iPhone; CPU iPhone OS 16_6 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/16.6 Mobile/15E148 Safari/604.1","error":null}
+2025-02-26 01:25:05: GET /payment-details 304 10ms
+2025-02-26 01:25:05: {"timestamp":"2025-02-25T19:55:05.966Z","method":"GET","url":"/js/main.51804d9c.js.map","status":200,"ip":"::1","userAgent":"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36","error":null}
+2025-02-26 01:25:05: GET /js/main.51804d9c.js.map 200 92ms
+2025-02-26 01:25:06: GET /manifest.json
+2025-02-26 01:25:06: Request URL: /manifest.json
+2025-02-26 01:25:06: Request Headers: {
+  host: 'localhost:3000',
+  connection: 'keep-alive',
+  'user-agent': 'Mozilla/5.0 (iPhone; CPU iPhone OS 16_6 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/16.6 Mobile/15E148 Safari/604.1',
+  dnt: '1',
+  accept: '*/*',
+  'sec-fetch-site': 'same-origin',
+  'sec-fetch-mode': 'cors',
+  'sec-fetch-dest': 'manifest',
+  'accept-encoding': 'gzip, deflate, br, zstd',
+  'accept-language': 'en-GB,en-US;q=0.9,en;q=0.8,hi;q=0.7',
+  'if-none-match': 'W/"122-19523e224d0"',
+  'if-modified-since': 'Thu, 20 Feb 2025 15:02:58 GMT'
+}
+2025-02-26 01:25:06: {"timestamp":"2025-02-25T19:55:06.166Z","method":"GET","url":"/manifest.json","status":200,"ip":"::1","userAgent":"Mozilla/5.0 (iPhone; CPU iPhone OS 16_6 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/16.6 Mobile/15E148 Safari/604.1","error":null}
+2025-02-26 01:25:06: GET /manifest.json 200 7ms
+2025-02-26 01:25:08: GET /api/check-access
+2025-02-26 01:25:08: Request URL: /api/check-access
+2025-02-26 01:25:08: Request Headers: {
+  host: 'localhost:3000',
+  connection: 'keep-alive',
+  authorization: 'Bearer demo',
+  'user-agent': 'Mozilla/5.0 (iPhone; CPU iPhone OS 16_6 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/16.6 Mobile/15E148 Safari/604.1',
+  dnt: '1',
+  'content-type': 'application/json',
+  accept: '*/*',
+  'sec-fetch-site': 'same-origin',
+  'sec-fetch-mode': 'cors',
+  'sec-fetch-dest': 'empty',
+  'accept-encoding': 'gzip, deflate, br, zstd',
+  'accept-language': 'en-GB,en-US;q=0.9,en;q=0.8,hi;q=0.7',
+  cookie: 'selectedProvider=OpenRouter; selectedModel=google/gemini-flash-1.5; cachedPrompt=',
+  'if-none-match': 'W/"77-2oO2h0qzK1qVV+wKKLj2gpI9Upg"'
+}
+2025-02-26 01:25:08: Headers: {
+  host: 'localhost:3000',
+  connection: 'keep-alive',
+  authorization: 'Bearer demo',
+  'user-agent': 'Mozilla/5.0 (iPhone; CPU iPhone OS 16_6 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/16.6 Mobile/15E148 Safari/604.1',
+  dnt: '1',
+  'content-type': 'application/json',
+  accept: '*/*',
+  'sec-fetch-site': 'same-origin',
+  'sec-fetch-mode': 'cors',
+  'sec-fetch-dest': 'empty',
+  'accept-encoding': 'gzip, deflate, br, zstd',
+  'accept-language': 'en-GB,en-US;q=0.9,en;q=0.8,hi;q=0.7',
+  cookie: 'selectedProvider=OpenRouter; selectedModel=google/gemini-flash-1.5; cachedPrompt=',
+  'if-none-match': 'W/"77-2oO2h0qzK1qVV+wKKLj2gpI9Upg"'
+}
+2025-02-26 01:25:08: Auth header: Bearer demo
+2025-02-26 01:25:08: Extracted token: demo
+2025-02-26 01:25:08: Found UTR: undefined
+2025-02-26 01:25:08: No UTR found for token: demo
+2025-02-26 01:25:08: {"timestamp":"2025-02-25T19:55:08.282Z","method":"GET","url":"/check-access","status":401,"ip":"::1","userAgent":"Mozilla/5.0 (iPhone; CPU iPhone OS 16_6 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/16.6 Mobile/15E148 Safari/604.1","error":null}
+2025-02-26 01:25:08: GET /check-access 401 13ms
+2025-02-26 01:25:10: POST /api/verify-utr
+2025-02-26 01:25:10: Request URL: /api/verify-utr
+2025-02-26 01:25:10: Request Headers: {
+  host: 'localhost:3000',
+  connection: 'keep-alive',
+  'content-length': '13',
+  'user-agent': 'Mozilla/5.0 (iPhone; CPU iPhone OS 16_6 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/16.6 Mobile/15E148 Safari/604.1',
+  dnt: '1',
+  'content-type': 'application/json',
+  accept: '*/*',
+  origin: 'http://localhost:3000',
+  'sec-fetch-site': 'same-origin',
+  'sec-fetch-mode': 'cors',
+  'sec-fetch-dest': 'empty',
+  'accept-encoding': 'gzip, deflate, br, zstd',
+  'accept-language': 'en-GB,en-US;q=0.9,en;q=0.8,hi;q=0.7',
+  cookie: 'selectedProvider=OpenRouter; selectedModel=google/gemini-flash-1.5; cachedPrompt='
+}
+2025-02-26 01:25:10: Received UTR: 333 Action: undefined Games Used: undefined
+2025-02-26 01:25:10: {"timestamp":"2025-02-25T19:55:10.841Z","method":"POST","url":"/verify-utr","status":400,"ip":"::1","userAgent":"Mozilla/5.0 (iPhone; CPU iPhone OS 16_6 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/16.6 Mobile/15E148 Safari/604.1","error":null}
+2025-02-26 01:25:10: POST /verify-utr 400 3ms
+2025-02-26 01:25:14: POST /api/verify-utr
+2025-02-26 01:25:14: Request URL: /api/verify-utr
+2025-02-26 01:25:14: Request Headers: {
+  host: 'localhost:3000',
+  connection: 'keep-alive',
+  'content-length': '13',
+  'user-agent': 'Mozilla/5.0 (iPhone; CPU iPhone OS 16_6 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/16.6 Mobile/15E148 Safari/604.1',
+  dnt: '1',
+  'content-type': 'application/json',
+  accept: '*/*',
+  origin: 'http://localhost:3000',
+  'sec-fetch-site': 'same-origin',
+  'sec-fetch-mode': 'cors',
+  'sec-fetch-dest': 'empty',
+  'accept-encoding': 'gzip, deflate, br, zstd',
+  'accept-language': 'en-GB,en-US;q=0.9,en;q=0.8,hi;q=0.7',
+  cookie: 'selectedProvider=OpenRouter; selectedModel=google/gemini-flash-1.5; cachedPrompt='
+}
+2025-02-26 01:25:14: Received UTR: 444 Action: undefined Games Used: undefined
+2025-02-26 01:25:14: Sending response: {
+  success: true,
+  message: 'Access restored',
+  utrNumber: '444',
+  planType: 'demo',
+  gamesAllowed: 3,
+  gamesUsed: 0,
+  expiresAt: '2025-02-26T19:48:03.881Z'
+}
+2025-02-26 01:25:14: {"timestamp":"2025-02-25T19:55:14.111Z","method":"POST","url":"/verify-utr","status":200,"ip":"::1","userAgent":"Mozilla/5.0 (iPhone; CPU iPhone OS 16_6 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/16.6 Mobile/15E148 Safari/604.1","error":null}
+2025-02-26 01:25:14: POST /verify-utr 200 3ms
+2025-02-26 01:25:16: GET /api/check-access
+2025-02-26 01:25:16: Request URL: /api/check-access
+2025-02-26 01:25:16: Request Headers: {
+  host: 'localhost:3000',
+  connection: 'keep-alive',
+  authorization: 'Bearer 444',
+  'user-agent': 'Mozilla/5.0 (iPhone; CPU iPhone OS 16_6 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/16.6 Mobile/15E148 Safari/604.1',
+  dnt: '1',
+  'content-type': 'application/json',
+  accept: '*/*',
+  'sec-fetch-site': 'same-origin',
+  'sec-fetch-mode': 'cors',
+  'sec-fetch-dest': 'empty',
+  'accept-encoding': 'gzip, deflate, br, zstd',
+  'accept-language': 'en-GB,en-US;q=0.9,en;q=0.8,hi;q=0.7',
+  cookie: 'selectedProvider=OpenRouter; selectedModel=google/gemini-flash-1.5; cachedPrompt=',
+  'if-none-match': 'W/"77-2oO2h0qzK1qVV+wKKLj2gpI9Upg"'
+}
+2025-02-26 01:25:16: Headers: {
+  host: 'localhost:3000',
+  connection: 'keep-alive',
+  authorization: 'Bearer 444',
+  'user-agent': 'Mozilla/5.0 (iPhone; CPU iPhone OS 16_6 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/16.6 Mobile/15E148 Safari/604.1',
+  dnt: '1',
+  'content-type': 'application/json',
+  accept: '*/*',
+  'sec-fetch-site': 'same-origin',
+  'sec-fetch-mode': 'cors',
+  'sec-fetch-dest': 'empty',
+  'accept-encoding': 'gzip, deflate, br, zstd',
+  'accept-language': 'en-GB,en-US;q=0.9,en;q=0.8,hi;q=0.7',
+  cookie: 'selectedProvider=OpenRouter; selectedModel=google/gemini-flash-1.5; cachedPrompt=',
+  'if-none-match': 'W/"77-2oO2h0qzK1qVV+wKKLj2gpI9Upg"'
+}
+2025-02-26 01:25:16: Auth header: Bearer 444
+2025-02-26 01:25:16: Extracted token: 444
+2025-02-26 01:25:16: Found UTR: {
+  id: 19,
+  utr_number: '444',
+  plan_type: 'demo',
+  duration_hours: 24,
+  games_allowed: 3,
+  games_used: 0,
+  created_at: '2025-02-25T19:29:27.666Z',
+  used_at: '2025-02-25T19:48:03.881Z',
+  used_by: null,
+  expires_at: '2025-02-26T19:48:03.881Z',
+  status: 'active'
+}
+2025-02-26 01:25:16: Checking expiry: { now: 2025-02-25T19:55:16.067Z, expiresAt: 2025-02-26T19:48:03.881Z }
+2025-02-26 01:25:16: Access valid
+2025-02-26 01:25:16: {"timestamp":"2025-02-25T19:55:16.068Z","method":"GET","url":"/check-access","status":200,"ip":"::1","userAgent":"Mozilla/5.0 (iPhone; CPU iPhone OS 16_6 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/16.6 Mobile/15E148 Safari/604.1","error":null}
+2025-02-26 01:25:16: GET /check-access 200 5ms
+2025-02-26 01:25:17: GET /api/check-access
+2025-02-26 01:25:17: Request URL: /api/check-access
+2025-02-26 01:25:17: Request Headers: {
+  host: 'localhost:3000',
+  connection: 'keep-alive',
+  authorization: 'Bearer 444',
+  'user-agent': 'Mozilla/5.0 (iPhone; CPU iPhone OS 16_6 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/16.6 Mobile/15E148 Safari/604.1',
+  dnt: '1',
+  'content-type': 'application/json',
+  accept: '*/*',
+  'sec-fetch-site': 'same-origin',
+  'sec-fetch-mode': 'cors',
+  'sec-fetch-dest': 'empty',
+  'accept-encoding': 'gzip, deflate, br, zstd',
+  'accept-language': 'en-GB,en-US;q=0.9,en;q=0.8,hi;q=0.7',
+  cookie: 'selectedProvider=OpenRouter; selectedModel=google/gemini-flash-1.5; cachedPrompt=',
+  'if-none-match': 'W/"77-dHG8aMD4rQe3pqHAK8wd/jVxV6M"'
+}
+2025-02-26 01:25:17: Headers: {
+  host: 'localhost:3000',
+  connection: 'keep-alive',
+  authorization: 'Bearer 444',
+  'user-agent': 'Mozilla/5.0 (iPhone; CPU iPhone OS 16_6 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/16.6 Mobile/15E148 Safari/604.1',
+  dnt: '1',
+  'content-type': 'application/json',
+  accept: '*/*',
+  'sec-fetch-site': 'same-origin',
+  'sec-fetch-mode': 'cors',
+  'sec-fetch-dest': 'empty',
+  'accept-encoding': 'gzip, deflate, br, zstd',
+  'accept-language': 'en-GB,en-US;q=0.9,en;q=0.8,hi;q=0.7',
+  cookie: 'selectedProvider=OpenRouter; selectedModel=google/gemini-flash-1.5; cachedPrompt=',
+  'if-none-match': 'W/"77-dHG8aMD4rQe3pqHAK8wd/jVxV6M"'
+}
+2025-02-26 01:25:17: Auth header: Bearer 444
+2025-02-26 01:25:17: Extracted token: 444
+2025-02-26 01:25:17: Found UTR: {
+  id: 19,
+  utr_number: '444',
+  plan_type: 'demo',
+  duration_hours: 24,
+  games_allowed: 3,
+  games_used: 0,
+  created_at: '2025-02-25T19:29:27.666Z',
+  used_at: '2025-02-25T19:48:03.881Z',
+  used_by: null,
+  expires_at: '2025-02-26T19:48:03.881Z',
+  status: 'active'
+}
+2025-02-26 01:25:17: Checking expiry: { now: 2025-02-25T19:55:17.514Z, expiresAt: 2025-02-26T19:48:03.881Z }
+2025-02-26 01:25:17: Access valid
+2025-02-26 01:25:17: {"timestamp":"2025-02-25T19:55:17.516Z","method":"GET","url":"/check-access","status":304,"ip":"::1","userAgent":"Mozilla/5.0 (iPhone; CPU iPhone OS 16_6 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/16.6 Mobile/15E148 Safari/604.1","error":null}
+2025-02-26 01:25:17: GET /check-access 304 7ms
+2025-02-26 01:25:17: GET /sounds/hack-running.mp3
+2025-02-26 01:25:17: Request URL: /sounds/hack-running.mp3
+2025-02-26 01:25:17: Request Headers: {
+  host: 'localhost:3000',
+  connection: 'keep-alive',
+  'accept-encoding': 'identity;q=1, *;q=0',
+  'user-agent': 'Mozilla/5.0 (iPhone; CPU iPhone OS 16_6 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/16.6 Mobile/15E148 Safari/604.1',
+  dnt: '1',
+  accept: '*/*',
+  'sec-fetch-site': 'same-origin',
+  'sec-fetch-mode': 'no-cors',
+  'sec-fetch-dest': 'audio',
+  'accept-language': 'en-GB,en-US;q=0.9,en;q=0.8,hi;q=0.7',
+  cookie: 'selectedProvider=OpenRouter; selectedModel=google/gemini-flash-1.5; cachedPrompt=',
+  range: 'bytes=0-7021',
+  'if-none-match': 'W/"1b6e-19523e224d0"',
+  'if-modified-since': 'Thu, 20 Feb 2025 15:02:58 GMT'
+}
+2025-02-26 01:25:17: GET /sounds/click.mp3
+2025-02-26 01:25:17: {"timestamp":"2025-02-25T19:55:17.559Z","method":"GET","url":"/sounds/hack-running.mp3","status":206,"ip":"::1","userAgent":"Mozilla/5.0 (iPhone; CPU iPhone OS 16_6 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/16.6 Mobile/15E148 Safari/604.1","error":null}
+2025-02-26 01:25:17: GET /sounds/hack-complete.mp3
+2025-02-26 01:25:17: GET /sounds/hack-start.mp3
+2025-02-26 01:25:17: Request URL: /sounds/click.mp3
+2025-02-26 01:25:17: Request Headers: {
+  host: 'localhost:3000',
+  connection: 'keep-alive',
+  'accept-encoding': 'identity;q=1, *;q=0',
+  'user-agent': 'Mozilla/5.0 (iPhone; CPU iPhone OS 16_6 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/16.6 Mobile/15E148 Safari/604.1',
+  dnt: '1',
+  accept: '*/*',
+  'sec-fetch-site': 'same-origin',
+  'sec-fetch-mode': 'no-cors',
+  'sec-fetch-dest': 'audio',
+  'accept-language': 'en-GB,en-US;q=0.9,en;q=0.8,hi;q=0.7',
+  cookie: 'selectedProvider=OpenRouter; selectedModel=google/gemini-flash-1.5; cachedPrompt=',
+  range: 'bytes=0-5348',
+  'if-none-match': 'W/"14e5-19523e224d0"',
+  'if-modified-since': 'Thu, 20 Feb 2025 15:02:58 GMT'
+}
+2025-02-26 01:25:17: Request URL: /sounds/hack-start.mp3
+2025-02-26 01:25:17: Request Headers: {
+  host: 'localhost:3000',
+  connection: 'keep-alive',
+  'accept-encoding': 'identity;q=1, *;q=0',
+  'user-agent': 'Mozilla/5.0 (iPhone; CPU iPhone OS 16_6 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/16.6 Mobile/15E148 Safari/604.1',
+  dnt: '1',
+  accept: '*/*',
+  'sec-fetch-site': 'same-origin',
+  'sec-fetch-mode': 'no-cors',
+  'sec-fetch-dest': 'audio',
+  'accept-language': 'en-GB,en-US;q=0.9,en;q=0.8,hi;q=0.7',
+  cookie: 'selectedProvider=OpenRouter; selectedModel=google/gemini-flash-1.5; cachedPrompt=',
+  range: 'bytes=0-14439',
+  'if-none-match': 'W/"3868-19523e224d0"',
+  'if-modified-since': 'Thu, 20 Feb 2025 15:02:58 GMT'
+}
+2025-02-26 01:25:17: Request URL: /sounds/hack-complete.mp3
+2025-02-26 01:25:17: Request Headers: {
+  host: 'localhost:3000',
+  connection: 'keep-alive',
+  'accept-encoding': 'identity;q=1, *;q=0',
+  'user-agent': 'Mozilla/5.0 (iPhone; CPU iPhone OS 16_6 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/16.6 Mobile/15E148 Safari/604.1',
+  dnt: '1',
+  accept: '*/*',
+  'sec-fetch-site': 'same-origin',
+  'sec-fetch-mode': 'no-cors',
+  'sec-fetch-dest': 'audio',
+  'accept-language': 'en-GB,en-US;q=0.9,en;q=0.8,hi;q=0.7',
+  cookie: 'selectedProvider=OpenRouter; selectedModel=google/gemini-flash-1.5; cachedPrompt=',
+  range: 'bytes=0-26037',
+  'if-none-match': 'W/"65b6-19523e224d0"',
+  'if-modified-since': 'Thu, 20 Feb 2025 15:02:58 GMT'
+}
+2025-02-26 01:25:17: GET /sounds/expand.mp3
+2025-02-26 01:25:17: Request URL: /sounds/expand.mp3
+2025-02-26 01:25:17: Request Headers: {
+  host: 'localhost:3000',
+  connection: 'keep-alive',
+  'accept-encoding': 'identity;q=1, *;q=0',
+  'user-agent': 'Mozilla/5.0 (iPhone; CPU iPhone OS 16_6 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/16.6 Mobile/15E148 Safari/604.1',
+  dnt: '1',
+  accept: '*/*',
+  'sec-fetch-site': 'same-origin',
+  'sec-fetch-mode': 'no-cors',
+  'sec-fetch-dest': 'audio',
+  'accept-language': 'en-GB,en-US;q=0.9,en;q=0.8,hi;q=0.7',
+  cookie: 'selectedProvider=OpenRouter; selectedModel=google/gemini-flash-1.5; cachedPrompt=',
+  range: 'bytes=0-15693',
+  'if-none-match': 'W/"3d4e-19523e224d0"',
+  'if-modified-since': 'Thu, 20 Feb 2025 15:02:58 GMT'
+}
+2025-02-26 01:25:17: GET /sounds/hack-running.mp3 206 10ms
+2025-02-26 01:25:17: GET /app.config.js?v=1739504222506
+2025-02-26 01:25:17: Request URL: /app.config.js?v=1739504222506
+2025-02-26 01:25:17: Request Headers: {
+  host: 'localhost:3000',
+  connection: 'keep-alive',
+  'user-agent': 'Mozilla/5.0 (iPhone; CPU iPhone OS 16_6 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/16.6 Mobile/15E148 Safari/604.1',
+  dnt: '1',
+  accept: '*/*',
+  'sec-fetch-site': 'same-origin',
+  'sec-fetch-mode': 'no-cors',
+  'sec-fetch-dest': 'script',
+  referer: 'http://localhost:3000/proxy',
+  'accept-encoding': 'gzip, deflate, br, zstd',
+  'accept-language': 'en-GB,en-US;q=0.9,en;q=0.8,hi;q=0.7',
+  cookie: 'selectedProvider=OpenRouter; selectedModel=google/gemini-flash-1.5; cachedPrompt=',
+  'if-none-match': 'W/"113-19523e224d0"',
+  'if-modified-since': 'Thu, 20 Feb 2025 15:02:58 GMT'
+}
+2025-02-26 01:25:17: {"timestamp":"2025-02-25T19:55:17.641Z","method":"GET","url":"/sounds/click.mp3","status":206,"ip":"::1","userAgent":"Mozilla/5.0 (iPhone; CPU iPhone OS 16_6 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/16.6 Mobile/15E148 Safari/604.1","error":null}
+2025-02-26 01:25:17: GET /sounds/click.mp3 206 82ms
+2025-02-26 01:25:17: {"timestamp":"2025-02-25T19:55:17.641Z","method":"GET","url":"/sounds/hack-complete.mp3","status":206,"ip":"::1","userAgent":"Mozilla/5.0 (iPhone; CPU iPhone OS 16_6 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/16.6 Mobile/15E148 Safari/604.1","error":null}
+2025-02-26 01:25:17: GET /sounds/hack-complete.mp3 206 81ms
+2025-02-26 01:25:17: {"timestamp":"2025-02-25T19:55:17.645Z","method":"GET","url":"/app.config.js?v=1739504222506","status":200,"ip":"::1","userAgent":"Mozilla/5.0 (iPhone; CPU iPhone OS 16_6 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/16.6 Mobile/15E148 Safari/604.1","error":null}
+2025-02-26 01:25:17: {"timestamp":"2025-02-25T19:55:17.644Z","method":"GET","url":"/sounds/expand.mp3","status":206,"ip":"::1","userAgent":"Mozilla/5.0 (iPhone; CPU iPhone OS 16_6 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/16.6 Mobile/15E148 Safari/604.1","error":null}
+2025-02-26 01:25:17: GET /app.config.js?v=1739504222506 200 10ms
+2025-02-26 01:25:17: GET /sounds/expand.mp3 206 13ms
+2025-02-26 01:25:17: {"timestamp":"2025-02-25T19:55:17.648Z","method":"GET","url":"/sounds/hack-start.mp3","status":206,"ip":"::1","userAgent":"Mozilla/5.0 (iPhone; CPU iPhone OS 16_6 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/16.6 Mobile/15E148 Safari/604.1","error":null}
+2025-02-26 01:25:17: GET /sounds/hack-start.mp3 206 88ms
+2025-02-26 01:25:18: GET /data.json
+2025-02-26 01:25:18: Request URL: /data.json
+2025-02-26 01:25:18: Request Headers: {
+  host: 'localhost:3000',
+  connection: 'keep-alive',
+  'user-agent': 'Mozilla/5.0 (iPhone; CPU iPhone OS 16_6 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/16.6 Mobile/15E148 Safari/604.1',
+  dnt: '1',
+  accept: '*/*',
+  'sec-fetch-site': 'same-origin',
+  'sec-fetch-mode': 'cors',
+  'sec-fetch-dest': 'empty',
+  referer: 'http://localhost:3000/proxy',
+  'accept-encoding': 'gzip, deflate, br, zstd',
+  'accept-language': 'en-GB,en-US;q=0.9,en;q=0.8,hi;q=0.7',
+  cookie: 'selectedProvider=OpenRouter; selectedModel=google/gemini-flash-1.5; cachedPrompt='
+}
+2025-02-26 01:25:18: GET /favico.ico
+2025-02-26 01:25:18: Request URL: /favico.ico
+2025-02-26 01:25:18: Request Headers: {
+  host: 'localhost:3000',
+  connection: 'keep-alive',
+  'user-agent': 'Mozilla/5.0 (iPhone; CPU iPhone OS 16_6 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/16.6 Mobile/15E148 Safari/604.1',
+  dnt: '1',
+  accept: 'image/avif,image/webp,image/apng,image/svg+xml,image/*,*/*;q=0.8',
+  'sec-fetch-site': 'same-origin',
+  'sec-fetch-mode': 'no-cors',
+  'sec-fetch-dest': 'image',
+  referer: 'http://localhost:3000/proxy',
+  'accept-encoding': 'gzip, deflate, br, zstd',
+  'accept-language': 'en-GB,en-US;q=0.9,en;q=0.8,hi;q=0.7',
+  cookie: 'selectedProvider=OpenRouter; selectedModel=google/gemini-flash-1.5; cachedPrompt='
+}
+2025-02-26 01:25:18: {"timestamp":"2025-02-25T19:55:18.229Z","method":"GET","url":"/data.json","status":200,"ip":"::1","userAgent":"Mozilla/5.0 (iPhone; CPU iPhone OS 16_6 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/16.6 Mobile/15E148 Safari/604.1","error":null}
+2025-02-26 01:25:18: GET /data.json 200 13ms
+2025-02-26 01:25:18: {"timestamp":"2025-02-25T19:55:18.232Z","method":"GET","url":"/favico.ico","status":200,"ip":"::1","userAgent":"Mozilla/5.0 (iPhone; CPU iPhone OS 16_6 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/16.6 Mobile/15E148 Safari/604.1","error":null}
+2025-02-26 01:25:18: GET /favico.ico 200 7ms
+2025-02-26 01:25:26: GET /
+2025-02-26 01:25:26: Request URL: /
+2025-02-26 01:25:26: Request Headers: {
+  host: 'localhost:3000',
+  connection: 'keep-alive',
+  dnt: '1',
+  'upgrade-insecure-requests': '1',
+  'user-agent': 'Mozilla/5.0 (iPhone; CPU iPhone OS 16_6 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/16.6 Mobile/15E148 Safari/604.1',
+  accept: 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7',
+  'sec-fetch-site': 'same-origin',
+  'sec-fetch-mode': 'navigate',
+  'sec-fetch-user': '?1',
+  'sec-fetch-dest': 'iframe',
+  referer: 'http://localhost:3000/proxy',
+  'accept-encoding': 'gzip, deflate, br, zstd',
+  'accept-language': 'en-GB,en-US;q=0.9,en;q=0.8,hi;q=0.7',
+  cookie: 'selectedProvider=OpenRouter; selectedModel=google/gemini-flash-1.5; cachedPrompt=',
+  'if-none-match': 'W/"2d1-URiJ8lbDFe9X/Sg3m7duUIL8H1A"'
+}
+2025-02-26 01:25:26: {"timestamp":"2025-02-25T19:55:26.898Z","method":"GET","url":"/","status":200,"ip":"::1","userAgent":"Mozilla/5.0 (iPhone; CPU iPhone OS 16_6 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/16.6 Mobile/15E148 Safari/604.1","error":null}
+2025-02-26 01:25:26: GET / 200 4ms
+2025-02-26 01:25:26: GET /app.config.js
+2025-02-26 01:25:26: Request URL: /app.config.js
+2025-02-26 01:25:26: Request Headers: {
+  host: 'localhost:3000',
+  connection: 'keep-alive',
+  'if-none-match': 'W/"113-1953eac9ba1"',
+  'user-agent': 'Mozilla/5.0 (iPhone; CPU iPhone OS 16_6 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/16.6 Mobile/15E148 Safari/604.1',
+  dnt: '1',
+  'if-modified-since': 'Tue, 25 Feb 2025 19:54:14 GMT',
+  accept: '*/*',
+  'sec-fetch-site': 'same-origin',
+  'sec-fetch-mode': 'no-cors',
+  'sec-fetch-dest': 'script',
+  'accept-encoding': 'gzip, deflate, br, zstd',
+  'accept-language': 'en-GB,en-US;q=0.9,en;q=0.8,hi;q=0.7',
+  cookie: 'selectedProvider=OpenRouter; selectedModel=google/gemini-flash-1.5; cachedPrompt='
+}
+2025-02-26 01:25:26: {"timestamp":"2025-02-25T19:55:26.930Z","method":"GET","url":"/app.config.js","status":304,"ip":"::1","userAgent":"Mozilla/5.0 (iPhone; CPU iPhone OS 16_6 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/16.6 Mobile/15E148 Safari/604.1","error":null}
+2025-02-26 01:25:26: GET /app.config.js 304 3ms
+2025-02-26 01:25:26: GET /static/js/main.51804d9c.js
+2025-02-26 01:25:26: Request URL: /static/js/main.51804d9c.js
+2025-02-26 01:25:26: Request Headers: {
+  host: 'localhost:3000',
+  connection: 'keep-alive',
+  'if-none-match': 'W/"b77b5-1953eacd08c"',
+  'user-agent': 'Mozilla/5.0 (iPhone; CPU iPhone OS 16_6 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/16.6 Mobile/15E148 Safari/604.1',
+  dnt: '1',
+  'if-modified-since': 'Tue, 25 Feb 2025 19:54:27 GMT',
+  accept: '*/*',
+  'sec-fetch-site': 'same-origin',
+  'sec-fetch-mode': 'no-cors',
+  'sec-fetch-dest': 'script',
+  'accept-encoding': 'gzip, deflate, br, zstd',
+  'accept-language': 'en-GB,en-US;q=0.9,en;q=0.8,hi;q=0.7',
+  cookie: 'selectedProvider=OpenRouter; selectedModel=google/gemini-flash-1.5; cachedPrompt='
+}
+2025-02-26 01:25:26: {"timestamp":"2025-02-25T19:55:26.950Z","method":"GET","url":"/js/main.51804d9c.js","status":304,"ip":"::1","userAgent":"Mozilla/5.0 (iPhone; CPU iPhone OS 16_6 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/16.6 Mobile/15E148 Safari/604.1","error":null}
+2025-02-26 01:25:26: GET /js/main.51804d9c.js 304 5ms
+2025-02-26 01:25:26: GET /static/css/main.67981760.css
+2025-02-26 01:25:26: Request URL: /static/css/main.67981760.css
+2025-02-26 01:25:26: Request Headers: {
+  host: 'localhost:3000',
+  connection: 'keep-alive',
+  'if-none-match': 'W/"356-1953eacd08c"',
+  'user-agent': 'Mozilla/5.0 (iPhone; CPU iPhone OS 16_6 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/16.6 Mobile/15E148 Safari/604.1',
+  dnt: '1',
+  'if-modified-since': 'Tue, 25 Feb 2025 19:54:27 GMT',
+  accept: 'text/css,*/*;q=0.1',
+  'sec-fetch-site': 'same-origin',
+  'sec-fetch-mode': 'no-cors',
+  'sec-fetch-dest': 'style',
+  'accept-encoding': 'gzip, deflate, br, zstd',
+  'accept-language': 'en-GB,en-US;q=0.9,en;q=0.8,hi;q=0.7',
+  cookie: 'selectedProvider=OpenRouter; selectedModel=google/gemini-flash-1.5; cachedPrompt='
+}
+2025-02-26 01:25:26: {"timestamp":"2025-02-25T19:55:26.957Z","method":"GET","url":"/css/main.67981760.css","status":304,"ip":"::1","userAgent":"Mozilla/5.0 (iPhone; CPU iPhone OS 16_6 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/16.6 Mobile/15E148 Safari/604.1","error":null}
+2025-02-26 01:25:26: GET /css/main.67981760.css 304 4ms
+2025-02-26 01:25:27: GET /static/js/main.51804d9c.js.map
+2025-02-26 01:25:27: GET /favicon.ico
+2025-02-26 01:25:27: Request URL: /static/js/main.51804d9c.js.map
+2025-02-26 01:25:27: Request Headers: {
+  host: 'localhost:3000',
+  connection: 'keep-alive',
+  'sec-fetch-site': 'same-origin',
+  'sec-fetch-mode': 'no-cors',
+  'sec-fetch-dest': 'empty',
+  'user-agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36',
+  'accept-encoding': 'gzip, deflate, br, zstd',
+  'accept-language': 'en-GB,en-US;q=0.9,en;q=0.8,hi;q=0.7',
+  cookie: 'selectedProvider=OpenRouter; selectedModel=google/gemini-flash-1.5; cachedPrompt=',
+  'if-none-match': 'W/"34e360-1953eacd08c"',
+  'if-modified-since': 'Tue, 25 Feb 2025 19:54:27 GMT'
+}
+2025-02-26 01:25:27: Request URL: /favicon.ico
+2025-02-26 01:25:27: Request Headers: {
+  host: 'localhost:3000',
+  connection: 'keep-alive',
+  'user-agent': 'Mozilla/5.0 (iPhone; CPU iPhone OS 16_6 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/16.6 Mobile/15E148 Safari/604.1',
+  dnt: '1',
+  accept: 'image/avif,image/webp,image/apng,image/svg+xml,image/*,*/*;q=0.8',
+  'sec-fetch-site': 'same-origin',
+  'sec-fetch-mode': 'no-cors',
+  'sec-fetch-dest': 'image',
+  'accept-encoding': 'gzip, deflate, br, zstd',
+  'accept-language': 'en-GB,en-US;q=0.9,en;q=0.8,hi;q=0.7',
+  cookie: 'selectedProvider=OpenRouter; selectedModel=google/gemini-flash-1.5; cachedPrompt=',
+  'if-none-match': 'W/"13e-1953eac9ba2"',
+  'if-modified-since': 'Tue, 25 Feb 2025 19:54:14 GMT'
+}
+2025-02-26 01:25:27: {"timestamp":"2025-02-25T19:55:27.406Z","method":"GET","url":"/favicon.ico","status":304,"ip":"::1","userAgent":"Mozilla/5.0 (iPhone; CPU iPhone OS 16_6 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/16.6 Mobile/15E148 Safari/604.1","error":null}
+2025-02-26 01:25:27: GET /favicon.ico 304 1ms
+2025-02-26 01:25:27: GET /static/css/main.67981760.css.map
+2025-02-26 01:25:27: {"timestamp":"2025-02-25T19:55:27.407Z","method":"GET","url":"/js/main.51804d9c.js.map","status":304,"ip":"::1","userAgent":"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36","error":null}
+2025-02-26 01:25:27: GET /js/main.51804d9c.js.map 304 3ms
+2025-02-26 01:25:27: Request URL: /static/css/main.67981760.css.map
+2025-02-26 01:25:27: Request Headers: {
+  host: 'localhost:3000',
+  connection: 'keep-alive',
+  'sec-fetch-site': 'same-origin',
+  'sec-fetch-mode': 'no-cors',
+  'sec-fetch-dest': 'empty',
+  'user-agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36',
+  'accept-encoding': 'gzip, deflate, br, zstd',
+  'accept-language': 'en-GB,en-US;q=0.9,en;q=0.8,hi;q=0.7',
+  cookie: 'selectedProvider=OpenRouter; selectedModel=google/gemini-flash-1.5; cachedPrompt=',
+  'if-none-match': 'W/"7bb-1953eacd08c"',
+  'if-modified-since': 'Tue, 25 Feb 2025 19:54:27 GMT'
+}
+2025-02-26 01:25:27: {"timestamp":"2025-02-25T19:55:27.410Z","method":"GET","url":"/css/main.67981760.css.map","status":304,"ip":"::1","userAgent":"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36","error":null}
+2025-02-26 01:25:27: GET /css/main.67981760.css.map 304 3ms
+2025-02-26 01:25:27: GET /api/payment-details
+2025-02-26 01:25:27: Request URL: /api/payment-details
+2025-02-26 01:25:27: Request Headers: {
+  host: 'localhost:3000',
+  connection: 'keep-alive',
+  'user-agent': 'Mozilla/5.0 (iPhone; CPU iPhone OS 16_6 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/16.6 Mobile/15E148 Safari/604.1',
+  dnt: '1',
+  accept: '*/*',
+  'sec-fetch-site': 'same-origin',
+  'sec-fetch-mode': 'cors',
+  'sec-fetch-dest': 'empty',
+  'accept-encoding': 'gzip, deflate, br, zstd',
+  'accept-language': 'en-GB,en-US;q=0.9,en;q=0.8,hi;q=0.7',
+  cookie: 'selectedProvider=OpenRouter; selectedModel=google/gemini-flash-1.5; cachedPrompt=',
+  'if-none-match': 'W/"6d-Z9phQ8j+BbSQlZb23fpEGnY9RxI"'
+}
+2025-02-26 01:25:27: {"timestamp":"2025-02-25T19:55:27.436Z","method":"GET","url":"/payment-details","status":304,"ip":"::1","userAgent":"Mozilla/5.0 (iPhone; CPU iPhone OS 16_6 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/16.6 Mobile/15E148 Safari/604.1","error":null}
+2025-02-26 01:25:27: GET /payment-details 304 11ms
+2025-02-26 01:25:29: GET /hack
+2025-02-26 01:25:29: Request URL: /hack
+2025-02-26 01:25:29: Request Headers: {
+  host: 'localhost:3000',
+  connection: 'keep-alive',
+  'cache-control': 'max-age=0',
+  dnt: '1',
+  'upgrade-insecure-requests': '1',
+  'user-agent': 'Mozilla/5.0 (iPhone; CPU iPhone OS 16_6 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/16.6 Mobile/15E148 Safari/604.1',
+  accept: 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7',
+  'sec-fetch-site': 'same-origin',
+  'sec-fetch-mode': 'navigate',
+  'sec-fetch-user': '?1',
+  'sec-fetch-dest': 'document',
+  'accept-encoding': 'gzip, deflate, br, zstd',
+  'accept-language': 'en-GB,en-US;q=0.9,en;q=0.8,hi;q=0.7',
+  cookie: 'selectedProvider=OpenRouter; selectedModel=google/gemini-flash-1.5; cachedPrompt=',
+  'if-none-match': 'W/"2d1-URiJ8lbDFe9X/Sg3m7duUIL8H1A"'
+}
+2025-02-26 01:25:29: {"timestamp":"2025-02-25T19:55:29.831Z","method":"GET","url":"/hack","status":200,"ip":"::1","userAgent":"Mozilla/5.0 (iPhone; CPU iPhone OS 16_6 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/16.6 Mobile/15E148 Safari/604.1","error":null}
+2025-02-26 01:25:29: GET /hack 200 6ms
+2025-02-26 01:25:29: GET /app.config.js
+2025-02-26 01:25:29: GET /static/css/main.67981760.css
+2025-02-26 01:25:29: Request URL: /app.config.js
+2025-02-26 01:25:29: Request Headers: {
+  host: 'localhost:3000',
+  connection: 'keep-alive',
+  'if-none-match': 'W/"113-1953eac9ba1"',
+  'user-agent': 'Mozilla/5.0 (iPhone; CPU iPhone OS 16_6 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/16.6 Mobile/15E148 Safari/604.1',
+  dnt: '1',
+  'if-modified-since': 'Tue, 25 Feb 2025 19:54:14 GMT',
+  accept: '*/*',
+  'sec-fetch-site': 'same-origin',
+  'sec-fetch-mode': 'no-cors',
+  'sec-fetch-dest': 'script',
+  'accept-encoding': 'gzip, deflate, br, zstd',
+  'accept-language': 'en-GB,en-US;q=0.9,en;q=0.8,hi;q=0.7',
+  cookie: 'selectedProvider=OpenRouter; selectedModel=google/gemini-flash-1.5; cachedPrompt='
+}
+2025-02-26 01:25:29: GET /static/js/main.51804d9c.js
+2025-02-26 01:25:29: Request URL: /static/css/main.67981760.css
+2025-02-26 01:25:29: Request Headers: {
+  host: 'localhost:3000',
+  connection: 'keep-alive',
+  'if-none-match': 'W/"356-1953eacd08c"',
+  'user-agent': 'Mozilla/5.0 (iPhone; CPU iPhone OS 16_6 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/16.6 Mobile/15E148 Safari/604.1',
+  dnt: '1',
+  'if-modified-since': 'Tue, 25 Feb 2025 19:54:27 GMT',
+  accept: 'text/css,*/*;q=0.1',
+  'sec-fetch-site': 'same-origin',
+  'sec-fetch-mode': 'no-cors',
+  'sec-fetch-dest': 'style',
+  'accept-encoding': 'gzip, deflate, br, zstd',
+  'accept-language': 'en-GB,en-US;q=0.9,en;q=0.8,hi;q=0.7',
+  cookie: 'selectedProvider=OpenRouter; selectedModel=google/gemini-flash-1.5; cachedPrompt='
+}
+2025-02-26 01:25:29: {"timestamp":"2025-02-25T19:55:29.878Z","method":"GET","url":"/app.config.js","status":304,"ip":"::1","userAgent":"Mozilla/5.0 (iPhone; CPU iPhone OS 16_6 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/16.6 Mobile/15E148 Safari/604.1","error":null}
+2025-02-26 01:25:29: GET /app.config.js 304 2ms
+2025-02-26 01:25:29: Request URL: /static/js/main.51804d9c.js
+2025-02-26 01:25:29: Request Headers: {
+  host: 'localhost:3000',
+  connection: 'keep-alive',
+  'if-none-match': 'W/"b77b5-1953eacd08c"',
+  'user-agent': 'Mozilla/5.0 (iPhone; CPU iPhone OS 16_6 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/16.6 Mobile/15E148 Safari/604.1',
+  dnt: '1',
+  'if-modified-since': 'Tue, 25 Feb 2025 19:54:27 GMT',
+  accept: '*/*',
+  'sec-fetch-site': 'same-origin',
+  'sec-fetch-mode': 'no-cors',
+  'sec-fetch-dest': 'script',
+  'accept-encoding': 'gzip, deflate, br, zstd',
+  'accept-language': 'en-GB,en-US;q=0.9,en;q=0.8,hi;q=0.7',
+  cookie: 'selectedProvider=OpenRouter; selectedModel=google/gemini-flash-1.5; cachedPrompt='
+}
+2025-02-26 01:25:29: {"timestamp":"2025-02-25T19:55:29.892Z","method":"GET","url":"/css/main.67981760.css","status":304,"ip":"::1","userAgent":"Mozilla/5.0 (iPhone; CPU iPhone OS 16_6 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/16.6 Mobile/15E148 Safari/604.1","error":null}
+2025-02-26 01:25:29: GET /css/main.67981760.css 304 15ms
+2025-02-26 01:25:29: {"timestamp":"2025-02-25T19:55:29.892Z","method":"GET","url":"/js/main.51804d9c.js","status":304,"ip":"::1","userAgent":"Mozilla/5.0 (iPhone; CPU iPhone OS 16_6 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/16.6 Mobile/15E148 Safari/604.1","error":null}
+2025-02-26 01:25:29: GET /js/main.51804d9c.js 304 15ms
+2025-02-26 01:25:30: GET /favicon.ico
+2025-02-26 01:25:30: GET /static/css/main.67981760.css.map
+2025-02-26 01:25:30: GET /static/js/main.51804d9c.js.map
+2025-02-26 01:25:30: Request URL: /favicon.ico
+2025-02-26 01:25:30: Request Headers: {
+  host: 'localhost:3000',
+  connection: 'keep-alive',
+  'if-none-match': 'W/"13e-1953eac9ba2"',
+  'user-agent': 'Mozilla/5.0 (iPhone; CPU iPhone OS 16_6 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/16.6 Mobile/15E148 Safari/604.1',
+  dnt: '1',
+  'if-modified-since': 'Tue, 25 Feb 2025 19:54:14 GMT',
+  accept: 'image/avif,image/webp,image/apng,image/svg+xml,image/*,*/*;q=0.8',
+  'sec-fetch-site': 'same-origin',
+  'sec-fetch-mode': 'no-cors',
+  'sec-fetch-dest': 'image',
+  'accept-encoding': 'gzip, deflate, br, zstd',
+  'accept-language': 'en-GB,en-US;q=0.9,en;q=0.8,hi;q=0.7',
+  cookie: 'selectedProvider=OpenRouter; selectedModel=google/gemini-flash-1.5; cachedPrompt='
+}
+2025-02-26 01:25:30: Request URL: /static/js/main.51804d9c.js.map
+2025-02-26 01:25:30: Request Headers: {
+  host: 'localhost:3000',
+  connection: 'keep-alive',
+  'sec-fetch-site': 'same-origin',
+  'sec-fetch-mode': 'no-cors',
+  'sec-fetch-dest': 'empty',
+  'user-agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36',
+  'accept-encoding': 'gzip, deflate, br, zstd',
+  'accept-language': 'en-GB,en-US;q=0.9,en;q=0.8,hi;q=0.7',
+  cookie: 'selectedProvider=OpenRouter; selectedModel=google/gemini-flash-1.5; cachedPrompt=',
+  'if-none-match': 'W/"34e360-1953eacd08c"',
+  'if-modified-since': 'Tue, 25 Feb 2025 19:54:27 GMT'
+}
+2025-02-26 01:25:30: Request URL: /static/css/main.67981760.css.map
+2025-02-26 01:25:30: Request Headers: {
+  host: 'localhost:3000',
+  connection: 'keep-alive',
+  'sec-fetch-site': 'same-origin',
+  'sec-fetch-mode': 'no-cors',
+  'sec-fetch-dest': 'empty',
+  'user-agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36',
+  'accept-encoding': 'gzip, deflate, br, zstd',
+  'accept-language': 'en-GB,en-US;q=0.9,en;q=0.8,hi;q=0.7',
+  cookie: 'selectedProvider=OpenRouter; selectedModel=google/gemini-flash-1.5; cachedPrompt=',
+  'if-none-match': 'W/"7bb-1953eacd08c"',
+  'if-modified-since': 'Tue, 25 Feb 2025 19:54:27 GMT'
+}
+2025-02-26 01:25:30: {"timestamp":"2025-02-25T19:55:30.264Z","method":"GET","url":"/js/main.51804d9c.js.map","status":304,"ip":"::1","userAgent":"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36","error":null}
+2025-02-26 01:25:30: GET /js/main.51804d9c.js.map 304 1ms
+2025-02-26 01:25:30: {"timestamp":"2025-02-25T19:55:30.264Z","method":"GET","url":"/favicon.ico","status":304,"ip":"::1","userAgent":"Mozilla/5.0 (iPhone; CPU iPhone OS 16_6 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/16.6 Mobile/15E148 Safari/604.1","error":null}
+2025-02-26 01:25:30: GET /favicon.ico 304 2ms
+2025-02-26 01:25:30: {"timestamp":"2025-02-25T19:55:30.264Z","method":"GET","url":"/css/main.67981760.css.map","status":304,"ip":"::1","userAgent":"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36","error":null}
+2025-02-26 01:25:30: GET /css/main.67981760.css.map 304 1ms
+2025-02-26 01:25:30: GET /api/check-access
+2025-02-26 01:25:30: Request URL: /api/check-access
+2025-02-26 01:25:30: Request Headers: {
+  host: 'localhost:3000',
+  connection: 'keep-alive',
+  authorization: 'Bearer 444',
+  'user-agent': 'Mozilla/5.0 (iPhone; CPU iPhone OS 16_6 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/16.6 Mobile/15E148 Safari/604.1',
+  dnt: '1',
+  'content-type': 'application/json',
+  accept: '*/*',
+  'sec-fetch-site': 'same-origin',
+  'sec-fetch-mode': 'cors',
+  'sec-fetch-dest': 'empty',
+  'accept-encoding': 'gzip, deflate, br, zstd',
+  'accept-language': 'en-GB,en-US;q=0.9,en;q=0.8,hi;q=0.7',
+  cookie: 'selectedProvider=OpenRouter; selectedModel=google/gemini-flash-1.5; cachedPrompt=',
+  'if-none-match': 'W/"77-dHG8aMD4rQe3pqHAK8wd/jVxV6M"'
+}
+2025-02-26 01:25:30: Headers: {
+  host: 'localhost:3000',
+  connection: 'keep-alive',
+  authorization: 'Bearer 444',
+  'user-agent': 'Mozilla/5.0 (iPhone; CPU iPhone OS 16_6 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/16.6 Mobile/15E148 Safari/604.1',
+  dnt: '1',
+  'content-type': 'application/json',
+  accept: '*/*',
+  'sec-fetch-site': 'same-origin',
+  'sec-fetch-mode': 'cors',
+  'sec-fetch-dest': 'empty',
+  'accept-encoding': 'gzip, deflate, br, zstd',
+  'accept-language': 'en-GB,en-US;q=0.9,en;q=0.8,hi;q=0.7',
+  cookie: 'selectedProvider=OpenRouter; selectedModel=google/gemini-flash-1.5; cachedPrompt=',
+  'if-none-match': 'W/"77-dHG8aMD4rQe3pqHAK8wd/jVxV6M"'
+}
+2025-02-26 01:25:30: Auth header: Bearer 444
+2025-02-26 01:25:30: Extracted token: 444
+2025-02-26 01:25:30: Found UTR: {
+  id: 19,
+  utr_number: '444',
+  plan_type: 'demo',
+  duration_hours: 24,
+  games_allowed: 3,
+  games_used: 0,
+  created_at: '2025-02-25T19:29:27.666Z',
+  used_at: '2025-02-25T19:48:03.881Z',
+  used_by: null,
+  expires_at: '2025-02-26T19:48:03.881Z',
+  status: 'active'
+}
+2025-02-26 01:25:30: Checking expiry: { now: 2025-02-25T19:55:30.273Z, expiresAt: 2025-02-26T19:48:03.881Z }
+2025-02-26 01:25:30: Access valid
+2025-02-26 01:25:30: {"timestamp":"2025-02-25T19:55:30.274Z","method":"GET","url":"/check-access","status":304,"ip":"::1","userAgent":"Mozilla/5.0 (iPhone; CPU iPhone OS 16_6 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/16.6 Mobile/15E148 Safari/604.1","error":null}
+2025-02-26 01:25:30: GET /check-access 304 5ms
+2025-02-26 01:25:30: GET /app.config.js?v=1739504222506
+2025-02-26 01:25:30: Request URL: /app.config.js?v=1739504222506
+2025-02-26 01:25:30: Request Headers: {
+  host: 'localhost:3000',
+  connection: 'keep-alive',
+  'if-none-match': 'W/"113-1953eac9ba1"',
+  'user-agent': 'Mozilla/5.0 (iPhone; CPU iPhone OS 16_6 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/16.6 Mobile/15E148 Safari/604.1',
+  dnt: '1',
+  'if-modified-since': 'Tue, 25 Feb 2025 19:54:14 GMT',
+  accept: '*/*',
+  'sec-fetch-site': 'same-origin',
+  'sec-fetch-mode': 'no-cors',
+  'sec-fetch-dest': 'script',
+  referer: 'http://localhost:3000/proxy',
+  'accept-encoding': 'gzip, deflate, br, zstd',
+  'accept-language': 'en-GB,en-US;q=0.9,en;q=0.8,hi;q=0.7',
+  cookie: 'selectedProvider=OpenRouter; selectedModel=google/gemini-flash-1.5; cachedPrompt='
+}
+2025-02-26 01:25:30: {"timestamp":"2025-02-25T19:55:30.438Z","method":"GET","url":"/app.config.js?v=1739504222506","status":304,"ip":"::1","userAgent":"Mozilla/5.0 (iPhone; CPU iPhone OS 16_6 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/16.6 Mobile/15E148 Safari/604.1","error":null}
+2025-02-26 01:25:30: GET /app.config.js?v=1739504222506 304 14ms
+2025-02-26 01:25:31: GET /data.json
+2025-02-26 01:25:31: Request URL: /data.json
+2025-02-26 01:25:31: Request Headers: {
+  host: 'localhost:3000',
+  connection: 'keep-alive',
+  'user-agent': 'Mozilla/5.0 (iPhone; CPU iPhone OS 16_6 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/16.6 Mobile/15E148 Safari/604.1',
+  dnt: '1',
+  accept: '*/*',
+  'sec-fetch-site': 'same-origin',
+  'sec-fetch-mode': 'cors',
+  'sec-fetch-dest': 'empty',
+  referer: 'http://localhost:3000/proxy',
+  'accept-encoding': 'gzip, deflate, br, zstd',
+  'accept-language': 'en-GB,en-US;q=0.9,en;q=0.8,hi;q=0.7',
+  cookie: 'selectedProvider=OpenRouter; selectedModel=google/gemini-flash-1.5; cachedPrompt=',
+  'if-none-match': 'W/"2c9-1953eacd08c"',
+  'if-modified-since': 'Tue, 25 Feb 2025 19:54:27 GMT'
+}
+2025-02-26 01:25:31: {"timestamp":"2025-02-25T19:55:31.027Z","method":"GET","url":"/data.json","status":304,"ip":"::1","userAgent":"Mozilla/5.0 (iPhone; CPU iPhone OS 16_6 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/16.6 Mobile/15E148 Safari/604.1","error":null}
+2025-02-26 01:25:31: GET /data.json 304 6ms
+2025-02-26 01:25:31: GET /favico.ico
+2025-02-26 01:25:31: Request URL: /favico.ico
+2025-02-26 01:25:31: Request Headers: {
+  host: 'localhost:3000',
+  connection: 'keep-alive',
+  'user-agent': 'Mozilla/5.0 (iPhone; CPU iPhone OS 16_6 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/16.6 Mobile/15E148 Safari/604.1',
+  dnt: '1',
+  accept: 'image/avif,image/webp,image/apng,image/svg+xml,image/*,*/*;q=0.8',
+  'sec-fetch-site': 'same-origin',
+  'sec-fetch-mode': 'no-cors',
+  'sec-fetch-dest': 'image',
+  referer: 'http://localhost:3000/proxy',
+  'accept-encoding': 'gzip, deflate, br, zstd',
+  'accept-language': 'en-GB,en-US;q=0.9,en;q=0.8,hi;q=0.7',
+  cookie: 'selectedProvider=OpenRouter; selectedModel=google/gemini-flash-1.5; cachedPrompt=',
+  'if-none-match': 'W/"2c9-1953eacd08c"',
+  'if-modified-since': 'Tue, 25 Feb 2025 19:54:27 GMT'
+}
+2025-02-26 01:25:31: {"timestamp":"2025-02-25T19:55:31.036Z","method":"GET","url":"/favico.ico","status":304,"ip":"::1","userAgent":"Mozilla/5.0 (iPhone; CPU iPhone OS 16_6 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/16.6 Mobile/15E148 Safari/604.1","error":null}
+2025-02-26 01:25:31: GET /favico.ico 304 3ms
+2025-02-26 01:25:31: GET /favicon.ico
+2025-02-26 01:25:31: Request URL: /favicon.ico
+2025-02-26 01:25:31: Request Headers: {
+  host: 'localhost:3000',
+  connection: 'keep-alive',
+  'user-agent': 'Mozilla/5.0 (iPhone; CPU iPhone OS 16_6 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/16.6 Mobile/15E148 Safari/604.1',
+  dnt: '1',
+  accept: 'image/avif,image/webp,image/apng,image/svg+xml,image/*,*/*;q=0.8',
+  'sec-fetch-site': 'same-origin',
+  'sec-fetch-mode': 'no-cors',
+  'sec-fetch-dest': 'image',
+  'accept-encoding': 'gzip, deflate, br, zstd',
+  'accept-language': 'en-GB,en-US;q=0.9,en;q=0.8,hi;q=0.7',
+  cookie: 'selectedProvider=OpenRouter; selectedModel=google/gemini-flash-1.5; cachedPrompt=',
+  'if-none-match': 'W/"13e-1953eac9ba2"',
+  'if-modified-since': 'Tue, 25 Feb 2025 19:54:14 GMT'
+}
+2025-02-26 01:25:31: {"timestamp":"2025-02-25T19:55:31.176Z","method":"GET","url":"/favicon.ico","status":304,"ip":"::1","userAgent":"Mozilla/5.0 (iPhone; CPU iPhone OS 16_6 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/16.6 Mobile/15E148 Safari/604.1","error":null}
+2025-02-26 01:25:31: GET /favicon.ico 304 3ms
+2025-02-26 01:25:31: GET /manifest.json
+2025-02-26 01:25:31: Request URL: /manifest.json
+2025-02-26 01:25:31: Request Headers: {
+  host: 'localhost:3000',
+  connection: 'keep-alive',
+  'user-agent': 'Mozilla/5.0 (iPhone; CPU iPhone OS 16_6 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/16.6 Mobile/15E148 Safari/604.1',
+  dnt: '1',
+  accept: '*/*',
+  'sec-fetch-site': 'same-origin',
+  'sec-fetch-mode': 'cors',
+  'sec-fetch-dest': 'manifest',
+  'accept-encoding': 'gzip, deflate, br, zstd',
+  'accept-language': 'en-GB,en-US;q=0.9,en;q=0.8,hi;q=0.7',
+  'if-none-match': 'W/"122-1953eac9ba2"',
+  'if-modified-since': 'Tue, 25 Feb 2025 19:54:14 GMT'
+}
+2025-02-26 01:25:31: {"timestamp":"2025-02-25T19:55:31.196Z","method":"GET","url":"/manifest.json","status":304,"ip":"::1","userAgent":"Mozilla/5.0 (iPhone; CPU iPhone OS 16_6 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/16.6 Mobile/15E148 Safari/604.1","error":null}
+2025-02-26 01:25:31: GET /manifest.json 304 3ms
+2025-02-26 01:25:34: GET /favicon.ico
+2025-02-26 01:25:34: Request URL: /favicon.ico
+2025-02-26 01:25:34: Request Headers: {
+  host: 'localhost:3000',
+  connection: 'keep-alive',
+  'user-agent': 'Mozilla/5.0 (iPhone; CPU iPhone OS 16_6 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/16.6 Mobile/15E148 Safari/604.1',
+  dnt: '1',
+  accept: 'image/avif,image/webp,image/apng,image/svg+xml,image/*,*/*;q=0.8',
+  'sec-fetch-site': 'same-origin',
+  'sec-fetch-mode': 'no-cors',
+  'sec-fetch-dest': 'image',
+  'accept-encoding': 'gzip, deflate, br, zstd',
+  'accept-language': 'en-GB,en-US;q=0.9,en;q=0.8,hi;q=0.7',
+  cookie: 'selectedProvider=OpenRouter; selectedModel=google/gemini-flash-1.5; cachedPrompt=',
+  'if-none-match': 'W/"13e-1953eac9ba2"',
+  'if-modified-since': 'Tue, 25 Feb 2025 19:54:14 GMT'
+}
+2025-02-26 01:25:34: {"timestamp":"2025-02-25T19:55:34.339Z","method":"GET","url":"/favicon.ico","status":304,"ip":"::1","userAgent":"Mozilla/5.0 (iPhone; CPU iPhone OS 16_6 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/16.6 Mobile/15E148 Safari/604.1","error":null}
+2025-02-26 01:25:34: GET /favicon.ico 304 2ms
+2025-02-26 01:25:41: POST /api/game/start
+2025-02-26 01:25:41: Request URL: /api/game/start
+2025-02-26 01:25:41: Request Headers: {
+  host: 'localhost:3000',
+  connection: 'keep-alive',
+  'content-length': '0',
+  authorization: 'Bearer 444',
+  'user-agent': 'Mozilla/5.0 (iPhone; CPU iPhone OS 16_6 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/16.6 Mobile/15E148 Safari/604.1',
+  dnt: '1',
+  'content-type': 'application/json',
+  accept: '*/*',
+  origin: 'http://localhost:3000',
+  'sec-fetch-site': 'same-origin',
+  'sec-fetch-mode': 'cors',
+  'sec-fetch-dest': 'empty',
+  'accept-encoding': 'gzip, deflate, br, zstd',
+  'accept-language': 'en-GB,en-US;q=0.9,en;q=0.8,hi;q=0.7',
+  cookie: 'selectedProvider=OpenRouter; selectedModel=google/gemini-flash-1.5; cachedPrompt='
+}
+2025-02-26 01:25:41: {"timestamp":"2025-02-25T19:55:41.257Z","method":"POST","url":"/game/start","status":200,"ip":"::1","userAgent":"Mozilla/5.0 (iPhone; CPU iPhone OS 16_6 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/16.6 Mobile/15E148 Safari/604.1","error":null}
+2025-02-26 01:25:41: POST /game/start 200 6ms
+2025-02-26 01:26:00: GET /api/check-access
+2025-02-26 01:26:00: Request URL: /api/check-access
+2025-02-26 01:26:00: Request Headers: {
+  host: 'localhost:3000',
+  connection: 'keep-alive',
+  authorization: 'Bearer 444',
+  'user-agent': 'Mozilla/5.0 (iPhone; CPU iPhone OS 16_6 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/16.6 Mobile/15E148 Safari/604.1',
+  dnt: '1',
+  'content-type': 'application/json',
+  accept: '*/*',
+  'sec-fetch-site': 'same-origin',
+  'sec-fetch-mode': 'cors',
+  'sec-fetch-dest': 'empty',
+  'accept-encoding': 'gzip, deflate, br, zstd',
+  'accept-language': 'en-GB,en-US;q=0.9,en;q=0.8,hi;q=0.7',
+  cookie: 'selectedProvider=OpenRouter; selectedModel=google/gemini-flash-1.5; cachedPrompt=',
+  'if-none-match': 'W/"77-dHG8aMD4rQe3pqHAK8wd/jVxV6M"'
+}
+2025-02-26 01:26:00: Headers: {
+  host: 'localhost:3000',
+  connection: 'keep-alive',
+  authorization: 'Bearer 444',
+  'user-agent': 'Mozilla/5.0 (iPhone; CPU iPhone OS 16_6 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/16.6 Mobile/15E148 Safari/604.1',
+  dnt: '1',
+  'content-type': 'application/json',
+  accept: '*/*',
+  'sec-fetch-site': 'same-origin',
+  'sec-fetch-mode': 'cors',
+  'sec-fetch-dest': 'empty',
+  'accept-encoding': 'gzip, deflate, br, zstd',
+  'accept-language': 'en-GB,en-US;q=0.9,en;q=0.8,hi;q=0.7',
+  cookie: 'selectedProvider=OpenRouter; selectedModel=google/gemini-flash-1.5; cachedPrompt=',
+  'if-none-match': 'W/"77-dHG8aMD4rQe3pqHAK8wd/jVxV6M"'
+}
+2025-02-26 01:26:00: Auth header: Bearer 444
+2025-02-26 01:26:00: Extracted token: 444
+2025-02-26 01:26:00: Found UTR: {
+  id: 19,
+  utr_number: '444',
+  plan_type: 'demo',
+  duration_hours: 24,
+  games_allowed: 3,
+  games_used: 1,
+  created_at: '2025-02-25T19:29:27.666Z',
+  used_at: '2025-02-25T19:48:03.881Z',
+  used_by: null,
+  expires_at: '2025-02-26T19:48:03.881Z',
+  status: 'active'
+}
+2025-02-26 01:26:00: Checking expiry: { now: 2025-02-25T19:56:00.422Z, expiresAt: 2025-02-26T19:48:03.881Z }
+2025-02-26 01:26:00: Access valid
+2025-02-26 01:26:00: {"timestamp":"2025-02-25T19:56:00.427Z","method":"GET","url":"/check-access","status":200,"ip":"::1","userAgent":"Mozilla/5.0 (iPhone; CPU iPhone OS 16_6 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/16.6 Mobile/15E148 Safari/604.1","error":null}
+2025-02-26 01:26:00: GET /check-access 200 11ms
+2025-02-26 01:27:05: GET /api/check-access
+2025-02-26 01:27:05: Request URL: /api/check-access
+2025-02-26 01:27:05: Request Headers: {
+  host: 'localhost:3000',
+  connection: 'keep-alive',
+  authorization: 'Bearer 444',
+  'user-agent': 'Mozilla/5.0 (iPhone; CPU iPhone OS 16_6 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/16.6 Mobile/15E148 Safari/604.1',
+  dnt: '1',
+  'content-type': 'application/json',
+  accept: '*/*',
+  'sec-fetch-site': 'same-origin',
+  'sec-fetch-mode': 'cors',
+  'sec-fetch-dest': 'empty',
+  'accept-encoding': 'gzip, deflate, br, zstd',
+  'accept-language': 'en-GB,en-US;q=0.9,en;q=0.8,hi;q=0.7',
+  cookie: 'selectedProvider=OpenRouter; selectedModel=google/gemini-flash-1.5; cachedPrompt=',
+  'if-none-match': 'W/"77-Th+tGDhFW18Tm+yD63qtk2thifk"'
+}
+2025-02-26 01:27:05: POST /api/game/start
+2025-02-26 01:27:05: Request URL: /api/game/start
+2025-02-26 01:27:05: Request Headers: {
+  host: 'localhost:3000',
+  connection: 'keep-alive',
+  'content-length': '0',
+  authorization: 'Bearer 444',
+  'user-agent': 'Mozilla/5.0 (iPhone; CPU iPhone OS 16_6 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/16.6 Mobile/15E148 Safari/604.1',
+  dnt: '1',
+  'content-type': 'application/json',
+  accept: '*/*',
+  origin: 'http://localhost:3000',
+  'sec-fetch-site': 'same-origin',
+  'sec-fetch-mode': 'cors',
+  'sec-fetch-dest': 'empty',
+  'accept-encoding': 'gzip, deflate, br, zstd',
+  'accept-language': 'en-GB,en-US;q=0.9,en;q=0.8,hi;q=0.7',
+  cookie: 'selectedProvider=OpenRouter; selectedModel=google/gemini-flash-1.5; cachedPrompt='
+}
+2025-02-26 01:27:05: Headers: {
+  host: 'localhost:3000',
+  connection: 'keep-alive',
+  authorization: 'Bearer 444',
+  'user-agent': 'Mozilla/5.0 (iPhone; CPU iPhone OS 16_6 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/16.6 Mobile/15E148 Safari/604.1',
+  dnt: '1',
+  'content-type': 'application/json',
+  accept: '*/*',
+  'sec-fetch-site': 'same-origin',
+  'sec-fetch-mode': 'cors',
+  'sec-fetch-dest': 'empty',
+  'accept-encoding': 'gzip, deflate, br, zstd',
+  'accept-language': 'en-GB,en-US;q=0.9,en;q=0.8,hi;q=0.7',
+  cookie: 'selectedProvider=OpenRouter; selectedModel=google/gemini-flash-1.5; cachedPrompt=',
+  'if-none-match': 'W/"77-Th+tGDhFW18Tm+yD63qtk2thifk"'
+}
+2025-02-26 01:27:05: Auth header: Bearer 444
+2025-02-26 01:27:05: Extracted token: 444
+2025-02-26 01:27:05: Found UTR: {
+  id: 19,
+  utr_number: '444',
+  plan_type: 'demo',
+  duration_hours: 24,
+  games_allowed: 3,
+  games_used: 1,
+  created_at: '2025-02-25T19:29:27.666Z',
+  used_at: '2025-02-25T19:48:03.881Z',
+  used_by: null,
+  expires_at: '2025-02-26T19:48:03.881Z',
+  status: 'active'
+}
+2025-02-26 01:27:05: Checking expiry: { now: 2025-02-25T19:57:05.805Z, expiresAt: 2025-02-26T19:48:03.881Z }
+2025-02-26 01:27:05: Access valid
+2025-02-26 01:27:05: {"timestamp":"2025-02-25T19:57:05.816Z","method":"GET","url":"/check-access","status":304,"ip":"::1","userAgent":"Mozilla/5.0 (iPhone; CPU iPhone OS 16_6 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/16.6 Mobile/15E148 Safari/604.1","error":null}
+2025-02-26 01:27:05: GET /check-access 304 34ms
+2025-02-26 01:27:05: GET /api/check-access
+2025-02-26 01:27:05: Request URL: /api/check-access
+2025-02-26 01:27:05: Request Headers: {
+  host: 'localhost:3000',
+  connection: 'keep-alive',
+  authorization: 'Bearer 444',
+  'user-agent': 'Mozilla/5.0 (iPhone; CPU iPhone OS 16_6 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/16.6 Mobile/15E148 Safari/604.1',
+  dnt: '1',
+  'content-type': 'application/json',
+  accept: '*/*',
+  'sec-fetch-site': 'same-origin',
+  'sec-fetch-mode': 'cors',
+  'sec-fetch-dest': 'empty',
+  'accept-encoding': 'gzip, deflate, br, zstd',
+  'accept-language': 'en-GB,en-US;q=0.9,en;q=0.8,hi;q=0.7',
+  cookie: 'selectedProvider=OpenRouter; selectedModel=google/gemini-flash-1.5; cachedPrompt=',
+  'if-none-match': 'W/"77-Th+tGDhFW18Tm+yD63qtk2thifk"'
+}
+2025-02-26 01:27:05: {"timestamp":"2025-02-25T19:57:05.850Z","method":"POST","url":"/game/start","status":200,"ip":"::1","userAgent":"Mozilla/5.0 (iPhone; CPU iPhone OS 16_6 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/16.6 Mobile/15E148 Safari/604.1","error":null}
+2025-02-26 01:27:05: POST /game/start 200 51ms
+2025-02-26 01:27:05: Headers: {
+  host: 'localhost:3000',
+  connection: 'keep-alive',
+  authorization: 'Bearer 444',
+  'user-agent': 'Mozilla/5.0 (iPhone; CPU iPhone OS 16_6 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/16.6 Mobile/15E148 Safari/604.1',
+  dnt: '1',
+  'content-type': 'application/json',
+  accept: '*/*',
+  'sec-fetch-site': 'same-origin',
+  'sec-fetch-mode': 'cors',
+  'sec-fetch-dest': 'empty',
+  'accept-encoding': 'gzip, deflate, br, zstd',
+  'accept-language': 'en-GB,en-US;q=0.9,en;q=0.8,hi;q=0.7',
+  cookie: 'selectedProvider=OpenRouter; selectedModel=google/gemini-flash-1.5; cachedPrompt=',
+  'if-none-match': 'W/"77-Th+tGDhFW18Tm+yD63qtk2thifk"'
+}
+2025-02-26 01:27:05: Auth header: Bearer 444
+2025-02-26 01:27:05: Extracted token: 444
+2025-02-26 01:27:05: Found UTR: {
+  id: 19,
+  utr_number: '444',
+  plan_type: 'demo',
+  duration_hours: 24,
+  games_allowed: 3,
+  games_used: 2,
+  created_at: '2025-02-25T19:29:27.666Z',
+  used_at: '2025-02-25T19:48:03.881Z',
+  used_by: null,
+  expires_at: '2025-02-26T19:48:03.881Z',
+  status: 'active'
+}
+2025-02-26 01:27:05: Checking expiry: { now: 2025-02-25T19:57:05.858Z, expiresAt: 2025-02-26T19:48:03.881Z }
+2025-02-26 01:27:05: Access valid
+2025-02-26 01:27:05: {"timestamp":"2025-02-25T19:57:05.865Z","method":"GET","url":"/check-access","status":200,"ip":"::1","userAgent":"Mozilla/5.0 (iPhone; CPU iPhone OS 16_6 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/16.6 Mobile/15E148 Safari/604.1","error":null}
+2025-02-26 01:27:05: GET /check-access 200 18ms
+2025-02-26 01:27:30: GET /api/check-access
+2025-02-26 01:27:30: Request URL: /api/check-access
+2025-02-26 01:27:30: Request Headers: {
+  host: 'localhost:3000',
+  connection: 'keep-alive',
+  authorization: 'Bearer 444',
+  'user-agent': 'Mozilla/5.0 (iPhone; CPU iPhone OS 16_6 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/16.6 Mobile/15E148 Safari/604.1',
+  dnt: '1',
+  'content-type': 'application/json',
+  accept: '*/*',
+  'sec-fetch-site': 'same-origin',
+  'sec-fetch-mode': 'cors',
+  'sec-fetch-dest': 'empty',
+  'accept-encoding': 'gzip, deflate, br, zstd',
+  'accept-language': 'en-GB,en-US;q=0.9,en;q=0.8,hi;q=0.7',
+  cookie: 'selectedProvider=OpenRouter; selectedModel=google/gemini-flash-1.5; cachedPrompt=',
+  'if-none-match': 'W/"77-ZangRApl8Qf3nMiuaAecz36Faqw"'
+}
+2025-02-26 01:27:30: Headers: {
+  host: 'localhost:3000',
+  connection: 'keep-alive',
+  authorization: 'Bearer 444',
+  'user-agent': 'Mozilla/5.0 (iPhone; CPU iPhone OS 16_6 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/16.6 Mobile/15E148 Safari/604.1',
+  dnt: '1',
+  'content-type': 'application/json',
+  accept: '*/*',
+  'sec-fetch-site': 'same-origin',
+  'sec-fetch-mode': 'cors',
+  'sec-fetch-dest': 'empty',
+  'accept-encoding': 'gzip, deflate, br, zstd',
+  'accept-language': 'en-GB,en-US;q=0.9,en;q=0.8,hi;q=0.7',
+  cookie: 'selectedProvider=OpenRouter; selectedModel=google/gemini-flash-1.5; cachedPrompt=',
+  'if-none-match': 'W/"77-ZangRApl8Qf3nMiuaAecz36Faqw"'
+}
+2025-02-26 01:27:30: Auth header: Bearer 444
+2025-02-26 01:27:30: Extracted token: 444
+2025-02-26 01:27:30: Found UTR: {
+  id: 19,
+  utr_number: '444',
+  plan_type: 'demo',
+  duration_hours: 24,
+  games_allowed: 3,
+  games_used: 2,
+  created_at: '2025-02-25T19:29:27.666Z',
+  used_at: '2025-02-25T19:48:03.881Z',
+  used_by: null,
+  expires_at: '2025-02-26T19:48:03.881Z',
+  status: 'active'
+}
+2025-02-26 01:27:30: Checking expiry: { now: 2025-02-25T19:57:30.281Z, expiresAt: 2025-02-26T19:48:03.881Z }
+2025-02-26 01:27:30: Access valid
+2025-02-26 01:27:30: {"timestamp":"2025-02-25T19:57:30.286Z","method":"GET","url":"/check-access","status":304,"ip":"::1","userAgent":"Mozilla/5.0 (iPhone; CPU iPhone OS 16_6 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/16.6 Mobile/15E148 Safari/604.1","error":null}
+2025-02-26 01:27:30: GET /check-access 304 15ms
+2025-02-26 01:27:30: GET /api/check-access
+2025-02-26 01:27:30: Request URL: /api/check-access
+2025-02-26 01:27:30: Request Headers: {
+  host: 'localhost:3000',
+  connection: 'keep-alive',
+  authorization: 'Bearer 444',
+  'user-agent': 'Mozilla/5.0 (iPhone; CPU iPhone OS 16_6 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/16.6 Mobile/15E148 Safari/604.1',
+  dnt: '1',
+  'content-type': 'application/json',
+  accept: '*/*',
+  'sec-fetch-site': 'same-origin',
+  'sec-fetch-mode': 'cors',
+  'sec-fetch-dest': 'empty',
+  'accept-encoding': 'gzip, deflate, br, zstd',
+  'accept-language': 'en-GB,en-US;q=0.9,en;q=0.8,hi;q=0.7',
+  cookie: 'selectedProvider=OpenRouter; selectedModel=google/gemini-flash-1.5; cachedPrompt=',
+  'if-none-match': 'W/"77-ZangRApl8Qf3nMiuaAecz36Faqw"'
+}
+2025-02-26 01:27:30: Headers: {
+  host: 'localhost:3000',
+  connection: 'keep-alive',
+  authorization: 'Bearer 444',
+  'user-agent': 'Mozilla/5.0 (iPhone; CPU iPhone OS 16_6 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/16.6 Mobile/15E148 Safari/604.1',
+  dnt: '1',
+  'content-type': 'application/json',
+  accept: '*/*',
+  'sec-fetch-site': 'same-origin',
+  'sec-fetch-mode': 'cors',
+  'sec-fetch-dest': 'empty',
+  'accept-encoding': 'gzip, deflate, br, zstd',
+  'accept-language': 'en-GB,en-US;q=0.9,en;q=0.8,hi;q=0.7',
+  cookie: 'selectedProvider=OpenRouter; selectedModel=google/gemini-flash-1.5; cachedPrompt=',
+  'if-none-match': 'W/"77-ZangRApl8Qf3nMiuaAecz36Faqw"'
+}
+2025-02-26 01:27:30: Auth header: Bearer 444
+2025-02-26 01:27:30: Extracted token: 444
+2025-02-26 01:27:30: Found UTR: {
+  id: 19,
+  utr_number: '444',
+  plan_type: 'demo',
+  duration_hours: 24,
+  games_allowed: 3,
+  games_used: 2,
+  created_at: '2025-02-25T19:29:27.666Z',
+  used_at: '2025-02-25T19:48:03.881Z',
+  used_by: null,
+  expires_at: '2025-02-26T19:48:03.881Z',
+  status: 'active'
+}
+2025-02-26 01:27:30: Checking expiry: { now: 2025-02-25T19:57:30.415Z, expiresAt: 2025-02-26T19:48:03.881Z }
+2025-02-26 01:27:30: Access valid
+2025-02-26 01:27:30: {"timestamp":"2025-02-25T19:57:30.416Z","method":"GET","url":"/check-access","status":304,"ip":"::1","userAgent":"Mozilla/5.0 (iPhone; CPU iPhone OS 16_6 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/16.6 Mobile/15E148 Safari/604.1","error":null}
+2025-02-26 01:27:30: GET /check-access 304 8ms
+2025-02-26 01:27:39: POST /api/game/start
+2025-02-26 01:27:39: Request URL: /api/game/start
+2025-02-26 01:27:39: Request Headers: {
+  host: 'localhost:3000',
+  connection: 'keep-alive',
+  'content-length': '0',
+  authorization: 'Bearer 444',
+  'user-agent': 'Mozilla/5.0 (iPhone; CPU iPhone OS 16_6 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/16.6 Mobile/15E148 Safari/604.1',
+  dnt: '1',
+  'content-type': 'application/json',
+  accept: '*/*',
+  origin: 'http://localhost:3000',
+  'sec-fetch-site': 'same-origin',
+  'sec-fetch-mode': 'cors',
+  'sec-fetch-dest': 'empty',
+  'accept-encoding': 'gzip, deflate, br, zstd',
+  'accept-language': 'en-GB,en-US;q=0.9,en;q=0.8,hi;q=0.7',
+  cookie: 'selectedProvider=OpenRouter; selectedModel=google/gemini-flash-1.5; cachedPrompt='
+}
+2025-02-26 01:27:39: {"timestamp":"2025-02-25T19:57:39.904Z","method":"POST","url":"/game/start","status":200,"ip":"::1","userAgent":"Mozilla/5.0 (iPhone; CPU iPhone OS 16_6 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/16.6 Mobile/15E148 Safari/604.1","error":null}
+2025-02-26 01:27:39: POST /game/start 200 8ms
+2025-02-26 01:27:50: POST /api/delete-utr
+2025-02-26 01:27:50: Request URL: /api/delete-utr
+2025-02-26 01:27:50: Request Headers: {
+  host: 'localhost:3000',
+  connection: 'keep-alive',
+  'content-length': '20',
+  'user-agent': 'Mozilla/5.0 (iPhone; CPU iPhone OS 16_6 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/16.6 Mobile/15E148 Safari/604.1',
+  dnt: '1',
+  'content-type': 'application/json',
+  accept: '*/*',
+  origin: 'http://localhost:3000',
+  'sec-fetch-site': 'same-origin',
+  'sec-fetch-mode': 'cors',
+  'sec-fetch-dest': 'empty',
+  'accept-encoding': 'gzip, deflate, br, zstd',
+  'accept-language': 'en-GB,en-US;q=0.9,en;q=0.8,hi;q=0.7',
+  cookie: 'selectedProvider=OpenRouter; selectedModel=google/gemini-flash-1.5; cachedPrompt='
+}
+2025-02-26 01:27:50: UTR deleted successfully: 444
+2025-02-26 01:27:50: {"timestamp":"2025-02-25T19:57:50.023Z","method":"POST","url":"/delete-utr","status":200,"ip":"::1","userAgent":"Mozilla/5.0 (iPhone; CPU iPhone OS 16_6 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/16.6 Mobile/15E148 Safari/604.1","error":null}
+2025-02-26 01:27:50: POST /delete-utr 200 5ms
+2025-02-26 01:28:19: GET /admin
+2025-02-26 01:28:19: Request URL: /admin
+2025-02-26 01:28:19: Request Headers: {
+  host: 'localhost:3000',
+  connection: 'keep-alive',
+  'cache-control': 'max-age=0',
+  dnt: '1',
+  'upgrade-insecure-requests': '1',
+  'user-agent': 'Mozilla/5.0 (iPhone; CPU iPhone OS 16_6 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/16.6 Mobile/15E148 Safari/604.1',
+  accept: 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7',
+  'sec-fetch-site': 'same-origin',
+  'sec-fetch-mode': 'navigate',
+  'sec-fetch-user': '?1',
+  'sec-fetch-dest': 'document',
+  referer: 'http://localhost:3000/admin',
+  'accept-encoding': 'gzip, deflate, br, zstd',
+  'accept-language': 'en-GB,en-US;q=0.9,en;q=0.8,hi;q=0.7',
+  cookie: 'selectedProvider=OpenRouter; selectedModel=google/gemini-flash-1.5; cachedPrompt=',
+  'if-none-match': 'W/"2d1-URiJ8lbDFe9X/Sg3m7duUIL8H1A"'
+}
+2025-02-26 01:28:19: {"timestamp":"2025-02-25T19:58:19.331Z","method":"GET","url":"/admin","status":200,"ip":"::1","userAgent":"Mozilla/5.0 (iPhone; CPU iPhone OS 16_6 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/16.6 Mobile/15E148 Safari/604.1","error":null}
+2025-02-26 01:28:19: GET /admin 200 13ms
+2025-02-26 01:28:19: GET /app.config.js
+2025-02-26 01:28:19: Request URL: /app.config.js
+2025-02-26 01:28:19: Request Headers: {
+  host: 'localhost:3000',
+  connection: 'keep-alive',
+  'user-agent': 'Mozilla/5.0 (iPhone; CPU iPhone OS 16_6 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/16.6 Mobile/15E148 Safari/604.1',
+  dnt: '1',
+  accept: '*/*',
+  'sec-fetch-site': 'same-origin',
+  'sec-fetch-mode': 'no-cors',
+  'sec-fetch-dest': 'script',
+  'accept-encoding': 'gzip, deflate, br, zstd',
+  'accept-language': 'en-GB,en-US;q=0.9,en;q=0.8,hi;q=0.7',
+  cookie: 'selectedProvider=OpenRouter; selectedModel=google/gemini-flash-1.5; cachedPrompt=',
+  'if-none-match': 'W/"113-1953eac9ba1"',
+  'if-modified-since': 'Tue, 25 Feb 2025 19:54:14 GMT'
+}
+2025-02-26 01:28:19: {"timestamp":"2025-02-25T19:58:19.490Z","method":"GET","url":"/app.config.js","status":304,"ip":"::1","userAgent":"Mozilla/5.0 (iPhone; CPU iPhone OS 16_6 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/16.6 Mobile/15E148 Safari/604.1","error":null}
+2025-02-26 01:28:19: GET /app.config.js 304 3ms
+2025-02-26 01:28:19: Client disconnected
+2025-02-26 01:28:19: GET /static/css/main.67981760.css
+2025-02-26 01:28:19: Request URL: /static/css/main.67981760.css
+2025-02-26 01:28:19: Request Headers: {
+  host: 'localhost:3000',
+  connection: 'keep-alive',
+  'user-agent': 'Mozilla/5.0 (iPhone; CPU iPhone OS 16_6 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/16.6 Mobile/15E148 Safari/604.1',
+  dnt: '1',
+  accept: 'text/css,*/*;q=0.1',
+  'sec-fetch-site': 'same-origin',
+  'sec-fetch-mode': 'no-cors',
+  'sec-fetch-dest': 'style',
+  'accept-encoding': 'gzip, deflate, br, zstd',
+  'accept-language': 'en-GB,en-US;q=0.9,en;q=0.8,hi;q=0.7',
+  cookie: 'selectedProvider=OpenRouter; selectedModel=google/gemini-flash-1.5; cachedPrompt=',
+  'if-none-match': 'W/"356-1953eacd08c"',
+  'if-modified-since': 'Tue, 25 Feb 2025 19:54:27 GMT'
+}
+2025-02-26 01:28:19: GET /static/js/main.51804d9c.js
+2025-02-26 01:28:19: {"timestamp":"2025-02-25T19:58:19.496Z","method":"GET","url":"/css/main.67981760.css","status":304,"ip":"::1","userAgent":"Mozilla/5.0 (iPhone; CPU iPhone OS 16_6 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/16.6 Mobile/15E148 Safari/604.1","error":null}
+2025-02-26 01:28:19: GET /css/main.67981760.css 304 4ms
+2025-02-26 01:28:19: Request URL: /static/js/main.51804d9c.js
+2025-02-26 01:28:19: Request Headers: {
+  host: 'localhost:3000',
+  connection: 'keep-alive',
+  'user-agent': 'Mozilla/5.0 (iPhone; CPU iPhone OS 16_6 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/16.6 Mobile/15E148 Safari/604.1',
+  dnt: '1',
+  accept: '*/*',
+  'sec-fetch-site': 'same-origin',
+  'sec-fetch-mode': 'no-cors',
+  'sec-fetch-dest': 'script',
+  'accept-encoding': 'gzip, deflate, br, zstd',
+  'accept-language': 'en-GB,en-US;q=0.9,en;q=0.8,hi;q=0.7',
+  cookie: 'selectedProvider=OpenRouter; selectedModel=google/gemini-flash-1.5; cachedPrompt=',
+  'if-none-match': 'W/"b77b5-1953eacd08c"',
+  'if-modified-since': 'Tue, 25 Feb 2025 19:54:27 GMT'
+}
+2025-02-26 01:28:19: {"timestamp":"2025-02-25T19:58:19.499Z","method":"GET","url":"/js/main.51804d9c.js","status":304,"ip":"::1","userAgent":"Mozilla/5.0 (iPhone; CPU iPhone OS 16_6 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/16.6 Mobile/15E148 Safari/604.1","error":null}
+2025-02-26 01:28:19: GET /js/main.51804d9c.js 304 4ms
+2025-02-26 01:28:19: GET /favicon.ico
+2025-02-26 01:28:19: Request URL: /favicon.ico
+2025-02-26 01:28:19: Request Headers: {
+  host: 'localhost:3000',
+  connection: 'keep-alive',
+  'user-agent': 'Mozilla/5.0 (iPhone; CPU iPhone OS 16_6 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/16.6 Mobile/15E148 Safari/604.1',
+  dnt: '1',
+  accept: 'image/avif,image/webp,image/apng,image/svg+xml,image/*,*/*;q=0.8',
+  'sec-fetch-site': 'same-origin',
+  'sec-fetch-mode': 'no-cors',
+  'sec-fetch-dest': 'image',
+  'accept-encoding': 'gzip, deflate, br, zstd',
+  'accept-language': 'en-GB,en-US;q=0.9,en;q=0.8,hi;q=0.7',
+  cookie: 'selectedProvider=OpenRouter; selectedModel=google/gemini-flash-1.5; cachedPrompt=',
+  'if-none-match': 'W/"13e-1953eac9ba2"',
+  'if-modified-since': 'Tue, 25 Feb 2025 19:54:14 GMT'
+}
+2025-02-26 01:28:19: {"timestamp":"2025-02-25T19:58:19.935Z","method":"GET","url":"/favicon.ico","status":304,"ip":"::1","userAgent":"Mozilla/5.0 (iPhone; CPU iPhone OS 16_6 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/16.6 Mobile/15E148 Safari/604.1","error":null}
+2025-02-26 01:28:19: GET /favicon.ico 304 1ms
+2025-02-26 01:28:19: GET /static/css/main.67981760.css.map
+2025-02-26 01:28:19: GET /static/js/main.51804d9c.js.map
+2025-02-26 01:28:19: Request URL: /static/js/main.51804d9c.js.map
+2025-02-26 01:28:19: Request Headers: {
+  host: 'localhost:3000',
+  connection: 'keep-alive',
+  'sec-fetch-site': 'same-origin',
+  'sec-fetch-mode': 'no-cors',
+  'sec-fetch-dest': 'empty',
+  'user-agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36',
+  'accept-encoding': 'gzip, deflate, br, zstd',
+  'accept-language': 'en-GB,en-US;q=0.9,en;q=0.8,hi;q=0.7',
+  cookie: 'selectedProvider=OpenRouter; selectedModel=google/gemini-flash-1.5; cachedPrompt=',
+  'if-none-match': 'W/"34e360-1953eacd08c"',
+  'if-modified-since': 'Tue, 25 Feb 2025 19:54:27 GMT'
+}
+2025-02-26 01:28:19: Request URL: /static/css/main.67981760.css.map
+2025-02-26 01:28:19: Request Headers: {
+  host: 'localhost:3000',
+  connection: 'keep-alive',
+  'sec-fetch-site': 'same-origin',
+  'sec-fetch-mode': 'no-cors',
+  'sec-fetch-dest': 'empty',
+  'user-agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36',
+  'accept-encoding': 'gzip, deflate, br, zstd',
+  'accept-language': 'en-GB,en-US;q=0.9,en;q=0.8,hi;q=0.7',
+  cookie: 'selectedProvider=OpenRouter; selectedModel=google/gemini-flash-1.5; cachedPrompt=',
+  'if-none-match': 'W/"7bb-1953eacd08c"',
+  'if-modified-since': 'Tue, 25 Feb 2025 19:54:27 GMT'
+}
+2025-02-26 01:28:19: {"timestamp":"2025-02-25T19:58:19.944Z","method":"GET","url":"/js/main.51804d9c.js.map","status":304,"ip":"::1","userAgent":"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36","error":null}
+2025-02-26 01:28:19: GET /js/main.51804d9c.js.map 304 7ms
+2025-02-26 01:28:19: {"timestamp":"2025-02-25T19:58:19.947Z","method":"GET","url":"/css/main.67981760.css.map","status":304,"ip":"::1","userAgent":"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36","error":null}
+2025-02-26 01:28:19: GET /css/main.67981760.css.map 304 9ms
+2025-02-26 01:28:20: GET /favicon.ico
+2025-02-26 01:28:20: Request URL: /favicon.ico
+2025-02-26 01:28:20: Request Headers: {
+  host: 'localhost:3000',
+  connection: 'keep-alive',
+  'user-agent': 'Mozilla/5.0 (iPhone; CPU iPhone OS 16_6 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/16.6 Mobile/15E148 Safari/604.1',
+  dnt: '1',
+  accept: 'image/avif,image/webp,image/apng,image/svg+xml,image/*,*/*;q=0.8',
+  'sec-fetch-site': 'same-origin',
+  'sec-fetch-mode': 'no-cors',
+  'sec-fetch-dest': 'image',
+  'accept-encoding': 'gzip, deflate, br, zstd',
+  'accept-language': 'en-GB,en-US;q=0.9,en;q=0.8,hi;q=0.7',
+  cookie: 'selectedProvider=OpenRouter; selectedModel=google/gemini-flash-1.5; cachedPrompt=',
+  'if-none-match': 'W/"13e-1953eac9ba2"',
+  'if-modified-since': 'Tue, 25 Feb 2025 19:54:14 GMT'
+}
+2025-02-26 01:28:20: {"timestamp":"2025-02-25T19:58:20.208Z","method":"GET","url":"/favicon.ico","status":304,"ip":"::1","userAgent":"Mozilla/5.0 (iPhone; CPU iPhone OS 16_6 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/16.6 Mobile/15E148 Safari/604.1","error":null}
+2025-02-26 01:28:20: GET /favicon.ico 304 5ms
+2025-02-26 01:28:20: GET /manifest.json
+2025-02-26 01:28:20: Request URL: /manifest.json
+2025-02-26 01:28:20: Request Headers: {
+  host: 'localhost:3000',
+  connection: 'keep-alive',
+  'user-agent': 'Mozilla/5.0 (iPhone; CPU iPhone OS 16_6 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/16.6 Mobile/15E148 Safari/604.1',
+  dnt: '1',
+  accept: '*/*',
+  'sec-fetch-site': 'same-origin',
+  'sec-fetch-mode': 'cors',
+  'sec-fetch-dest': 'manifest',
+  'accept-encoding': 'gzip, deflate, br, zstd',
+  'accept-language': 'en-GB,en-US;q=0.9,en;q=0.8,hi;q=0.7',
+  'if-none-match': 'W/"122-1953eac9ba2"',
+  'if-modified-since': 'Tue, 25 Feb 2025 19:54:14 GMT'
+}
+2025-02-26 01:28:20: {"timestamp":"2025-02-25T19:58:20.216Z","method":"GET","url":"/manifest.json","status":304,"ip":"::1","userAgent":"Mozilla/5.0 (iPhone; CPU iPhone OS 16_6 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/16.6 Mobile/15E148 Safari/604.1","error":null}
+2025-02-26 01:28:20: GET /manifest.json 304 2ms
+2025-02-26 01:28:24: POST /api/admin/login
+2025-02-26 01:28:24: Request URL: /api/admin/login
+2025-02-26 01:28:24: Request Headers: {
+  host: 'localhost:3000',
+  connection: 'keep-alive',
+  'content-length': '39',
+  'user-agent': 'Mozilla/5.0 (iPhone; CPU iPhone OS 16_6 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/16.6 Mobile/15E148 Safari/604.1',
+  dnt: '1',
+  'content-type': 'application/json',
+  accept: '*/*',
+  origin: 'http://localhost:3000',
+  'sec-fetch-site': 'same-origin',
+  'sec-fetch-mode': 'cors',
+  'sec-fetch-dest': 'empty',
+  'accept-encoding': 'gzip, deflate, br, zstd',
+  'accept-language': 'en-GB,en-US;q=0.9,en;q=0.8,hi;q=0.7',
+  cookie: 'selectedProvider=OpenRouter; selectedModel=google/gemini-flash-1.5; cachedPrompt='
+}
+2025-02-26 01:28:24: Login attempt: { username: 'admin', password: 'admin' }
+2025-02-26 01:28:24: Login successful
+2025-02-26 01:28:24: {"timestamp":"2025-02-25T19:58:24.095Z","method":"POST","url":"/admin/login","status":200,"ip":"::1","userAgent":"Mozilla/5.0 (iPhone; CPU iPhone OS 16_6 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/16.6 Mobile/15E148 Safari/604.1","error":null}
+2025-02-26 01:28:24: POST /admin/login 200 7ms
+2025-02-26 01:28:24: GET /api/admin/verify
+2025-02-26 01:28:24: Request URL: /api/admin/verify
+2025-02-26 01:28:24: Request Headers: {
+  host: 'localhost:3000',
+  connection: 'keep-alive',
+  'user-agent': 'Mozilla/5.0 (iPhone; CPU iPhone OS 16_6 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/16.6 Mobile/15E148 Safari/604.1',
+  dnt: '1',
+  authorization: 'Bearer admin_token',
+  accept: '*/*',
+  'sec-fetch-site': 'same-origin',
+  'sec-fetch-mode': 'cors',
+  'sec-fetch-dest': 'empty',
+  'accept-encoding': 'gzip, deflate, br, zstd',
+  'accept-language': 'en-GB,en-US;q=0.9,en;q=0.8,hi;q=0.7',
+  cookie: 'selectedProvider=OpenRouter; selectedModel=google/gemini-flash-1.5; cachedPrompt=',
+  'if-none-match': 'W/"2b-lrHvxNs0tN2i33xbI3u2GoD80/k"'
+}
+2025-02-26 01:28:24: GET /api/admin/plans
+2025-02-26 01:28:24: GET /api/admin/stats
+2025-02-26 01:28:24: {"timestamp":"2025-02-25T19:58:24.174Z","method":"GET","url":"/admin/verify","status":304,"ip":"::1","userAgent":"Mozilla/5.0 (iPhone; CPU iPhone OS 16_6 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/16.6 Mobile/15E148 Safari/604.1","error":null}
+2025-02-26 01:28:24: GET /admin/verify 304 15ms
+2025-02-26 01:28:24: Request URL: /api/admin/plans
+2025-02-26 01:28:24: Request Headers: {
+  host: 'localhost:3000',
+  connection: 'keep-alive',
+  authorization: 'Bearer admin_token',
+  'user-agent': 'Mozilla/5.0 (iPhone; CPU iPhone OS 16_6 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/16.6 Mobile/15E148 Safari/604.1',
+  dnt: '1',
+  'content-type': 'application/json',
+  accept: '*/*',
+  'sec-fetch-site': 'same-origin',
+  'sec-fetch-mode': 'cors',
+  'sec-fetch-dest': 'empty',
+  'accept-encoding': 'gzip, deflate, br, zstd',
+  'accept-language': 'en-GB,en-US;q=0.9,en;q=0.8,hi;q=0.7',
+  cookie: 'selectedProvider=OpenRouter; selectedModel=google/gemini-flash-1.5; cachedPrompt=',
+  'if-none-match': 'W/"33-VmDTKOu0WCzHkkqUHyIHPkLc/jQ"'
+}
+2025-02-26 01:28:24: Request URL: /api/admin/stats
+2025-02-26 01:28:24: Request Headers: {
+  host: 'localhost:3000',
+  connection: 'keep-alive',
+  'user-agent': 'Mozilla/5.0 (iPhone; CPU iPhone OS 16_6 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/16.6 Mobile/15E148 Safari/604.1',
+  dnt: '1',
+  authorization: 'Bearer admin_token',
+  accept: '*/*',
+  'sec-fetch-site': 'same-origin',
+  'sec-fetch-mode': 'cors',
+  'sec-fetch-dest': 'empty',
+  'accept-encoding': 'gzip, deflate, br, zstd',
+  'accept-language': 'en-GB,en-US;q=0.9,en;q=0.8,hi;q=0.7',
+  cookie: 'selectedProvider=OpenRouter; selectedModel=google/gemini-flash-1.5; cachedPrompt=',
+  'if-none-match': 'W/"62-rSOBp+jxJBvJRFhZZRV0kQ1P7Dg"'
+}
+2025-02-26 01:28:24: GET /api/admin/analytics
+2025-02-26 01:28:24: GET /api/payment-details
+2025-02-26 01:28:24: Request URL: /api/payment-details
+2025-02-26 01:28:24: Request Headers: {
+  host: 'localhost:3000',
+  connection: 'keep-alive',
+  'user-agent': 'Mozilla/5.0 (iPhone; CPU iPhone OS 16_6 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/16.6 Mobile/15E148 Safari/604.1',
+  dnt: '1',
+  authorization: 'Bearer admin_token',
+  accept: '*/*',
+  'sec-fetch-site': 'same-origin',
+  'sec-fetch-mode': 'cors',
+  'sec-fetch-dest': 'empty',
+  'accept-encoding': 'gzip, deflate, br, zstd',
+  'accept-language': 'en-GB,en-US;q=0.9,en;q=0.8,hi;q=0.7',
+  cookie: 'selectedProvider=OpenRouter; selectedModel=google/gemini-flash-1.5; cachedPrompt=',
+  'if-none-match': 'W/"6d-Z9phQ8j+BbSQlZb23fpEGnY9RxI"'
+}
+2025-02-26 01:28:24: Request URL: /api/admin/analytics
+2025-02-26 01:28:24: Request Headers: {
+  host: 'localhost:3000',
+  connection: 'keep-alive',
+  'user-agent': 'Mozilla/5.0 (iPhone; CPU iPhone OS 16_6 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/16.6 Mobile/15E148 Safari/604.1',
+  dnt: '1',
+  authorization: 'Bearer admin_token',
+  accept: '*/*',
+  'sec-fetch-site': 'same-origin',
+  'sec-fetch-mode': 'cors',
+  'sec-fetch-dest': 'empty',
+  'accept-encoding': 'gzip, deflate, br, zstd',
+  'accept-language': 'en-GB,en-US;q=0.9,en;q=0.8,hi;q=0.7',
+  cookie: 'selectedProvider=OpenRouter; selectedModel=google/gemini-flash-1.5; cachedPrompt=',
+  'if-none-match': 'W/"bb-6HmGhGeq0ymIkC2et+n3uAPbTWs"'
+}
+2025-02-26 01:28:24: GET /api/admin/utr/list
+2025-02-26 01:28:24: Request URL: /api/admin/utr/list
+2025-02-26 01:28:24: Request Headers: {
+  host: 'localhost:3000',
+  connection: 'keep-alive',
+  'user-agent': 'Mozilla/5.0 (iPhone; CPU iPhone OS 16_6 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/16.6 Mobile/15E148 Safari/604.1',
+  dnt: '1',
+  authorization: 'Bearer admin_token',
+  accept: '*/*',
+  'sec-fetch-site': 'same-origin',
+  'sec-fetch-mode': 'cors',
+  'sec-fetch-dest': 'empty',
+  'accept-encoding': 'gzip, deflate, br, zstd',
+  'accept-language': 'en-GB,en-US;q=0.9,en;q=0.8,hi;q=0.7',
+  cookie: 'selectedProvider=OpenRouter; selectedModel=google/gemini-flash-1.5; cachedPrompt=',
+  'if-none-match': 'W/"55e-KcwgDD9n/dAdE4NmtDqn8cmlwG0"'
+}
+2025-02-26 01:28:24: {"timestamp":"2025-02-25T19:58:24.193Z","method":"GET","url":"/admin/stats","status":200,"ip":"::1","userAgent":"Mozilla/5.0 (iPhone; CPU iPhone OS 16_6 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/16.6 Mobile/15E148 Safari/604.1","error":null}
+2025-02-26 01:28:24: {"timestamp":"2025-02-25T19:58:24.194Z","method":"GET","url":"/admin/utr/list","status":200,"ip":"::1","userAgent":"Mozilla/5.0 (iPhone; CPU iPhone OS 16_6 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/16.6 Mobile/15E148 Safari/604.1","error":null}
+2025-02-26 01:28:24: {"timestamp":"2025-02-25T19:58:24.195Z","method":"GET","url":"/payment-details","status":304,"ip":"::1","userAgent":"Mozilla/5.0 (iPhone; CPU iPhone OS 16_6 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/16.6 Mobile/15E148 Safari/604.1","error":null}
+2025-02-26 01:28:24: GET /admin/stats 200 21ms
+2025-02-26 01:28:24: GET /payment-details 304 10ms
+2025-02-26 01:28:24: {"timestamp":"2025-02-25T19:58:24.195Z","method":"GET","url":"/admin/analytics","status":200,"ip":"::1","userAgent":"Mozilla/5.0 (iPhone; CPU iPhone OS 16_6 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/16.6 Mobile/15E148 Safari/604.1","error":null}
+2025-02-26 01:28:24: GET /admin/analytics 200 10ms
+2025-02-26 01:28:24: GET /admin/utr/list 200 6ms
+2025-02-26 01:28:24: GET /api/admin/stats
+2025-02-26 01:28:24: GET /api/admin/utr/list
+2025-02-26 01:28:24: Request URL: /api/admin/utr/list
+2025-02-26 01:28:24: Request Headers: {
+  host: 'localhost:3000',
+  connection: 'keep-alive',
+  'user-agent': 'Mozilla/5.0 (iPhone; CPU iPhone OS 16_6 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/16.6 Mobile/15E148 Safari/604.1',
+  dnt: '1',
+  authorization: 'Bearer admin_token',
+  accept: '*/*',
+  'sec-fetch-site': 'same-origin',
+  'sec-fetch-mode': 'cors',
+  'sec-fetch-dest': 'empty',
+  'accept-encoding': 'gzip, deflate, br, zstd',
+  'accept-language': 'en-GB,en-US;q=0.9,en;q=0.8,hi;q=0.7',
+  cookie: 'selectedProvider=OpenRouter; selectedModel=google/gemini-flash-1.5; cachedPrompt=',
+  'if-none-match': 'W/"2d6-R8tjgr7X9hAuhcgIvQusetzGO9g"'
+}
+2025-02-26 01:28:24: Request URL: /api/admin/stats
+2025-02-26 01:28:24: Request Headers: {
+  host: 'localhost:3000',
+  connection: 'keep-alive',
+  'user-agent': 'Mozilla/5.0 (iPhone; CPU iPhone OS 16_6 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/16.6 Mobile/15E148 Safari/604.1',
+  dnt: '1',
+  authorization: 'Bearer admin_token',
+  accept: '*/*',
+  'sec-fetch-site': 'same-origin',
+  'sec-fetch-mode': 'cors',
+  'sec-fetch-dest': 'empty',
+  'accept-encoding': 'gzip, deflate, br, zstd',
+  'accept-language': 'en-GB,en-US;q=0.9,en;q=0.8,hi;q=0.7',
+  cookie: 'selectedProvider=OpenRouter; selectedModel=google/gemini-flash-1.5; cachedPrompt=',
+  'if-none-match': 'W/"62-kaxDVE0dRlRYyfik19TfDpxw2W4"'
+}
+2025-02-26 01:28:24: {"timestamp":"2025-02-25T19:58:24.205Z","method":"GET","url":"/admin/plans","status":304,"ip":"::1","userAgent":"Mozilla/5.0 (iPhone; CPU iPhone OS 16_6 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/16.6 Mobile/15E148 Safari/604.1","error":null}
+2025-02-26 01:28:24: GET /admin/plans 304 34ms
+2025-02-26 01:28:24: {"timestamp":"2025-02-25T19:58:24.206Z","method":"GET","url":"/admin/stats","status":304,"ip":"::1","userAgent":"Mozilla/5.0 (iPhone; CPU iPhone OS 16_6 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/16.6 Mobile/15E148 Safari/604.1","error":null}
+2025-02-26 01:28:24: {"timestamp":"2025-02-25T19:58:24.206Z","method":"GET","url":"/admin/utr/list","status":304,"ip":"::1","userAgent":"Mozilla/5.0 (iPhone; CPU iPhone OS 16_6 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/16.6 Mobile/15E148 Safari/604.1","error":null}
+2025-02-26 01:28:24: GET /admin/stats 304 4ms
+2025-02-26 01:28:24: GET /admin/utr/list 304 2ms
+2025-02-26 01:28:24: GET /api/payment-details
+2025-02-26 01:28:24: Request URL: /api/payment-details
+2025-02-26 01:28:24: Request Headers: {
+  host: 'localhost:3000',
+  connection: 'keep-alive',
+  'user-agent': 'Mozilla/5.0 (iPhone; CPU iPhone OS 16_6 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/16.6 Mobile/15E148 Safari/604.1',
+  dnt: '1',
+  authorization: 'Bearer admin_token',
+  accept: '*/*',
+  'sec-fetch-site': 'same-origin',
+  'sec-fetch-mode': 'cors',
+  'sec-fetch-dest': 'empty',
+  'accept-encoding': 'gzip, deflate, br, zstd',
+  'accept-language': 'en-GB,en-US;q=0.9,en;q=0.8,hi;q=0.7',
+  cookie: 'selectedProvider=OpenRouter; selectedModel=google/gemini-flash-1.5; cachedPrompt=',
+  'if-none-match': 'W/"6d-Z9phQ8j+BbSQlZb23fpEGnY9RxI"'
+}
+2025-02-26 01:28:24: {"timestamp":"2025-02-25T19:58:24.269Z","method":"GET","url":"/payment-details","status":304,"ip":"::1","userAgent":"Mozilla/5.0 (iPhone; CPU iPhone OS 16_6 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/16.6 Mobile/15E148 Safari/604.1","error":null}
+2025-02-26 01:28:24: GET /payment-details 304 2ms
+2025-02-26 01:31:03: GET /admin
+2025-02-26 01:31:03: Request URL: /admin
+2025-02-26 01:31:03: Request Headers: {
+  host: 'localhost:3000',
+  connection: 'keep-alive',
+  'cache-control': 'max-age=0',
+  dnt: '1',
+  'upgrade-insecure-requests': '1',
+  'user-agent': 'Mozilla/5.0 (iPhone; CPU iPhone OS 16_6 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/16.6 Mobile/15E148 Safari/604.1',
+  accept: 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7',
+  'sec-fetch-site': 'same-origin',
+  'sec-fetch-mode': 'navigate',
+  'sec-fetch-user': '?1',
+  'sec-fetch-dest': 'document',
+  'accept-encoding': 'gzip, deflate, br, zstd',
+  'accept-language': 'en-GB,en-US;q=0.9,en;q=0.8,hi;q=0.7',
+  cookie: 'selectedProvider=OpenRouter; selectedModel=google/gemini-flash-1.5; cachedPrompt=',
+  'if-none-match': 'W/"2c9-1953eacd08c"',
+  'if-modified-since': 'Tue, 25 Feb 2025 19:54:27 GMT'
+}
+2025-02-26 01:31:03: {"timestamp":"2025-02-25T20:01:03.625Z","method":"GET","url":"/admin","status":304,"ip":"::1","userAgent":"Mozilla/5.0 (iPhone; CPU iPhone OS 16_6 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/16.6 Mobile/15E148 Safari/604.1","error":null}
+2025-02-26 01:31:03: GET /admin 304 10ms
+2025-02-26 01:31:03: GET /static/css/main.67981760.css
+2025-02-26 01:31:03: GET /app.config.js
+2025-02-26 01:31:03: Request URL: /static/css/main.67981760.css
+2025-02-26 01:31:03: Request Headers: {
+  host: 'localhost:3000',
+  connection: 'keep-alive',
+  'user-agent': 'Mozilla/5.0 (iPhone; CPU iPhone OS 16_6 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/16.6 Mobile/15E148 Safari/604.1',
+  dnt: '1',
+  accept: 'text/css,*/*;q=0.1',
+  'sec-fetch-site': 'same-origin',
+  'sec-fetch-mode': 'no-cors',
+  'sec-fetch-dest': 'style',
+  'accept-encoding': 'gzip, deflate, br, zstd',
+  'accept-language': 'en-GB,en-US;q=0.9,en;q=0.8,hi;q=0.7',
+  cookie: 'selectedProvider=OpenRouter; selectedModel=google/gemini-flash-1.5; cachedPrompt=',
+  'if-none-match': 'W/"356-1953eacd08c"',
+  'if-modified-since': 'Tue, 25 Feb 2025 19:54:27 GMT'
+}
+2025-02-26 01:31:03: Request URL: /app.config.js
+2025-02-26 01:31:03: Request Headers: {
+  host: 'localhost:3000',
+  connection: 'keep-alive',
+  'user-agent': 'Mozilla/5.0 (iPhone; CPU iPhone OS 16_6 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/16.6 Mobile/15E148 Safari/604.1',
+  dnt: '1',
+  accept: '*/*',
+  'sec-fetch-site': 'same-origin',
+  'sec-fetch-mode': 'no-cors',
+  'sec-fetch-dest': 'script',
+  'accept-encoding': 'gzip, deflate, br, zstd',
+  'accept-language': 'en-GB,en-US;q=0.9,en;q=0.8,hi;q=0.7',
+  cookie: 'selectedProvider=OpenRouter; selectedModel=google/gemini-flash-1.5; cachedPrompt=',
+  'if-none-match': 'W/"113-1953eac9ba1"',
+  'if-modified-since': 'Tue, 25 Feb 2025 19:54:14 GMT'
+}
+2025-02-26 01:31:03: {"timestamp":"2025-02-25T20:01:03.748Z","method":"GET","url":"/css/main.67981760.css","status":304,"ip":"::1","userAgent":"Mozilla/5.0 (iPhone; CPU iPhone OS 16_6 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/16.6 Mobile/15E148 Safari/604.1","error":null}
+2025-02-26 01:31:03: GET /css/main.67981760.css 304 3ms
+2025-02-26 01:31:03: {"timestamp":"2025-02-25T20:01:03.753Z","method":"GET","url":"/app.config.js","status":304,"ip":"::1","userAgent":"Mozilla/5.0 (iPhone; CPU iPhone OS 16_6 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/16.6 Mobile/15E148 Safari/604.1","error":null}
+2025-02-26 01:31:03: GET /app.config.js 304 7ms
+2025-02-26 01:31:03: GET /static/js/main.51804d9c.js
+2025-02-26 01:31:03: Request URL: /static/js/main.51804d9c.js
+2025-02-26 01:31:03: Request Headers: {
+  host: 'localhost:3000',
+  connection: 'keep-alive',
+  'user-agent': 'Mozilla/5.0 (iPhone; CPU iPhone OS 16_6 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/16.6 Mobile/15E148 Safari/604.1',
+  dnt: '1',
+  accept: '*/*',
+  'sec-fetch-site': 'same-origin',
+  'sec-fetch-mode': 'no-cors',
+  'sec-fetch-dest': 'script',
+  'accept-encoding': 'gzip, deflate, br, zstd',
+  'accept-language': 'en-GB,en-US;q=0.9,en;q=0.8,hi;q=0.7',
+  cookie: 'selectedProvider=OpenRouter; selectedModel=google/gemini-flash-1.5; cachedPrompt=',
+  'if-none-match': 'W/"b77b5-1953eacd08c"',
+  'if-modified-since': 'Tue, 25 Feb 2025 19:54:27 GMT'
+}
+2025-02-26 01:31:03: {"timestamp":"2025-02-25T20:01:03.782Z","method":"GET","url":"/js/main.51804d9c.js","status":304,"ip":"::1","userAgent":"Mozilla/5.0 (iPhone; CPU iPhone OS 16_6 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/16.6 Mobile/15E148 Safari/604.1","error":null}
+2025-02-26 01:31:03: GET /js/main.51804d9c.js 304 10ms
+2025-02-26 01:31:04: GET /static/css/main.67981760.css.map
+2025-02-26 01:31:04: Request URL: /static/css/main.67981760.css.map
+2025-02-26 01:31:04: Request Headers: {
+  host: 'localhost:3000',
+  connection: 'keep-alive',
+  'sec-fetch-site': 'same-origin',
+  'sec-fetch-mode': 'no-cors',
+  'sec-fetch-dest': 'empty',
+  'user-agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36',
+  'accept-encoding': 'gzip, deflate, br, zstd',
+  'accept-language': 'en-GB,en-US;q=0.9,en;q=0.8,hi;q=0.7',
+  cookie: 'selectedProvider=OpenRouter; selectedModel=google/gemini-flash-1.5; cachedPrompt=',
+  'if-none-match': 'W/"7bb-1953eacd08c"',
+  'if-modified-since': 'Tue, 25 Feb 2025 19:54:27 GMT'
+}
+2025-02-26 01:31:04: {"timestamp":"2025-02-25T20:01:04.232Z","method":"GET","url":"/css/main.67981760.css.map","status":304,"ip":"::1","userAgent":"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36","error":null}
+2025-02-26 01:31:04: GET /css/main.67981760.css.map 304 1ms
+2025-02-26 01:31:04: GET /static/js/main.51804d9c.js.map
+2025-02-26 01:31:04: Request URL: /static/js/main.51804d9c.js.map
+2025-02-26 01:31:04: Request Headers: {
+  host: 'localhost:3000',
+  connection: 'keep-alive',
+  'sec-fetch-site': 'same-origin',
+  'sec-fetch-mode': 'no-cors',
+  'sec-fetch-dest': 'empty',
+  'user-agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36',
+  'accept-encoding': 'gzip, deflate, br, zstd',
+  'accept-language': 'en-GB,en-US;q=0.9,en;q=0.8,hi;q=0.7',
+  cookie: 'selectedProvider=OpenRouter; selectedModel=google/gemini-flash-1.5; cachedPrompt=',
+  'if-none-match': 'W/"34e360-1953eacd08c"',
+  'if-modified-since': 'Tue, 25 Feb 2025 19:54:27 GMT'
+}
+2025-02-26 01:31:04: {"timestamp":"2025-02-25T20:01:04.269Z","method":"GET","url":"/js/main.51804d9c.js.map","status":304,"ip":"::1","userAgent":"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36","error":null}
+2025-02-26 01:31:04: GET /js/main.51804d9c.js.map 304 6ms
+2025-02-26 01:31:04: GET /favicon.ico
+2025-02-26 01:31:04: Request URL: /favicon.ico
+2025-02-26 01:31:04: Request Headers: {
+  host: 'localhost:3000',
+  connection: 'keep-alive',
+  'user-agent': 'Mozilla/5.0 (iPhone; CPU iPhone OS 16_6 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/16.6 Mobile/15E148 Safari/604.1',
+  dnt: '1',
+  accept: 'image/avif,image/webp,image/apng,image/svg+xml,image/*,*/*;q=0.8',
+  'sec-fetch-site': 'same-origin',
+  'sec-fetch-mode': 'no-cors',
+  'sec-fetch-dest': 'image',
+  'accept-encoding': 'gzip, deflate, br, zstd',
+  'accept-language': 'en-GB,en-US;q=0.9,en;q=0.8,hi;q=0.7',
+  cookie: 'selectedProvider=OpenRouter; selectedModel=google/gemini-flash-1.5; cachedPrompt=',
+  'if-none-match': 'W/"13e-1953eac9ba2"',
+  'if-modified-since': 'Tue, 25 Feb 2025 19:54:14 GMT'
+}
+2025-02-26 01:31:04: {"timestamp":"2025-02-25T20:01:04.280Z","method":"GET","url":"/favicon.ico","status":304,"ip":"::1","userAgent":"Mozilla/5.0 (iPhone; CPU iPhone OS 16_6 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/16.6 Mobile/15E148 Safari/604.1","error":null}
+2025-02-26 01:31:04: GET /favicon.ico 304 6ms
+2025-02-26 01:31:04: GET /api/admin/verify
+2025-02-26 01:31:04: GET /api/admin/stats
+2025-02-26 01:31:04: GET /api/admin/plans
+2025-02-26 01:31:04: Request URL: /api/admin/verify
+2025-02-26 01:31:04: Request Headers: {
+  host: 'localhost:3000',
+  connection: 'keep-alive',
+  'user-agent': 'Mozilla/5.0 (iPhone; CPU iPhone OS 16_6 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/16.6 Mobile/15E148 Safari/604.1',
+  dnt: '1',
+  authorization: 'Bearer admin_token',
+  accept: '*/*',
+  'sec-fetch-site': 'same-origin',
+  'sec-fetch-mode': 'cors',
+  'sec-fetch-dest': 'empty',
+  'accept-encoding': 'gzip, deflate, br, zstd',
+  'accept-language': 'en-GB,en-US;q=0.9,en;q=0.8,hi;q=0.7',
+  cookie: 'selectedProvider=OpenRouter; selectedModel=google/gemini-flash-1.5; cachedPrompt=',
+  'if-none-match': 'W/"2b-lrHvxNs0tN2i33xbI3u2GoD80/k"'
+}
+2025-02-26 01:31:04: Request URL: /api/admin/stats
+2025-02-26 01:31:04: Request Headers: {
+  host: 'localhost:3000',
+  connection: 'keep-alive',
+  'user-agent': 'Mozilla/5.0 (iPhone; CPU iPhone OS 16_6 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/16.6 Mobile/15E148 Safari/604.1',
+  dnt: '1',
+  authorization: 'Bearer admin_token',
+  accept: '*/*',
+  'sec-fetch-site': 'same-origin',
+  'sec-fetch-mode': 'cors',
+  'sec-fetch-dest': 'empty',
+  'accept-encoding': 'gzip, deflate, br, zstd',
+  'accept-language': 'en-GB,en-US;q=0.9,en;q=0.8,hi;q=0.7',
+  cookie: 'selectedProvider=OpenRouter; selectedModel=google/gemini-flash-1.5; cachedPrompt=',
+  'if-none-match': 'W/"62-kaxDVE0dRlRYyfik19TfDpxw2W4"'
+}
+2025-02-26 01:31:04: Request URL: /api/admin/plans
+2025-02-26 01:31:04: Request Headers: {
+  host: 'localhost:3000',
+  connection: 'keep-alive',
+  authorization: 'Bearer admin_token',
+  'user-agent': 'Mozilla/5.0 (iPhone; CPU iPhone OS 16_6 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/16.6 Mobile/15E148 Safari/604.1',
+  dnt: '1',
+  'content-type': 'application/json',
+  accept: '*/*',
+  'sec-fetch-site': 'same-origin',
+  'sec-fetch-mode': 'cors',
+  'sec-fetch-dest': 'empty',
+  'accept-encoding': 'gzip, deflate, br, zstd',
+  'accept-language': 'en-GB,en-US;q=0.9,en;q=0.8,hi;q=0.7',
+  cookie: 'selectedProvider=OpenRouter; selectedModel=google/gemini-flash-1.5; cachedPrompt=',
+  'if-none-match': 'W/"33-VmDTKOu0WCzHkkqUHyIHPkLc/jQ"'
+}
+2025-02-26 01:31:04: GET /api/admin/utr/list
+2025-02-26 01:31:04: Request URL: /api/admin/utr/list
+2025-02-26 01:31:04: Request Headers: {
+  host: 'localhost:3000',
+  connection: 'keep-alive',
+  'user-agent': 'Mozilla/5.0 (iPhone; CPU iPhone OS 16_6 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/16.6 Mobile/15E148 Safari/604.1',
+  dnt: '1',
+  authorization: 'Bearer admin_token',
+  accept: '*/*',
+  'sec-fetch-site': 'same-origin',
+  'sec-fetch-mode': 'cors',
+  'sec-fetch-dest': 'empty',
+  'accept-encoding': 'gzip, deflate, br, zstd',
+  'accept-language': 'en-GB,en-US;q=0.9,en;q=0.8,hi;q=0.7',
+  cookie: 'selectedProvider=OpenRouter; selectedModel=google/gemini-flash-1.5; cachedPrompt=',
+  'if-none-match': 'W/"2d6-R8tjgr7X9hAuhcgIvQusetzGO9g"'
+}
+2025-02-26 01:31:04: GET /api/payment-details
+2025-02-26 01:31:04: Request URL: /api/payment-details
+2025-02-26 01:31:04: Request Headers: {
+  host: 'localhost:3000',
+  connection: 'keep-alive',
+  'user-agent': 'Mozilla/5.0 (iPhone; CPU iPhone OS 16_6 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/16.6 Mobile/15E148 Safari/604.1',
+  dnt: '1',
+  authorization: 'Bearer admin_token',
+  accept: '*/*',
+  'sec-fetch-site': 'same-origin',
+  'sec-fetch-mode': 'cors',
+  'sec-fetch-dest': 'empty',
+  'accept-encoding': 'gzip, deflate, br, zstd',
+  'accept-language': 'en-GB,en-US;q=0.9,en;q=0.8,hi;q=0.7',
+  cookie: 'selectedProvider=OpenRouter; selectedModel=google/gemini-flash-1.5; cachedPrompt=',
+  'if-none-match': 'W/"6d-Z9phQ8j+BbSQlZb23fpEGnY9RxI"'
+}
+2025-02-26 01:31:04: GET /api/admin/analytics
+2025-02-26 01:31:04: {"timestamp":"2025-02-25T20:01:04.435Z","method":"GET","url":"/admin/verify","status":304,"ip":"::1","userAgent":"Mozilla/5.0 (iPhone; CPU iPhone OS 16_6 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/16.6 Mobile/15E148 Safari/604.1","error":null}
+2025-02-26 01:31:04: GET /admin/verify 304 33ms
+2025-02-26 01:31:04: Request URL: /api/admin/analytics
+2025-02-26 01:31:04: Request Headers: {
+  host: 'localhost:3000',
+  connection: 'keep-alive',
+  'user-agent': 'Mozilla/5.0 (iPhone; CPU iPhone OS 16_6 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/16.6 Mobile/15E148 Safari/604.1',
+  dnt: '1',
+  authorization: 'Bearer admin_token',
+  accept: '*/*',
+  'sec-fetch-site': 'same-origin',
+  'sec-fetch-mode': 'cors',
+  'sec-fetch-dest': 'empty',
+  'accept-encoding': 'gzip, deflate, br, zstd',
+  'accept-language': 'en-GB,en-US;q=0.9,en;q=0.8,hi;q=0.7',
+  cookie: 'selectedProvider=OpenRouter; selectedModel=google/gemini-flash-1.5; cachedPrompt=',
+  'if-none-match': 'W/"de-YdN4VOqKv3T6dCkK62r4drKyAbI"'
+}
+2025-02-26 01:31:04: {"timestamp":"2025-02-25T20:01:04.444Z","method":"GET","url":"/admin/stats","status":304,"ip":"::1","userAgent":"Mozilla/5.0 (iPhone; CPU iPhone OS 16_6 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/16.6 Mobile/15E148 Safari/604.1","error":null}
+2025-02-26 01:31:04: {"timestamp":"2025-02-25T20:01:04.446Z","method":"GET","url":"/admin/plans","status":304,"ip":"::1","userAgent":"Mozilla/5.0 (iPhone; CPU iPhone OS 16_6 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/16.6 Mobile/15E148 Safari/604.1","error":null}
+2025-02-26 01:31:04: GET /admin/plans 304 39ms
+2025-02-26 01:31:04: GET /admin/stats 304 39ms
+2025-02-26 01:31:04: GET /api/admin/stats
+2025-02-26 01:31:04: Request URL: /api/admin/stats
+2025-02-26 01:31:04: Request Headers: {
+  host: 'localhost:3000',
+  connection: 'keep-alive',
+  'user-agent': 'Mozilla/5.0 (iPhone; CPU iPhone OS 16_6 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/16.6 Mobile/15E148 Safari/604.1',
+  dnt: '1',
+  authorization: 'Bearer admin_token',
+  accept: '*/*',
+  'sec-fetch-site': 'same-origin',
+  'sec-fetch-mode': 'cors',
+  'sec-fetch-dest': 'empty',
+  'accept-encoding': 'gzip, deflate, br, zstd',
+  'accept-language': 'en-GB,en-US;q=0.9,en;q=0.8,hi;q=0.7',
+  cookie: 'selectedProvider=OpenRouter; selectedModel=google/gemini-flash-1.5; cachedPrompt=',
+  'if-none-match': 'W/"62-kaxDVE0dRlRYyfik19TfDpxw2W4"'
+}
+2025-02-26 01:31:04: {"timestamp":"2025-02-25T20:01:04.447Z","method":"GET","url":"/admin/utr/list","status":304,"ip":"::1","userAgent":"Mozilla/5.0 (iPhone; CPU iPhone OS 16_6 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/16.6 Mobile/15E148 Safari/604.1","error":null}
+2025-02-26 01:31:04: {"timestamp":"2025-02-25T20:01:04.449Z","method":"GET","url":"/admin/analytics","status":304,"ip":"::1","userAgent":"Mozilla/5.0 (iPhone; CPU iPhone OS 16_6 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/16.6 Mobile/15E148 Safari/604.1","error":null}
+2025-02-26 01:31:04: GET /admin/utr/list 304 32ms
+2025-02-26 01:31:04: GET /admin/analytics 304 14ms
+2025-02-26 01:31:04: {"timestamp":"2025-02-25T20:01:04.452Z","method":"GET","url":"/payment-details","status":304,"ip":"::1","userAgent":"Mozilla/5.0 (iPhone; CPU iPhone OS 16_6 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/16.6 Mobile/15E148 Safari/604.1","error":null}
+2025-02-26 01:31:04: GET /payment-details 304 19ms
+2025-02-26 01:31:04: {"timestamp":"2025-02-25T20:01:04.459Z","method":"GET","url":"/admin/stats","status":304,"ip":"::1","userAgent":"Mozilla/5.0 (iPhone; CPU iPhone OS 16_6 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/16.6 Mobile/15E148 Safari/604.1","error":null}
+2025-02-26 01:31:04: GET /admin/stats 304 13ms
+2025-02-26 01:31:04: GET /api/admin/utr/list
+2025-02-26 01:31:04: Request URL: /api/admin/utr/list
+2025-02-26 01:31:04: Request Headers: {
+  host: 'localhost:3000',
+  connection: 'keep-alive',
+  'user-agent': 'Mozilla/5.0 (iPhone; CPU iPhone OS 16_6 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/16.6 Mobile/15E148 Safari/604.1',
+  dnt: '1',
+  authorization: 'Bearer admin_token',
+  accept: '*/*',
+  'sec-fetch-site': 'same-origin',
+  'sec-fetch-mode': 'cors',
+  'sec-fetch-dest': 'empty',
+  'accept-encoding': 'gzip, deflate, br, zstd',
+  'accept-language': 'en-GB,en-US;q=0.9,en;q=0.8,hi;q=0.7',
+  cookie: 'selectedProvider=OpenRouter; selectedModel=google/gemini-flash-1.5; cachedPrompt=',
+  'if-none-match': 'W/"2d6-R8tjgr7X9hAuhcgIvQusetzGO9g"'
+}
+2025-02-26 01:31:04: {"timestamp":"2025-02-25T20:01:04.529Z","method":"GET","url":"/admin/utr/list","status":304,"ip":"::1","userAgent":"Mozilla/5.0 (iPhone; CPU iPhone OS 16_6 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/16.6 Mobile/15E148 Safari/604.1","error":null}
+2025-02-26 01:31:04: GET /admin/utr/list 304 21ms
+2025-02-26 01:31:04: GET /api/payment-details
+2025-02-26 01:31:04: GET /favicon.ico
+2025-02-26 01:31:04: Request URL: /api/payment-details
+2025-02-26 01:31:04: Request Headers: {
+  host: 'localhost:3000',
+  connection: 'keep-alive',
+  'user-agent': 'Mozilla/5.0 (iPhone; CPU iPhone OS 16_6 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/16.6 Mobile/15E148 Safari/604.1',
+  dnt: '1',
+  authorization: 'Bearer admin_token',
+  accept: '*/*',
+  'sec-fetch-site': 'same-origin',
+  'sec-fetch-mode': 'cors',
+  'sec-fetch-dest': 'empty',
+  'accept-encoding': 'gzip, deflate, br, zstd',
+  'accept-language': 'en-GB,en-US;q=0.9,en;q=0.8,hi;q=0.7',
+  cookie: 'selectedProvider=OpenRouter; selectedModel=google/gemini-flash-1.5; cachedPrompt=',
+  'if-none-match': 'W/"6d-Z9phQ8j+BbSQlZb23fpEGnY9RxI"'
+}
+2025-02-26 01:31:04: Request URL: /favicon.ico
+2025-02-26 01:31:04: Request Headers: {
+  host: 'localhost:3000',
+  connection: 'keep-alive',
+  'user-agent': 'Mozilla/5.0 (iPhone; CPU iPhone OS 16_6 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/16.6 Mobile/15E148 Safari/604.1',
+  dnt: '1',
+  accept: 'image/avif,image/webp,image/apng,image/svg+xml,image/*,*/*;q=0.8',
+  'sec-fetch-site': 'same-origin',
+  'sec-fetch-mode': 'no-cors',
+  'sec-fetch-dest': 'image',
+  'accept-encoding': 'gzip, deflate, br, zstd',
+  'accept-language': 'en-GB,en-US;q=0.9,en;q=0.8,hi;q=0.7',
+  cookie: 'selectedProvider=OpenRouter; selectedModel=google/gemini-flash-1.5; cachedPrompt=',
+  'if-none-match': 'W/"13e-1953eac9ba2"',
+  'if-modified-since': 'Tue, 25 Feb 2025 19:54:14 GMT'
+}
+2025-02-26 01:31:04: {"timestamp":"2025-02-25T20:01:04.582Z","method":"GET","url":"/favicon.ico","status":304,"ip":"::1","userAgent":"Mozilla/5.0 (iPhone; CPU iPhone OS 16_6 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/16.6 Mobile/15E148 Safari/604.1","error":null}
+2025-02-26 01:31:04: GET /favicon.ico 304 14ms
+2025-02-26 01:31:04: {"timestamp":"2025-02-25T20:01:04.587Z","method":"GET","url":"/payment-details","status":304,"ip":"::1","userAgent":"Mozilla/5.0 (iPhone; CPU iPhone OS 16_6 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/16.6 Mobile/15E148 Safari/604.1","error":null}
+2025-02-26 01:31:04: GET /payment-details 304 20ms
+2025-02-26 01:31:04: GET /manifest.json
+2025-02-26 01:31:04: Request URL: /manifest.json
+2025-02-26 01:31:04: Request Headers: {
+  host: 'localhost:3000',
+  connection: 'keep-alive',
+  'user-agent': 'Mozilla/5.0 (iPhone; CPU iPhone OS 16_6 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/16.6 Mobile/15E148 Safari/604.1',
+  dnt: '1',
+  accept: '*/*',
+  'sec-fetch-site': 'same-origin',
+  'sec-fetch-mode': 'cors',
+  'sec-fetch-dest': 'manifest',
+  'accept-encoding': 'gzip, deflate, br, zstd',
+  'accept-language': 'en-GB,en-US;q=0.9,en;q=0.8,hi;q=0.7',
+  'if-none-match': 'W/"122-1953eac9ba2"',
+  'if-modified-since': 'Tue, 25 Feb 2025 19:54:14 GMT'
+}
+2025-02-26 01:31:04: {"timestamp":"2025-02-25T20:01:04.638Z","method":"GET","url":"/manifest.json","status":304,"ip":"::1","userAgent":"Mozilla/5.0 (iPhone; CPU iPhone OS 16_6 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/16.6 Mobile/15E148 Safari/604.1","error":null}
+2025-02-26 01:31:04: GET /manifest.json 304 7ms
+2025-02-26 01:42:19: GET /verify
+2025-02-26 01:42:19: Request URL: /verify
+2025-02-26 01:42:19: Request Headers: {
+  host: 'localhost:3000',
+  connection: 'keep-alive',
+  'cache-control': 'max-age=0',
+  dnt: '1',
+  'upgrade-insecure-requests': '1',
+  'user-agent': 'Mozilla/5.0 (iPhone; CPU iPhone OS 16_6 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/16.6 Mobile/15E148 Safari/604.1',
+  accept: 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7',
+  'sec-fetch-site': 'same-origin',
+  'sec-fetch-mode': 'navigate',
+  'sec-fetch-user': '?1',
+  'sec-fetch-dest': 'document',
+  'accept-encoding': 'gzip, deflate, br, zstd',
+  'accept-language': 'en-GB,en-US;q=0.9,en;q=0.8,hi;q=0.7',
+  cookie: 'selectedProvider=OpenRouter; selectedModel=google/gemini-flash-1.5; cachedPrompt=',
+  'if-none-match': 'W/"2d1-URiJ8lbDFe9X/Sg3m7duUIL8H1A"'
+}
+2025-02-26 01:42:19: {"timestamp":"2025-02-25T20:12:19.086Z","method":"GET","url":"/verify","status":404,"ip":"::1","userAgent":"Mozilla/5.0 (iPhone; CPU iPhone OS 16_6 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/16.6 Mobile/15E148 Safari/604.1","error":null}
+2025-02-26 01:42:19: GET /verify 404 25ms
+2025-02-26 01:42:21: GET /verify
+2025-02-26 01:42:21: Request URL: /verify
+2025-02-26 01:42:21: Request Headers: {
+  host: 'localhost:3000',
+  connection: 'keep-alive',
+  'cache-control': 'max-age=0',
+  dnt: '1',
+  'upgrade-insecure-requests': '1',
+  'user-agent': 'Mozilla/5.0 (iPhone; CPU iPhone OS 16_6 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/16.6 Mobile/15E148 Safari/604.1',
+  accept: 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7',
+  'sec-fetch-site': 'same-origin',
+  'sec-fetch-mode': 'navigate',
+  'sec-fetch-user': '?1',
+  'sec-fetch-dest': 'document',
+  'accept-encoding': 'gzip, deflate, br, zstd',
+  'accept-language': 'en-GB,en-US;q=0.9,en;q=0.8,hi;q=0.7',
+  cookie: 'selectedProvider=OpenRouter; selectedModel=google/gemini-flash-1.5; cachedPrompt='
+}
+2025-02-26 01:42:21: {"timestamp":"2025-02-25T20:12:21.112Z","method":"GET","url":"/verify","status":404,"ip":"::1","userAgent":"Mozilla/5.0 (iPhone; CPU iPhone OS 16_6 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/16.6 Mobile/15E148 Safari/604.1","error":null}
+2025-02-26 01:42:21: GET /verify 404 11ms

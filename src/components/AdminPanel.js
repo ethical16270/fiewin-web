@@ -368,8 +368,10 @@ const AdminPanel = () => {
   const fetchPlanAmounts = async () => {
     try {
       const response = await fetch('/api/admin/plans', {
+        method: 'GET',
         headers: {
-          'Authorization': token
+          'Content-Type': 'application/json',
+          'Authorization': `Bearer ${token}`
         }
       });
 
@@ -538,7 +540,7 @@ const AdminPanel = () => {
   const fetchStats = async () => {
     try {
       const response = await fetch('/api/admin/stats', {
-        headers: { 'Authorization': token }
+        headers: { 'Authorization': `Bearer ${token}` }
       });
       const data = await response.json();
       if (response.ok) {
@@ -553,7 +555,7 @@ const AdminPanel = () => {
     try {
       const response = await fetch('/api/payment-details', {
         headers: {
-          'Authorization': token
+          'Authorization': `Bearer ${token}`
         }
       });
 
@@ -1046,7 +1048,7 @@ const AdminPanel = () => {
         try {
           const response = await fetch('/api/admin/verify', {
             headers: {
-              'Authorization': token
+              'Authorization': `Bearer ${token}`
             }
           });
           

@@ -272,8 +272,8 @@ router.get('/payment-details', (req, res) => {
 });
 
 router.post('/verify-utr', (req, res) => {
-  const { utr } = req.body;
-  console.log('Received UTR:', utr); // Debug log
+  const { utr, action, gamesUsed } = req.body;
+  console.log('Received UTR:', utr, 'Action:', action, 'Games Used:', gamesUsed); // Debug log
 
   if (!utr) {
     return res.status(400).json({
@@ -284,6 +284,55 @@ router.post('/verify-utr', (req, res) => {
 
   const trimmedUTR = utr.trim();
   
+  // Handle update-games action
+  if (action === 'update-games' && gamesUsed !== undefined) {
+    console.log('Handling update-games action with games used:', gamesUsed);
+    
+    db.run(
+      'UPDATE utrs SET games_used = ? WHERE utr_number = ?',
+      [gamesUsed, trimmedUTR],
+      (err) => {
+        if (err) {
+          console.error('Database error updating games used:', err);
+          return res.status(500).json({
+            success: false,
+            message: 'Failed to update games count'
+          });
+        }
+        
+        // Get updated UTR data
+        db.get('SELECT * FROM utrs WHERE utr_number = ?', [trimmedUTR], (err, row) => {
+          if (err || !row) {
+            console.error('Database error fetching updated UTR:', err);
+            return res.status(500).json({
+              success: false,
+              message: 'Failed to fetch updated UTR data'
+            });
+          }
+          
+          const response = {
+            success: true,
+            message: 'Games count updated successfully',
+            utrNumber: trimmedUTR,
+            planType: row.plan_type,
+            gamesAllowed: row.games_allowed,
+            gamesUsed: row.games_used,
+            gamesRemaining: row.games_allowed - row.games_used,
+            expiresAt: row.expires_at
+          };
+          
+          console.log('Sending update-games response:', response);
+          return res.json(response);
+        });
+        
+        return;
+      }
+    );
+    
+    return;
+  }
+  
+  // Continue with normal UTR verification
   db.get('SELECT * FROM utrs WHERE utr_number = ?', [trimmedUTR], (err, row) => {
     if (err) {
       console.error('Database error:', err);
